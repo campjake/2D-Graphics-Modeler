@@ -14,3 +14,25 @@ that can be integrated into an existing software suite.
 ### [Getting Started on GitHub](https://guides.github.com/activities/hello-world/)
 
 ### [Unit Testing with Google Primer](https://google.github.io/googletest/primer.html)
+
+## Project Group Members
+- Davis Ramirez
+  - Role: (tbd)
+
+- Dylan Earl
+  - Role: (tbd)
+
+- Fuli Gan
+  - Role: (tbd)
+
+- Hardin Liu
+  - Role: (tbd)
+
+- Jacob Campbell
+  - Role: (tbd)
+
+- Lawrence Tep
+  - Role: (tbd)
+
+- Matthew Chin
+  - Role: (tbd)
