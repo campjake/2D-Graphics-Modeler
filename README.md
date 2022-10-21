@@ -22,7 +22,7 @@ that can be integrated into an existing software suite.
 - Dylan Earl
   - Role: (tbd)
 
-- Fuli Gan
+- Fuli Gan  (Asuna)
   - Role: (tbd)
 
 - Hardin Liu
