@@ -15,6 +15,9 @@ that can be integrated into an existing software suite.
 
 - Hardin Liu
   - Role: (tbd)
+  
+- Harshil Shahi
+  - Role: (tbd)
 
 - Jacob Campbell
   - Role: (tbd)
