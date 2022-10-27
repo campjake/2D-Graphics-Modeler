@@ -20,27 +20,27 @@ that can be integrated into an existing software suite.
 
 ## Project Group Members
 - Davis Ramirez
-  - Role: (tbd)
+  - Role: Team
 
 - Dylan Earl
-  - Role: (tbd)
+  - Role: Team
 
 - Fuli Gan  (Asuna)
-  - Role: God
+  - Role: Team
 
 - Hardin Liu
-  - Role: (tbd)
+  - Role: Team
   
 - Harshil Shahi
-  - Role: (tbd)
+  - Role: Team
 
 - Jacob Campbell
-  - Role: (tbd)
+  - Role: Scrum Master
 
 - Lawrence Tep
-  - Role: (tbd)
+  - Role: Team
 
 - Matthew Chin
-  - Role: (tbd)
+  - Role: Product Owner
 
 
