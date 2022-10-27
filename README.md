@@ -1,3 +1,4 @@
+# TEAM NAME : Shapes R Us
 # 2D-Graphics-Modeler
 
 A 2D graphic object modeling software for the fictional company 2D Graphics Modeler Inc. This is a 2D graphics rendering library 
