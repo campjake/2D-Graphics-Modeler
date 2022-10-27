@@ -26,7 +26,7 @@ that can be integrated into an existing software suite.
   - Role: (tbd)
 
 - Fuli Gan  (Asuna)
-  - Role: (tbd)
+  - Role: God
 
 - Hardin Liu
   - Role: (tbd)
