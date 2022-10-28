@@ -18,6 +18,28 @@ that can be integrated into an existing software suite.
 
 ### [Git Cheat Sheat](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
 
+## Progress on Deliverables
+- [x] Uses Qt
+- [x] Uses GIT/Github
+- [ ] Uses Doxygen
+- [ ] Base class definition
+- [ ] Base class member function definitions
+- [ ] Derived class definitions
+- [ ] Derived class member function definitions
+- [x] Vector class definition
+- [ ] Vector class member function definitions
+- [ ] Text class definition
+- [ ] Text class member function definitions
+- [ ] Shape Move setter (mutator) (admin only)
+- [ ] Read shape attributes from file
+- [ ] Objects print
+- [ ] Add/Remove Objects
+- [ ] Shape List Report
+- [ ] Save changes between executions
+- [ ] Contact Us Method
+- [ ] Testimonials
+- [ ] Passes valgrind memory check
+
 ## Project Group Members
 - Davis Ramirez
   - Role: Team
