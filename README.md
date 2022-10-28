@@ -39,6 +39,7 @@ that can be integrated into an existing software suite.
 - [ ] Contact Us Method
 - [ ] Testimonials
 - [ ] Passes valgrind memory check
+- [x] Extra Credit: Uses Agile Planning tools (Projects & Actions)
 
 ## Project Group Members
 - Davis Ramirez
