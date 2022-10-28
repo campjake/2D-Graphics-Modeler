@@ -42,6 +42,8 @@ that can be integrated into an existing software suite.
 
 - Matthew Chin
   - Role: Product Owner
+  
+  ## Visualization of Time Spent on Project
 
 ![Visualization of the codebase](./diagram.svg)
 
