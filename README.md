@@ -43,4 +43,5 @@ that can be integrated into an existing software suite.
 - Matthew Chin
   - Role: Product Owner
 
+![Visualization of the codebase](./diagram.svg)
 
