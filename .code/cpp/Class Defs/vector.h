@@ -1,3 +1,4 @@
+// Hardin will work on this
 // a vector which approximates the stl vector - provided by J.Kath from Canvas
 
 template <typename T>
