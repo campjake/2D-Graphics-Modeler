@@ -2,6 +2,7 @@
 
 #include "vector.h"
 
+template <typename T>
 vector::vector() : size_v{0}, elem{nullpt}, space{0} {}
 
 explicit vecter::vector(int s) : size_v{s}, elem{new T[s]}, space{s} {}
@@ -51,3 +52,45 @@ vector::~vector()
     delete[] elem;
 }
 
+T& operator[] (int n)
+{
+    return elem[n];
+}
+
+const T& operator[] (int n)
+{
+    return elem[n];
+}
+
+int size() const
+{
+    return size_v;
+}
+
+int capacity() const
+{
+    return space;
+}
+
+void resize(int newsize)
+{
+    reserve(newsize);
+    for (int i = size_v; i < newsize; ++i)
+        elem[i] = 0;
+    size_v = newsize;
+}
+
+void push_back(T val)
+{
+    if (space == 0)
+        reserve(8);
+    else if (size_v == space)
+        reserve(2*space);
+    elem[size_v] = val;
+    ++size_v;
+}
+
+void reserve(int newalloc)
+{
+    
+}

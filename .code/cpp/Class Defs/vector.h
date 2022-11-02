@@ -1,12 +1,6 @@
 // Hardin will work on this
 // a vector which approximates the stl vector - provided by J.Kath from Canvas
 
-#ifndef VECTOR_H_
-#define VECTOR_H_
-
-#include <algorithm> // std::copy
-using std::copy;
-
 template <typename T>
 class vector
 {
@@ -16,11 +10,11 @@ class vector
     explicit vector(int s);                                 // alternate constructor
     vector(const vector&);                                  // copy constructor
     vector& operator=vector(const vector&);                 // copy assignment
-    vector(const vector&&) noexcept;                        // move constructor
-    vector& operator=vector(const vector&&) noexcept;       // move assignment
+    vector(vector&&) noexcept;                              // move constructor
+    vector& operator=vector(vector&&) noexcept;             // move assignment
     ~vector()                                               // destructor
 
-    T& operator[] (int n);                     // access: return reference
+    T& operator[] (int n);                    // access: return reference
     const T& operator[] (int n);              // access: return reference
 
     int size() const;                         // the current size
@@ -43,5 +37,3 @@ class vector
     T* elem;        // pointer to elements
     int space;      // size + free space
 };
-
-#endif /* VECTOR_H_ */
