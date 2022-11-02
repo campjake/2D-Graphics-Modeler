@@ -5,7 +5,7 @@
 template <typename T>
 vector::vector() : size_v{0}, elem{nullpt}, space{0} {}
 
-explicit vecter::vector(int s) : size_v{s}, elem{new T[s]}, space{s} {}
+explicit vector::vector(int s) : size_v{s}, elem{new T[s]}, space{s} {}
 
 vector::vector(const vector &src) : size_v{src.size_v}, elem{new double[src.size_v]}, space{src.space}
 {
