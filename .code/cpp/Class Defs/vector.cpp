@@ -92,5 +92,62 @@ void push_back(T val)
 
 void reserve(int newalloc)
 {
-    
+    if (newalloc <= space)
+        return;
+    T *p = new T[newalloc];
+    for (int i = 0; i < size_v; ++i)
+    {
+        p[i] = elem[i];
+    }
+    delete elem[];
+    elem = p;
+}
+
+iterator begin()
+{
+    if (size_v == 0)
+        return nullptr;
+    return &elem[0];
+}
+
+const_iterator begin() const
+{
+    if (size_v == 0)
+        return nullptr;
+    return &elem[0]; 
+}
+
+iterator end()
+{
+    if (size_v == 0)
+        return nullptr;
+    return &elem[size_v];
+}
+
+const_iterator end() const
+{
+    if (size_v == 0)
+        return nullptr;
+    return &elem[size_v];
+}
+
+iterator insert(iterator p, const T& v)
+{
+    if (size_v == space)
+        reserve(2*space);  
+    for (iterator pos = end(); pos != p; --pos)
+        *pos = *(pos - 1);
+    *pos = &val;
+    ++size_v;
+    return p;
+}
+
+iterator erase(iterator p) 
+{
+    if (p == end())
+        return p;
+    for (iterator pos = p + 1; pos != end(); ++pos)
+        *(pos - 1) = *pos; 
+    --size_v;
+    return p;
 }
