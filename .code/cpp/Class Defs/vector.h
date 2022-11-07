@@ -14,9 +14,9 @@ class vector
     vector();                                               // default constructor
     explicit vector(int s);                                 // alternate constructor
     vector(const vector&);                                  // copy constructor
-    vector& operator=vector(const vector&);                 // copy assignment
+    vector& operator=(const vector&);                 // copy assignment
     vector(vector&&) noexcept;                              // move constructor
-    vector& operator=vector(vector&&) noexcept;             // move assignment
+    vector& operator=(vector&&) noexcept;             // move assignment
     ~vector()                                               // destructor
 
     T& operator[] (int n);                    // access: return reference

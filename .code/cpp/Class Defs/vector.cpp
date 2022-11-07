@@ -2,17 +2,20 @@
 
 #include "vector.h"
 
-template <typename T>
-vector::vector() : size_v{0}, elem{nullpt}, space{0} {}
+template <class T>
+vector<T>::vector() : size_v{0}, elem{nullpt}, space{0} {}
 
-explicit vector::vector(int s) : size_v{s}, elem{new T[s]}, space{s} {}
+template <class T>
+explicit vector<T>::vector(int s) : size_v{s}, elem{new T[s]}, space{s} {}
 
-vector::vector(const vector &src) : size_v{src.size_v}, elem{new double[src.size_v]}, space{src.space}
+template <class T>
+vector<T>::vector(const vector &src) : size_v{src.size_v}, elem{new double[src.size_v]}, space{src.space}
 {
     copy(src.elem, src.elem + size_v, elem); 
 }
 
-vector& vector::operator=(const vector& rhs) 
+template <class T>
+vector<T>& vector<T>::operator=(const vector& rhs) 
 {
     if (this != &rhs)
     {
@@ -26,7 +29,8 @@ vector& vector::operator=(const vector& rhs)
     return *this;  
 }
 
-vector::vector(vector&& src) noexcept
+template <class T>
+vector<T>::vector(vector&& src) noexcept
 : size_v{std::move(src.size_v)}, elem{std::move(src.elem)}, space{std::move(src.space)}
 {
     src.size = 0;
@@ -34,7 +38,8 @@ vector::vector(vector&& src) noexcept
     src.space = 0;
 }
 
-vector& vector::operator=vector(vector&& rhs) noexcept
+template <class T>
+vector<T>& vector<T>::operator=(vector&& rhs) noexcept
 {
     delete[] elem;
     size_v = std::move(rhs.size_v);
@@ -47,32 +52,38 @@ vector& vector::operator=vector(vector&& rhs) noexcept
     return *this;
 }
 
-vector::~vector()
+template <class T>
+vector<T>::~vector()
 {
     delete[] elem;
 }
 
-T& operator[] (int n)
+template <class T>
+T& vector<T>::operator[] (int n)
 {
     return elem[n];
 }
 
-const T& operator[] (int n)
+template <class T>
+const T& vector<T>::operator[] (int n)
 {
     return elem[n];
 }
 
-int size() const
+template <class T>
+int vector<T>::size() const
 {
     return size_v;
 }
 
-int capacity() const
+template <class T>
+int vector<T>::capacity() const
 {
     return space;
 }
 
-void resize(int newsize)
+template <class T>
+void vector<T>::resize(int newsize)
 {
     reserve(newsize);
     for (int i = size_v; i < newsize; ++i)
@@ -80,7 +91,8 @@ void resize(int newsize)
     size_v = newsize;
 }
 
-void push_back(T val)
+template <class T>
+void vector<T>::push_back(T val)
 {
     if (space == 0)
         reserve(8);
@@ -90,7 +102,8 @@ void push_back(T val)
     ++size_v;
 }
 
-void reserve(int newalloc)
+template <class T>
+void vector<T>::reserve(int newalloc)
 {
     if (newalloc <= space)
         return;
@@ -103,6 +116,13 @@ void reserve(int newalloc)
     elem = p;
 }
 
+template <class T>
+using iterator = T*;
+
+template <class T>
+using const_iterator = const T*;
+
+template <class T>
 iterator begin()
 {
     if (size_v == 0)
@@ -110,6 +130,7 @@ iterator begin()
     return &elem[0];
 }
 
+template <class T>
 const_iterator begin() const
 {
     if (size_v == 0)
@@ -117,6 +138,7 @@ const_iterator begin() const
     return &elem[0]; 
 }
 
+template <class T>
 iterator end()
 {
     if (size_v == 0)
@@ -124,6 +146,7 @@ iterator end()
     return &elem[size_v];
 }
 
+template <class T>
 const_iterator end() const
 {
     if (size_v == 0)
@@ -131,6 +154,7 @@ const_iterator end() const
     return &elem[size_v];
 }
 
+template <class T>
 iterator insert(iterator p, const T& v)
 {
     if (size_v == space)
@@ -142,6 +166,7 @@ iterator insert(iterator p, const T& v)
     return p;
 }
 
+template <class T>
 iterator erase(iterator p) 
 {
     if (p == end())
