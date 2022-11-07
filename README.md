@@ -27,7 +27,7 @@ that can be integrated into an existing software suite.
 - [ ] Derived class definitions
 - [ ] Derived class member function definitions
 - [x] Vector class definition
-- [ ] Vector class member function definitions
+- [x] Vector class member function definitions
 - [ ] Text class definition
 - [ ] Text class member function definitions
 - [ ] Shape Move setter (mutator) (admin only)
