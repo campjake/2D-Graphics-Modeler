@@ -42,6 +42,7 @@ that can be integrated into an existing software suite.
 - [x] Extra Credit: Uses Agile Planning tools (Projects & Actions)
 
 ## Project Group Members
+### Sprint 1
 - Davis Ramirez
   - Role: Team
 
