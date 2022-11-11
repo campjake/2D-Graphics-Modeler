@@ -152,7 +152,7 @@ Shape* ReadLine(std::ifstream& fin, int id)
 	
 	// Instantiate brush & pen using strings we read in previously ^^^
 	QBrush brush(color);
-	QPen pen(brush, width, getPenStyle(style), 
+	QPen pen(brush, penWidth, getPenStyle(style), 
 			 getCapStyle(capStyle), getPenJoinStyle(joinStyle));
 
 	// Instantiate Line object using the brush, pen, & data passed in
@@ -252,7 +252,7 @@ Shape* ReadPolyline(std::ifstream& fin, int id)
 	
 	// Instantiate brush & pen using strings we read in previously ^^^
 	QBrush brush(color);
-	QPen pen(brush, width, getPenStyle(style), 
+	QPen pen(brush, penWidth, getPenStyle(style), 
 			 getCapStyle(capStyle), getPenJoinStyle(joinStyle));
 
 	// Instantiate Line object using the brush, pen, & data passed in
@@ -360,7 +360,7 @@ Shape* ReadPolygon(std::ifstream& fin, int id)
 	// Instantiate brush & pen using strings we read in previously ^^^
 	QBrush brush(brushColor, brushStyle);
 	QBrush brushForPen(color, penStyle);
-	QPen pen(brushforPen, width, getPenStyle(style), 
+	QPen pen(brushforPen, penWidth, getPenStyle(style), 
 			 getCapStyle(capStyle), getPenJoinStyle(joinStyle));
 
 	// Instantiate Line object using the brush, pen, & data passed in
