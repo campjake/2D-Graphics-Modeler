@@ -17,7 +17,7 @@ class vector
     vector& operator=(const vector&);                 // copy assignment
     vector(vector&&) noexcept;                              // move constructor
     vector& operator=(vector&&) noexcept;             // move assignment
-    ~vector()                                               // destructor
+    ~vector();                                               // destructor
 
     T& operator[] (int n);                    // access: return reference
     const T& operator[] (int n);              // access: return reference
@@ -38,13 +38,13 @@ class vector
     iterator erase(iterator p);                     // remove element pointed to by p
 
     private :
-    int size_v      // the size
+    int size_v;      // the size
     T* elem;        // pointer to elements
     int space;      // size + free space
 };
 
 template <class T>
-vector<T>::vector() : size_v{0}, elem{nullpt}, space{0} {}
+vector<T>::vector() : size_v{0}, elem{nullptr}, space{0} {}
 
 template <class T>
 explicit vector<T>::vector(int s) : size_v{s}, elem{new T[s]}, space{s} {}
@@ -151,9 +151,9 @@ void vector<T>::reserve(int newalloc)
     T *p = new T[newalloc];
     for (int i = 0; i < size_v; ++i)
     {
-        p[i] = elem[i];
+        p[i] = std::move(elem[i]);
     }
-    delete elem[];
+    delete[] elem;
     elem = p;
 }
 
@@ -164,7 +164,7 @@ template <class T>
 using const_iterator = const T*;
 
 template <class T>
-iterator begin()
+iterator<T> vector<T>::begin()
 {
     if (size_v == 0)
         return nullptr;
@@ -172,23 +172,15 @@ iterator begin()
 }
 
 template <class T>
-const_iterator begin() const
+const_iterator<T> vector<T>::begin() const
 {
     if (size_v == 0)
         return nullptr;
-    return &elem[0]; 
+    return &elem[0];
 }
 
 template <class T>
-iterator end()
-{
-    if (size_v == 0)
-        return nullptr;
-    return &elem[size_v];
-}
-
-template <class T>
-const_iterator end() const
+iterator<T> vector<T>::end()
 {
     if (size_v == 0)
         return nullptr;
@@ -196,24 +188,32 @@ const_iterator end() const
 }
 
 template <class T>
-iterator insert(iterator p, const T& v)
+const_iterator<T> vector<T>::end() const
+{
+    if (size_v == 0)
+        return nullptr;
+    return &elem[size_v];
+}
+
+template <class T>
+iterator<T> vector<T>::insert(iterator p, const T& v)
 {
     if (size_v == space)
-        reserve(2*space);  
+        reserve(2*space);
     for (iterator pos = end(); pos != p; --pos)
         *pos = *(pos - 1);
-    *pos = &val;
+    p = &v;
     ++size_v;
     return p;
 }
 
 template <class T>
-iterator erase(iterator p) 
+iterator<T> vector<T>::erase(iterator p)
 {
     if (p == end())
         return p;
     for (iterator pos = p + 1; pos != end(); ++pos)
-        *(pos - 1) = *pos; 
+        *(pos - 1) = *pos;
     --size_v;
     return p;
 }
