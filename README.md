@@ -31,7 +31,7 @@ that can be integrated into an existing software suite.
 - [ ] Text class definition
 - [ ] Text class member function definitions
 - [ ] Shape Move setter (mutator) (admin only)
-- [ ] Read shape attributes from file
+- [x] Read shape attributes from file (Text Parser)
 - [ ] Objects print
 - [ ] Add/Remove Objects
 - [ ] Shape List Report
