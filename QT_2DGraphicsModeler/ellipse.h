@@ -1,6 +1,10 @@
+#ifndef ELLIPSE_H
+#define ELLIPSE_H
+
+#include "shape.h"
+
 // Class Definition of an Ellipse
 
-#include "Shape.h"
 
 class Ellipse : virtual public Shape
 {
@@ -12,3 +16,4 @@ class Ellipse : virtual public Shape
 
 
 };
+#endif // ELLIPSE_H

@@ -52,22 +52,22 @@ explicit vector<T>::vector(int s) : size_v{s}, elem{new T[s]}, space{s} {}
 template <class T>
 vector<T>::vector(const vector &src) : size_v{src.size_v}, elem{new double[src.size_v]}, space{src.space}
 {
-    copy(src.elem, src.elem + size_v, elem); 
+    copy(src.elem, src.elem + size_v, elem);
 }
 
 template <class T>
-vector<T>& vector<T>::operator=(const vector& rhs) 
+vector<T>& vector<T>::operator=(const vector& rhs)
 {
     if (this != &rhs)
     {
-        T *p = new T[rhs.size_v];       
-        copy(rhs.elem, rhs.elem + rhs.size_v, p);  
-        delete[] elem;                            
-        elem = p;                                 
+        T *p = new T[rhs.size_v];
+        copy(rhs.elem, rhs.elem + rhs.size_v, p);
+        delete[] elem;
+        elem = p;
         size_v = rhs.size_v;
     }
 
-    return *this;  
+    return *this;
 }
 
 template <class T>
@@ -89,7 +89,7 @@ vector<T>& vector<T>::operator=(vector&& rhs) noexcept
     rhs.size_v = 0;
     rhs.elem = NULL;
     rhs.space = 0;
-    
+
     return *this;
 }
 

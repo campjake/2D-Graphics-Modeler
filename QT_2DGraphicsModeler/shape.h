@@ -1,15 +1,19 @@
+#ifndef SHAPE_H
+#define SHAPE_H
+
+
 // Definition of Shape class
 #include <Qt>
-#include <Qpainter>
-#include <vector.h>
+#include <QPainter>
+#include "vector.h"
 
 class Shape
 {
   public :
   enum class ShapeType
   {
-  	NoShape, Line, Polyline, Polygon, Rectangle,
-  	Ellipse, Text
+    NoShape, Line, Polyline, Polygon, Rectangle,
+    Ellipse, Text
   };
 
   // Constructor
@@ -30,7 +34,7 @@ class Shape
   QPainter& get_qpainter();
 
   private :
-  QPainter* p_qpainter; 
+  QPainter* p_qpainter;
   int id;
   ShapeType shapeName;
   //Need to work on shape dimensions with vector
@@ -39,6 +43,9 @@ class Shape
   Qt::PenStyle	 penStyle;
   Qt::PenCapStyle  penCapStyle;
   Qt::PenJoinStyle penJoinStyle;
- 	Qt::GlobalColor  brushColor;
- 	Qt::BrushStyle	 brushStyle;
+    Qt::GlobalColor  brushColor;
+    Qt::BrushStyle	 brushStyle;
 };
+
+
+#endif // SHAPE_H
