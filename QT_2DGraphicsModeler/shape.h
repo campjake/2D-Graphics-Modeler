@@ -7,44 +7,113 @@
 #include <QPainter>
 #include "vector.h"
 
+enum class ShapeType
+{
+  NoShape, Line, Polyline, Polygon, Rectangle,
+  Square, Ellipse, Circle, Text
+};
+
 class Shape
 {
   public :
-  enum class ShapeType
-  {
-    NoShape, Line, Polyline, Polygon, Rectangle,
-    Ellipse, Text
-  };
 
-  // Constructor
-  Shape(QPaintDevice* device = nullptr,
-        int id = -1, ShapeType shape = ShapeType::NoShape);
-  virtual ~Shape() {}
+    // Constructor
+    Shape(QPaintDevice* device = nullptr,
+          int id = -1,
+          ShapeType shapeType = ShapeType::NoShape);
+
+    // Destructor
+    virtual ~Shape() {--count;}
 
     // Copy Operations (delete them)
     Shape(const Shape& source) = delete;
     Shape& operator=(const Shape& source) = delete;
 
-    virtual void Draw() = 0;
-    virtual void Move() = 0;
-    virtual const double CalcPerimeter() = 0;
-    virtual const double CalcArea() = 0;
+    // Move Operations
+        // Move Ctor
+    Shape(Shape&& otherShape) noexcept;
+
+        // Move Assignment
+    Shape& operator=(Shape&& otherShape) noexcept;
+
+    /******************* Overloaded Compare Operators *********************/
+    // Equality operator
+    bool operator==(const Shape& otherShape);
+//    bool operator<(const Shape& otherShape);  DO WE NEED THIS?
+    /********************************************************************/
+
+    // ACCESSORS / GETTERS
+
+    // Get Unique ID for Shape Object
+    int GetID() const;
+
+    // Get Shape Type (convert ShapeType to string in implementation)
+    ShapeType GetShapeType() const;
+
+    // Get Pen Properties
+    QPen GetPen() const;
+
+    // Get Brush Properties
+    QBrush GetBrush() const;
+
+    // Get Position on X, Y Plane
+    QPoint GetPos() const;
+
+
+
+    // MUTATORS / SETTERS
+
+    // Set Unique ID for Shape Object
+    void SetID(const int theID);
+
+    // Set Shape Type
+    void SetShapeType(const ShapeType type);
+
+    // Set Pen Properties
+    void SetPen(const QColor color, const int size,
+                const Qt::PenStyle penStyle,
+                const Qt::PenCapStyle capStyle,
+                const Qt::PenJoinStyle joinStyle);
+
+    // Overloaded SetPen incase its already defined?
+    void SetPen(const QPen thatPen);
+
+    // Set Brush Properties
+    void SetBrush(const QColor aColor, const Qt::BrushStyle brushStyle);
+
+    // Overloaded Set Brush?
+    void SetBrush(const QBrush thatBrush);
+
+    // Set Position on X, Y Plane
+    void SetPos(const QPoint thatPos);
+
+
+    /******************* Pure Virtual Fcns **************************/
+    // Draw function
+    virtual void Draw(QPainter* painter) = 0;
+
+    // Move function
+    virtual void Move(int xCoord, int yCoord) = 0;
+
+    // CalcPerimeter
+    virtual double CalcPerimeter() = 0;
+
+    // CalcArea
+    virtual double CalcArea() = 0;
+    /*************************************************************/
 
   protected :
   QPainter& get_qpainter();
 
   private :
-  QPainter* p_qpainter;
-  int id;
-  ShapeType shapeName;
-  //Need to work on shape dimensions with vector
-  Qt::GlobalColor  penColor;
-  int			 	 penWidth;
-  Qt::PenStyle	 penStyle;
-  Qt::PenCapStyle  penCapStyle;
-  Qt::PenJoinStyle penJoinStyle;
-    Qt::GlobalColor  brushColor;
-    Qt::BrushStyle	 brushStyle;
+    QPainter*   p_qpainter;
+    int   id;
+    ShapeType   shapeName;
+    QPen        shapePen;
+    QBrush      shapeBrush;
+    QPoint      shapePos;
+    static int  count;      // helps set unique ID
+
 };
 
 
