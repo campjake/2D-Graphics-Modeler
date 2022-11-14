@@ -4,7 +4,6 @@
 #define VECTOR_H_
 
 #include <iostream>
-using namespace std;
 
 template <typename T>
 class vector
@@ -20,7 +19,7 @@ class vector
     ~vector();                                               // destructor
 
     T& operator[] (int n);                    // access: return reference
-    const T& operator[] (int n);              // access: return reference
+    const T& operator[] (int n) const;              // access: return reference
 
     int size() const;                         // the current size
     int capacity() const;                     // current available space
@@ -47,7 +46,7 @@ template <class T>
 vector<T>::vector() : size_v{0}, elem{nullptr}, space{0} {}
 
 template <class T>
-explicit vector<T>::vector(int s) : size_v{s}, elem{new T[s]}, space{s} {}
+vector<T>::vector(int s) : size_v{s}, elem{new T[s]}, space{s} {}
 
 template <class T>
 vector<T>::vector(const vector &src) : size_v{src.size_v}, elem{new double[src.size_v]}, space{src.space}
@@ -106,7 +105,7 @@ T& vector<T>::operator[] (int n)
 }
 
 template <class T>
-const T& vector<T>::operator[] (int n)
+const T& vector<T>::operator[] (int n) const
 {
     return elem[n];
 }

@@ -17,10 +17,11 @@
    <bool>false</bool>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Login</string>
   </property>
   <property name="windowIcon">
-   <iconset theme="dialog-password"/>
+   <iconset theme="dialog-password">
+    <normaloff>.</normaloff>.</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -91,7 +92,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>250</x>
