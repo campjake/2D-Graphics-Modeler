@@ -4,6 +4,7 @@
 #define VECTOR_H_
 
 #include <iostream>
+// using namespace std;
 
 template <typename T>
 class vector

@@ -47,7 +47,7 @@ class TextParser
     // Mutator - Read file
     // Pre-conditions  : QString file
     // Post-conditions : Reurns a vector of Shape pointer(s)
-    projectStd::vector<Shape*> ReadFile(QString file = "shapes.txt");
+    vector<Shape*> ReadFile(QString file = "shapes.txt");
 
     private :
     // ReadFile requires several helper functions

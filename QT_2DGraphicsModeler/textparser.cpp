@@ -11,9 +11,9 @@ const QMap<ShapeNames, QString> shapeMap = {
 
 };
 
-projectStd::vector<Shape*> TextParser::ReadFile(QString fileName)
+vector<Shape*> TextParser::ReadFile(QString fileName)
 {
-    projectStd::vector<Shape*> v_Shapes;
+    vector<Shape*> v_Shapes;
 
     QString fullPath = QDir::currentPath().split("CS1C_2D_Graphics_Modeler").at(0) + "CS1C_2D_Graphics_Modeler/QTPROJECT/" + fileName;
 
@@ -28,7 +28,7 @@ projectStd::vector<Shape*> TextParser::ReadFile(QString fileName)
     {
         QMessageBox::information(0, "file error", file.errorString());
 
-        return v_Shapes;
+        return v_Shapes; // BUG??
     }
     else
     {
@@ -39,7 +39,7 @@ projectStd::vector<Shape*> TextParser::ReadFile(QString fileName)
 
     while(!(fin.atEnd()))
     {
-        Shape* shape = nullptr;
+//        Shape* shape = nullptr;
 
         // QTextStream fcn "readLine() simplifies the reading process
         fin.readLine();
@@ -74,6 +74,7 @@ projectStd::vector<Shape*> TextParser::ReadFile(QString fileName)
 
             case TEXT 		: v_Shapes.push_back(ReadText(fin, id));
             break;
+
         }
 
 
@@ -112,7 +113,7 @@ Shape* TextParser::ReadLine(QTextStream &fin, int id)
     joinStyle = GetPenJoinStyle(fin.readLine().remove(0, 14));
 
     Line* line = new Line(id, front, end);
-    line->setPen(color, width, penStyle, capStyle, joinStyle);
+    line->SetPen(color, width, penStyle, capStyle, joinStyle);
 
     // Note - Line has no Brush, so we can get by with just QColor & no setBrush fcn
 
@@ -136,7 +137,6 @@ Shape* TextParser::ReadPolyline(QTextStream &fin, int id)
     // Now create a QPoint variable for each coordinate pair
     bool invalid = true;
     int i = 0;
-    int i2 = 0;
     int size = points.size();
 
     do  // while(invalid)
@@ -170,7 +170,7 @@ Shape* TextParser::ReadPolyline(QTextStream &fin, int id)
     joinStyle = GetPenJoinStyle(fin.readLine().remove(0, 14));
 
     Polyline* polyline = new Polyline(id, pointList);
-    polyline->setPen(color, width, penStyle, capStyle, joinStyle);
+    polyline->SetPen(color, width, penStyle, capStyle, joinStyle);
 
     // Note - Polyline has no Brush, so we can get by with just QColor & no setBrush fcn
 
@@ -230,8 +230,8 @@ Shape* TextParser::ReadPolygon(QTextStream &fin, int id)
     QString brushStyle = fin.readLine().remove(0, 12);
 
     Polygon* polygon = new Polygon(id, pointList);
-    polygon->setPen(color, width, penStyle, capStyle, joinStyle);
-    polygon->setBrush(brushColor, GetBrushStyle(brushStyle));
+    polygon->SetPen(color, width, penStyle, capStyle, joinStyle);
+    polygon->SetBrush(brushColor, GetBrushStyle(brushStyle));
 
     return polygon;
 }
@@ -270,8 +270,8 @@ Shape* TextParser::ReadRectangle(QTextStream &fin, int id)
     QString brushStyle = fin.readLine().remove(0, 12);
 
     Rectangle* rectangle = new Rectangle(id, pos, l, w);
-    rectangle->setPen(color, penWidth, penStyle, capStyle, joinStyle);
-    rectangle->setBrush(brushColor, GetBrushStyle(brushStyle));
+    rectangle->SetPen(color, penWidth, penStyle, capStyle, joinStyle);
+    rectangle->SetBrush(brushColor, GetBrushStyle(brushStyle));
 
     return rectangle;
 }
@@ -308,8 +308,8 @@ Shape* TextParser::ReadSquare(QTextStream &fin, int id)
     QString brushStyle = fin.readLine().remove(0, 12);
 
     Rectangle* square = new Rectangle(id, pos, l, l);
-    square->setPen(color, penWidth, penStyle, capStyle, joinStyle);
-    square->setBrush(brushColor, GetBrushStyle(brushStyle));
+    square->SetPen(color, penWidth, penStyle, capStyle, joinStyle);
+    square->SetBrush(brushColor, GetBrushStyle(brushStyle));
 
     return square;
 }
@@ -348,8 +348,8 @@ Shape* TextParser::ReadEllipse(QTextStream &fin, int id)
     QString brushStyle = fin.readLine().remove(0, 12);
 
     Ellipse* ellipse = new Ellipse(id, pos, a, b);
-    ellipse->setPen(color, penWidth, penStyle, capStyle, joinStyle);
-    ellipse->setBrush(brushColor, GetBrushStyle(brushStyle));
+    ellipse->SetPen(color, penWidth, penStyle, capStyle, joinStyle);
+    ellipse->SetBrush(brushColor, GetBrushStyle(brushStyle));
 
     return ellipse;
 }
@@ -386,8 +386,8 @@ Shape* TextParser::ReadCircle(QTextStream &fin, int id)
     QString brushStyle = fin.readLine().remove(0, 12);
 
     Ellipse* circle = new Ellipse(id, pos, r, r);
-    circle->setPen(color, penWidth, penStyle, capStyle, joinStyle);
-    circle->setBrush(brushColor, GetBrushStyle(brushStyle));
+    circle->SetPen(color, penWidth, penStyle, capStyle, joinStyle);
+    circle->SetBrush(brushColor, GetBrushStyle(brushStyle));
 
     return circle;
 }
@@ -421,7 +421,7 @@ Shape* ReadText(QTextStream &fin, int id)
     color = fin.readLine().remove(0, 11);
 
     // Get alignment
-    getAlignment(in.readLine().remove(0, 15));
+    GetAlignment(fin.readLine().remove(0, 15));
 
     // Get point size
     textPointSize = fin.readLine().remove(0, 15).toInt();
@@ -434,10 +434,10 @@ Shape* ReadText(QTextStream &fin, int id)
     // no brush
 
     // make a new shape
-    Text* text = new Text(id, CreateFont(fontFamily, textPointSize, fontWeight, fontStyle),
+    Text* textObj = new Text(id, CreateFont(fontFamily, textPointSize, fontWeight, fontStyle),
                           color, pos, l, w, alignment);
 
-    return text;
+    return textObj;
 }
 
 Qt::PenStyle TextParser::GetPenStyle(QString penStyle)

@@ -5,7 +5,7 @@
 // Definition of Shape class
 #include <Qt>
 #include <QPainter>
-#include "vector.h"
+//#include "vector.h"
 
 enum class ShapeType
 {
