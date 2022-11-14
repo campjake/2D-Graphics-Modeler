@@ -24,10 +24,10 @@ that can be integrated into an existing software suite.
 - [ ] Uses Doxygen
 - [ ] Base class definition
 - [ ] Base class member function definitions
-- [ ] Derived class definitions
-- [ ] Derived class member function definitions
+- [x] Derived class definitions
+- [x] Derived class implementation
 - [x] Vector class definition
-- [x] Vector class member function definitions
+- [ ] Vector class implementation
 - [ ] Text class definition
 - [ ] Text class member function definitions
 - [ ] Shape Move setter (mutator) (admin only)
@@ -39,7 +39,7 @@ that can be integrated into an existing software suite.
 - [ ] Contact Us Method
 - [ ] Testimonials
 - [ ] Passes valgrind memory check
-- [x] Extra Credit: Uses Agile Planning tools (Projects & Actions)
+- [x] Extra Credit: Uses Agile Planning tools (Projects, Issues & Actions)
 
 ## Project Group Members
 ### Sprint 1
