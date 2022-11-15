@@ -1,0 +1,13 @@
+release/ellipse.o
+release/line.o
+release/logindialog.o
+release/main.o
+release/mainwindow.o
+release/polygon.o
+release/polyline.o
+release/rectangle.o
+release/shape.o
+release/text.o
+release/textparser.o
+release/moc_logindialog.o
+release/moc_mainwindow.o

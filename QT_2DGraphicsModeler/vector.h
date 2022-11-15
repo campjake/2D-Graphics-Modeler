@@ -198,8 +198,8 @@ const_iterator<T> vector<T>::end() const
 template <class T>
 iterator<T> vector<T>::insert(iterator p, const T& v)
 {
-    if (size_v == space)
-        reserve(2*space);
+    if (size_v == capacity())
+        reserve(size() == 0 ? 8 : 2 * size());
     for (iterator pos = end(); pos != p; --pos)
         *pos = *(pos - 1);
     p = &v;
