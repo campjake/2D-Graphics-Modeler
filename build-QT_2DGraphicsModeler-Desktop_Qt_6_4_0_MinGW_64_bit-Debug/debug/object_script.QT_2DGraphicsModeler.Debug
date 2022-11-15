@@ -1,0 +1,13 @@
+debug/ellipse.o
+debug/line.o
+debug/logindialog.o
+debug/main.o
+debug/mainwindow.o
+debug/polygon.o
+debug/polyline.o
+debug/rectangle.o
+debug/shape.o
+debug/text.o
+debug/textparser.o
+debug/moc_logindialog.o
+debug/moc_mainwindow.o
