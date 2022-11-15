@@ -37,7 +37,7 @@
      <string>Menu</string>
     </property>
     <addaction name="actionContact_Us"/>
-    <addaction name="actionCustomer_Testimonails"/>
+    <addaction name="actionCustomer_Testimonials"/>
    </widget>
    <widget class="QMenu" name="menuReports">
     <property name="title">
@@ -76,7 +76,7 @@
     <string>Contact Us</string>
    </property>
   </action>
-  <action name="actionCustomer_Testimonails">
+  <action name="actionCustomer_Testimonials">
    <property name="text">
     <string>Customer Testimonials</string>
    </property>
