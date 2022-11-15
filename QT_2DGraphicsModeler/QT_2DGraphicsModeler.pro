@@ -19,7 +19,8 @@ SOURCES += \
     rectangle.cpp \
     shape.cpp \
     text.cpp \
-    textparser.cpp
+    textparser.cpp \
+    contactus.cpp
 
 HEADERS += \
     ellipse.h \
@@ -32,11 +33,13 @@ HEADERS += \
     shape.h \
     text.h \
     textparser.h \
-    vector.h
+    vector.h \
+    contactus.h
 
 FORMS += \
     logindialog.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    contactus.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
