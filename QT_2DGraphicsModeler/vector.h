@@ -155,6 +155,7 @@ void vector<T>::reserve(int newalloc)
     }
     delete[] elem;
     elem = p;
+    space = newalloc;
 }
 
 template <class T>
