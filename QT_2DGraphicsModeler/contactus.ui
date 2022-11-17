@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>contactus</class>
+ <widget class="QDialog" name="contactus">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -29,8 +29,8 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>0</y>
+     <x>30</x>
+     <y>10</y>
      <width>601</width>
      <height>431</height>
     </rect>
@@ -38,7 +38,7 @@
    <property name="title">
     <string/>
    </property>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="lebel_title">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -59,7 +59,7 @@
      <string>Contact Us</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="label_email">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -75,6 +75,34 @@
     </property>
     <property name="text">
      <string>Email: shapesruscs1c@gmail.com</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_logo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>601</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../../Pictures/qt pic/ShapesRUs.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+    <property name="margin">
+     <number>0</number>
     </property>
    </widget>
   </widget>

@@ -2,6 +2,7 @@
 #define CONTACTUS_H
 
 #include <QDialog>
+#include <QWidget>
 
 namespace Ui {
 class ContactUs;
