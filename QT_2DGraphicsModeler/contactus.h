@@ -4,8 +4,9 @@
 #include <QDialog>
 #include <QWidget>
 
+
 namespace Ui {
-class ContactUs;
+    class ContactUs;
 }
 
 class ContactUs : public QDialog
