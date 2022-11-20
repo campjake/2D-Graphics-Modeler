@@ -5,6 +5,7 @@
 // Definition of Shape class
 #include <Qt>
 #include <QPainter>
+#include <QPaintDevice>
 //#include "vector.h"
 
 enum class ShapeType
@@ -19,7 +20,7 @@ class Shape
 
     // Constructor
     Shape(QPaintDevice* device = nullptr,
-          int id = -1,
+          int anID = -1,
           ShapeType shapeType = ShapeType::NoShape);
 
     // Destructor
@@ -29,12 +30,15 @@ class Shape
     Shape(const Shape& source) = delete;
     Shape& operator=(const Shape& source) = delete;
 
-    // Move Operations
-        // Move Ctor
-    Shape(Shape&& otherShape) noexcept;
 
-        // Move Assignment
-    Shape& operator=(Shape&& otherShape) noexcept;
+    // COME BACK AND FIGURE OUT IMPLEMENTATION
+
+//    // Move Operations
+//        // Move Ctor
+//    Shape(Shape&& otherShape) noexcept;
+
+//        // Move Assignment
+//    Shape& operator=(Shape&& otherShape) noexcept;
 
     /******************* Overloaded Compare Operators *********************/
     // Equality operator
@@ -106,7 +110,7 @@ class Shape
   QPainter& get_qpainter();
 
   private :
-    QPainter*   p_qpainter;
+    QPainter   qpainter;
     int   id;
     ShapeType   shapeName;
     QPen        shapePen;
