@@ -28,10 +28,10 @@ public:
     void Move(int xCoord, int yCoord);
 
     //calculates line length
-    double CalcPerimeter();
+    double CalcPerimeter() const;
 
     //calculates area
-    double CalcArea();
+    double CalcArea() const;
 
     //Operators
 

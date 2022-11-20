@@ -23,7 +23,7 @@ public:
     //operators
     bool operator == (const Line& other);
 
-    virtual const double CalcPerimeter();
+    virtual double CalcPerimeter() const;
     bool operator < (const Line& other);
 
     //Base class pure virtual functions
@@ -38,7 +38,7 @@ public:
     double CalcPerimeter();
 
     //Returns area
-    double CalcArea();
+    double CalcArea() const;
 
     //Class specific functions
 

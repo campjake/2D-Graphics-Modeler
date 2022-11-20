@@ -1,6 +1,5 @@
 #include "polyline.h"
 
-Polyline::Polyline()
 Polyline::Polyline(QPaintDevice* device, int anID, ShapeType shapeType) : Shape(device, anID, shapeType)
 {
     SetPen(Qt::SolidLine);
@@ -30,7 +29,7 @@ void Polyline::Move(int xCoord, int yCoord)
 }
 
 //calculates line length
-double Polyline::CalcPerimeter()
+double Polyline::CalcPerimeter() const
 {
     double distance;
     double perimeter = 0;   // init for += use
@@ -55,7 +54,7 @@ double Polyline::CalcPerimeter()
 }
 
 //calculates area
-double Polyline::CalcArea()
+double Polyline::CalcArea() const
 {
     //lines dont have area
     return 0;

@@ -87,10 +87,10 @@ public:
     virtual void Move(int xCoord, int yCoord);
 
     // CalcPerimeter
-    virtual double CalcPerimeter();
+    virtual double CalcPerimeter() const;
 
     // CalcArea
-    virtual double CalcArea();
+    virtual double CalcArea() const;
     /*************************************************************/
 
 

@@ -179,7 +179,7 @@ void Polygon::Move(int xCoord, int yCoord)
 // Calc Perimeter Function
 // Pre-Conditions - NONE
 // Post-Conditions - returns a double of perimeter of polygon
-double Polygon::CalcPerimeter()
+double Polygon::CalcPerimeter() const
 {
     //use distance formula
     double distance;

@@ -1,6 +1,5 @@
 #include "line.h"
 
-Line::Line()
 //Constructor
 Line::Line(QPaintDevice* device, int anID, ShapeType shapeType) : Shape(device, anID, shapeType)
 {
@@ -51,13 +50,13 @@ void Line::Move(int xCoord, int yCoord)
 }
 
 //Calculates distance
-double Line::CalcPerimeter()
+double Line::CalcPerimeter() const
 {
     return sqrt(pow((point1.x() - point2.x()), 2) + pow((point1.y() - point2.y()), 2));
 }
 
 //Returns area
-double Line::CalcArea()
+double Line::CalcArea() const
 {
     return 0;
 }
