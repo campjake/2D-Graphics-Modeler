@@ -1,16 +1,15 @@
 #include "text.h"
 
 //Default Constructor
-Text::Text()	: Shape()
+Text::Text(QPaintDevice* device, int newID, ShapeType newShapeType)	:Shape(device, newID, newShapeType)
 {
-	SetShapeType(ShapeType::Text);
 	width = 12;
 	height = 9;
 	textString     = "Text";
-    textAlignment  = Qt::AlignLeft;
+	textAlignment  = AlignLeft;
 	textFont.setPointSize(12);
-    textFont.setWeight(QFont::Weight::Thin);
-    textFont.setStyle(QFont::Style::StyleNormal);
+	textFont.setWeight(Weight::Thin);
+	textFont.setStyle(Style::StyleNormal);
 }
 
 //Alternate Constructor
