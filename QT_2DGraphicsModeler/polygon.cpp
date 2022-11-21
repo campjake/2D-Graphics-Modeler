@@ -13,6 +13,13 @@ Polygon::Polygon(QPaintDevice *device,
 //    qpainter.begin(device);
 }
 
+// Overloaded Ctor
+Polygon::Polygon(int anID, QList<QPoint>* pointList)
+{
+    id = anID;
+    polyPoints = std::move(pointList);
+}
+
 // Overloaded == op
 // Pre-conditions - Other shape must be there..
 // Post-conditions - Returns a bool if they have the same id?

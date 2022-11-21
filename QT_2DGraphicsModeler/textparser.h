@@ -39,9 +39,6 @@ class TextParser
 {
     public :
 
-    // Make it abstract by declaring a pure virtual dummy function
-    virtual void foo() = 0;
-
     // Accept defaults of ctor, dtor, copy, move operations
 
     // Mutator - Read file
@@ -49,7 +46,7 @@ class TextParser
     // Post-conditions : Reurns a vector of Shape pointer(s)
     vector<Shape*> ReadFile(QString file = "shapes.txt");
 
-    private :
+//    private :
     // ReadFile requires several helper functions
     // Make private because they are only called within ReadFile
 
@@ -92,6 +89,12 @@ class TextParser
     // Pre-conditions: Elements required to construct a Font
     // Post-conditions: Returns QFont object
     QFont CreateFont(QString fam, int size, QString weight, QString style);
+
+    // GetAlignment function
+    // Pre-Conditions - Requires a QString
+    // Post-Conditions - Returns
+    Qt::AlignmentFlag GetAlignment(QString align);
+
 };
 
 #endif // FILEPARSER_H_
