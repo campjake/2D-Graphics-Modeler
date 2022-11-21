@@ -16,22 +16,6 @@ public:
     Rectangle(const Rectangle& source) = delete;
     Rectangle& operator=(const Rectangle& source) = delete;
 
-
-    // COME BACK AND FIGURE OUT IMPLEMENTATION
-
-//    // Move Operations
-//        // Move Ctor
-//    Shape(Shape&& otherShape) noexcept;
-
-//        // Move Assignment
-//    Shape& operator=(Shape&& otherShape) noexcept;
-
-    /******************* Overloaded Compare Operators *********************/
-    // Equality operator
-    bool operator==(const Rectangle& otherRectangle);
-//    bool operator<(const Shape& otherShape);  DO WE NEED THIS?
-    /********************************************************************/
-
     float getWidth()const;
 
     float getLength()const;

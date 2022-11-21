@@ -100,10 +100,10 @@ class Shape
     virtual void Move(int xCoord, int yCoord) = 0;
 
     // CalcPerimeter
-    virtual double CalcPerimeter() = 0;
+    virtual double CalcPerimeter() const = 0;
 
     // CalcArea
-    virtual double CalcArea() = 0;
+    virtual double CalcArea() const = 0;
     /*************************************************************/
 
   protected :

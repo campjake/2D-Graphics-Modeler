@@ -10,6 +10,9 @@ public:
             int id = -1,
             ShapeType shapeType = ShapeType::Polygon);
 
+    // Overloaded ctor
+    Polygon(int anID, QList<QPoint>* pointList);
+
     virtual ~Polygon() {}
 
     // Delete Copy Operations
@@ -87,10 +90,10 @@ public:
     virtual void Move(int xCoord, int yCoord);
 
     // CalcPerimeter
-    virtual double CalcPerimeter();
+    virtual double CalcPerimeter() const;
 
     // CalcArea
-    virtual double CalcArea();
+    virtual double CalcArea() const;
     /*************************************************************/
 
 

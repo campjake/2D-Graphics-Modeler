@@ -40,7 +40,7 @@ void Rectangle::setLength(const float length)
 // Draw function
 void Rectangle::Draw(QPainter* painter)
 {
-    painter->drawRect(0.0, 0.0, width, length);
+    painter->drawRect(0, 0, width, length);
 }
 
 // Move function
@@ -50,7 +50,13 @@ void Rectangle::Move(QPoint pos)
 }
 
 // CalcPerimeter
-double Rectangle::CalcPerimeter();
+double Rectangle::CalcPerimeter()
+{
+    return (width + length)*2;
+}
 
 // CalcArea
-double Rectangle::CalcArea();
+double Rectangle::CalcArea()
+{
+    return width*length;
+}

@@ -2,6 +2,7 @@
 #define TEXT_H
 
 #include "shape.h"
+#include <QString>
 
 class Text : public Shape
 {
@@ -12,12 +13,12 @@ class Text : public Shape
 		//Alternate Constructor
 		//In order : ID, Text, Font, Color, Position, Height, Width, Alignment
 		Text(int newId, QString newString, QFont newFont, QColor newColor, QPoint newPos,
-			 int newHeight, int newWidth, AlignmentFlag newAlign);
+             int newHeight, int newWidth, Qt::AlignmentFlag newAlign);
 
 		/***********
 		* ACCESSPR
 		 ***********/
-		Qstring GetTextString() const;
+        QString GetTextString() const;
 
 		/***********
 		 * MUTATORS
@@ -27,20 +28,20 @@ class Text : public Shape
 		void SetTextString(const QString userString);
 		void SetColor(const QColor userColor);
 		void SetFont(const QFont userFont);
-		void SetAlignment(const AlignmentFlag userAlignment);
+        void SetAlignment(const Qt::AlignmentFlag userAlignment);
 
 
 		//Derived
-		void Draw(QPainter painter) const;
+        virtual void Draw(QPainter* painter);
 
 		    // Move function
-		void Move(int xCoord, int yCoord);
+        virtual void Move(int xCoord, int yCoord);
 
 		    // CalcPerimeter
-		 double CalcPerimeter();
+        virtual double CalcPerimeter() const;
 
 		    // CalcArea
-		 double CalcArea();
+        virtual double CalcArea() const;
 
 	private:
 		int width;	//Text Box Width
@@ -52,7 +53,7 @@ class Text : public Shape
 		QColor textColor;	 //TextColor
 
 		//Qt::AlignmentFlag
-		AlignmentFlag textAlignment; //Alignment of text can be: left, center, top, etc...
+        Qt::AlignmentFlag textAlignment; //Alignment of text can be: left, center, top, etc...
 
 
 };

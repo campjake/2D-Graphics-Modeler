@@ -180,7 +180,7 @@ Shape* TextParser::ReadPolyline(QTextStream &fin, int id)
 Shape* TextParser::ReadPolygon(QTextStream &fin, int id)
 {
     QList<int> points;
-    QList<QPoint> pointList;
+    QList<QPoint>* pointList;
     QColor  color;
     int     width;
     Qt::PenStyle penStyle;
@@ -203,7 +203,7 @@ Shape* TextParser::ReadPolygon(QTextStream &fin, int id)
             tempPoint.setX(points[i]);
             tempPoint.setY(points[i + 1]);
 
-            pointList.push_back(tempPoint);
+            pointList->push_back(tempPoint);
 
             i += 2;
         }
@@ -396,7 +396,7 @@ Shape* ReadText(QTextStream &fin, int id)
 {
     QString text;
     QColor  color;
-    int     alignment;
+    Qt::AlignmentFlag     alignment;
     int     textPointSize;
     QString fontFamily;
     QString fontStyle;
@@ -421,7 +421,7 @@ Shape* ReadText(QTextStream &fin, int id)
     color = fin.readLine().remove(0, 11);
 
     // Get alignment
-    GetAlignment(fin.readLine().remove(0, 15));
+    alignment = GetAlignment(fin.readLine().remove(0, 15));
 
     // Get point size
     textPointSize = fin.readLine().remove(0, 15).toInt();
@@ -434,7 +434,7 @@ Shape* ReadText(QTextStream &fin, int id)
     // no brush
 
     // make a new shape
-    Text* textObj = new Text(id, CreateFont(fontFamily, textPointSize, fontWeight, fontStyle),
+    Text* textObj = new Text(id, TextParser::CreateFont(fontFamily, textPointSize, fontWeight, fontStyle),
                           color, pos, l, w, alignment);
 
     return textObj;
@@ -629,3 +629,35 @@ QFont TextParser::CreateFont(QString fam, int size, QString weight, QString styl
     return font;
 }
 
+Qt::AlignmentFlag TextParser::GetAlignment(QString align)
+{
+    if(align == "AlignLeft")
+    {
+        return Qt::AlignLeft;
+    }
+    else
+    {
+        if(align == "AlignRight")
+        {
+            return Qt::AlignRight;
+        }
+        else
+        {
+            if(align == "AlignTop")
+            {
+                return Qt::AlignTop;
+            }
+            else
+            {
+                if(align == "AlignBottom")
+                {
+                    return Qt::AlignBottom;
+                }
+                else
+                {
+                    return Qt::AlignCenter;
+                }
+            }   // Bottom
+        } // Top
+    } // Right
+} // Left

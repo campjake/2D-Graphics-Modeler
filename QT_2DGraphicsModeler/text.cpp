@@ -7,19 +7,19 @@ Text::Text()	: Shape()
 	width = 12;
 	height = 9;
 	textString     = "Text";
-	textAlignment  = AlignLeft;
+    textAlignment  = Qt::AlignLeft;
 	textFont.setPointSize(12);
-	textFont.setWeight(Weight::Thin);
-	textFont.setStyle(Style::StyleNormal);
+    textFont.setWeight(QFont::Weight::Thin);
+    textFont.setStyle(QFont::Style::StyleNormal);
 }
 
 //Alternate Constructor
 //In order : ID, Text, Font, Color, Position, Height, Width, Alignment
 Text::Text(int newId, QString newString, QFont newFont, QColor newColor, QPoint newPos,
-			int newHeight, int newWidth, AlignmentFlag newAlign)
+            int newHeight, int newWidth, Qt::AlignmentFlag newAlign)
 
-	: textString{newString}, textFont{newFont}, texColor{newColor},
-	  width{newWidth}, height{newHeight}, textAlignment{newAlign}
+    :  width{newWidth}, height{newHeight}, textString{newString},
+       textFont{newFont}, textColor{newColor}, textAlignment{newAlign}
 {
 	Shape::SetID(newId);
 	Shape::SetPos(newPos);
@@ -32,7 +32,7 @@ Text::Text(int newId, QString newString, QFont newFont, QColor newColor, QPoint 
 * This method returns QString textString
 * Post-Condition: returns textString
 *********************************************************************/
-Qstring Text::GetTextString() const{
+QString Text::GetTextString() const{
 	return textString;
 }
 
@@ -65,7 +65,7 @@ void Text::SetHeight(const int userHeight){
 * This method sets textString to userString
 * Post-Condition: textString = userString
 *********************************************************************/
-void Text::SetTextString(const Qstring userString){
+void Text::SetTextString(const QString userString){
 	textString = userString;
 }
 /*********************************************************************
@@ -94,7 +94,7 @@ void Text::SetFont(const QFont userFont){
 * This method sets textAlignment to userAlignment
 * Post-Condition: textAlignment = userAlignment
 *********************************************************************/
-void Text::SetAlignment(const AlignmentFlag userAlignment){
+void Text::SetAlignment(const Qt::AlignmentFlag userAlignment){
 	textAlignment = userAlignment;
 }
 
@@ -107,16 +107,16 @@ void Text::SetAlignment(const AlignmentFlag userAlignment){
 * written on the text variable then outputs the text within the given
 * boundary box.
 *********************************************************************/
-void Text::Draw(QPainter painter) const{
+void Text::Draw(QPainter* painter) {
 
 	QSize rectSize(width, height);	//Dimension for boundingBox
 	QRect boundBox(Shape::GetPos(), rectSize);	//Text Location + box size
 
-	painter.setPen(textColor);	//Assigns Qcolor textColor
-	painter.setFont(textFont);	//Assigns QFont textFont
+    painter->setPen(textColor);	//Assigns Qcolor textColor
+    painter->setFont(textFont);	//Assigns QFont textFont
 
 	//This uses drawText(const QRect &rectangle, int flags, const QString &text, QRect *boundingRect = nullptr)
-	painter.drawText(boundBox, textAlignment, textString);
+    painter->drawText(boundBox, textAlignment, textString);
 }
 
 /*********************************************************************
@@ -131,11 +131,11 @@ void Text::Move(int xCoord, int yCoord){
 }
 
 //-1 as text shouldnt have perimeter/area
-double Text::CalcPerimeter(){
+double Text::CalcPerimeter() const{
 	return -1;
 }
 
    // CalcArea
-double Text::CalcArea(){
+double Text::CalcArea() const{
 	return -1;
 }
