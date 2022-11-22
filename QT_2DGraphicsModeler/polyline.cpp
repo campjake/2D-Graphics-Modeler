@@ -1,14 +1,20 @@
 #include "polyline.h"
 
-Polyline::Polyline()
-Polyline::Polyline(QPaintDevice* device, int anID, ShapeType shapeType) : Shape(device, anID, shapeType)
+Polyline::Polyline(int anID, QList<QPoint>* LinePoints) : LinePoints {LinePoints}
+{
+    SetID(anID);
+}
+
+Polyline::Polyline(QPaintDevice* device, int anID, ShapeType shapeType, QList<QPoint>* LinePoints) :
+    Shape(device, anID, shapeType), LinePoints { LinePoints }
 {
     SetPen(Qt::SolidLine);
     SetBrush(Qt::NoBrush);
 }
 
 //constructor with pen and brush
-Polyline::Polyline(QPaintDevice* device, int anID, ShapeType shapeType, QPen thatPen, QBrush thatBrush) : Shape(device, anID, shapeType)
+Polyline::Polyline(QPaintDevice* device, int anID, ShapeType shapeType, QPen thatPen, QBrush thatBrush,  QList<QPoint>* LinePoints) :
+    Shape(device, anID, shapeType), LinePoints { LinePoints }
 {
     SetPen(thatPen);
     SetBrush(thatBrush);

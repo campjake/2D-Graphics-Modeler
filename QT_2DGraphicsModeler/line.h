@@ -6,13 +6,15 @@
 class Line : virtual public Shape
 {
 public:
-public:
+    //Parser constructor
+    Line(int anID, QPoint point1, QPoint point2);
+
     //Constructor
-    Line(QPaintDevice* device = nullptr, int anID = -1, ShapeType shapeType = ShapeType::Polyline);
+    Line(QPaintDevice* device = nullptr, int anID = -1, ShapeType shapeType = ShapeType::Polyline, QPoint point1 = {0, 0}, QPoint point2 = {0, 0});
 
     //constructor with pen and brush
     Line(QPaintDevice* device = nullptr, int anID = -1, ShapeType shapeType = ShapeType::Polyline,
-        QPen thatPen = Qt::SolidLine, QBrush thatBrush = Qt::NoBrush);
+        QPen thatPen = Qt::SolidLine, QBrush thatBrush = Qt::NoBrush, QPoint point1 = {0, 0}, QPoint point2 = {0, 0});
 
     virtual ~Line() {}
 
@@ -23,7 +25,6 @@ public:
     //operators
     bool operator == (const Line& other);
 
-    virtual const double CalcPerimeter();
     bool operator < (const Line& other);
 
     //Base class pure virtual functions

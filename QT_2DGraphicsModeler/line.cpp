@@ -1,16 +1,21 @@
 #include "line.h"
 
-Line::Line()
-//Constructor
-Line::Line(QPaintDevice* device, int anID, ShapeType shapeType) : Shape(device, anID, shapeType)
+Line::Line(int anID, QPoint point1, QPoint point2) : point1 { point1 }, point2 { point2 }
 {
+    SetID(anID);
+}
 
+//Constructor
+Line::Line(QPaintDevice* device, int anID, ShapeType shapeType, QPoint point1, QPoint point2) :
+    Shape(device, anID, shapeType), point1 {point1}, point2 {point2}
+{
     SetPen(Qt::SolidLine);
     SetBrush(Qt::NoBrush);
 }
 
 //constructor with pen and brush
-Line::Line(QPaintDevice* device, int anID, ShapeType shapeType, QPen thatPen, QBrush thatBrush) : Shape(device, anID, shapeType)
+Line::Line(QPaintDevice* device, int anID, ShapeType shapeType, QPen thatPen, QBrush thatBrush, QPoint point1, QPoint point2) :
+    Shape(device, anID, shapeType), point1 {point1}, point2 {point2}
 {
     SetPen(thatPen);
     SetBrush(thatBrush);
