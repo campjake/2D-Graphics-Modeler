@@ -6,10 +6,10 @@ Text::Text(QPaintDevice* device, int newID, ShapeType newShapeType)	:Shape(devic
 	width = 12;
 	height = 9;
 	textString     = "Text";
-	textAlignment  = AlignLeft;
+    textAlignment  = Qt::AlignLeft;
 	textFont.setPointSize(12);
-	textFont.setWeight(Weight::Thin);
-	textFont.setStyle(Style::StyleNormal);
+    textFont.setWeight(QFont::Weight::Thin);
+    textFont.setStyle(QFont::Style::StyleNormal);
 }
 
 //Alternate Constructor
