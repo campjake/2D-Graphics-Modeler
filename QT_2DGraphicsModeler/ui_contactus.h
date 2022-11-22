@@ -51,6 +51,7 @@ public:
         label_email->setObjectName("label_email");
         label_email->setGeometry(QRect(30, 80, 261, 41));
         QFont font1;
+        font1.setPointSize(15);
         font1.setBold(true);
         label_email->setFont(font1);
         label_logo = new QLabel(groupBox);
