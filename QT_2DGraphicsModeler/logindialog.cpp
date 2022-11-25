@@ -14,8 +14,9 @@ LoginDialog::LoginDialog(QWidget *parent) :
     setWindowFlags(Qt::Window
         | Qt::WindowMinimizeButtonHint
         | Qt::WindowMaximizeButtonHint);
-    QPixmap pix("C:/Users/chinm/Pictures/qt pic/ShapesRUs.jpg");
-    ui->label_logo->setPixmap(pix.scaled(1000,1000,Qt::KeepAspectRatio));
+//    QPixmap pix("C:/Users/chinm/Pictures/qt pic/ShapesRUs.jpg");
+
+//    ui->label_logo->setPixmap(pix.scaled(1000,1000,Qt::KeepAspectRatio));
 }
 
 LoginDialog::~LoginDialog()

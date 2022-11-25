@@ -9,7 +9,11 @@ class Ellipse : public Shape
 {
     public :
     // Constructor
-    Ellipse(QPaintDevice* device, int anID, ShapeType shapeType, float width, float height);
+    Ellipse(QPaintDevice* device, int anID,
+            ShapeType shapeType, int width, int height);
+
+    // Parser Constructor
+    Ellipse(int anID, QPoint qPos, int a, int b);
 
     // Destructor
     virtual ~Ellipse();
@@ -19,31 +23,33 @@ class Ellipse : public Shape
     Ellipse& operator=(const Ellipse& source) = delete;
 
 
-    float getWidth()const;
+    int getWidth()const;
 
-    float getHeight()const;
+    int getHeight()const;
 
-    void setWidth(const float width);
+    void setWidth(const int width);
 
-    void setHeight(const float height);
+    void setHeight(const int height);
 
     /******************* Pure Virtual Fcns **************************/
     // Draw function
     virtual void Draw(QPainter* painter);
 
     // Move function
-    virtual void Move(QPoint pos);
+    virtual void Move(int xCoor, int yCoord);
 
     // CalcPerimeter
-    virtual double CalcPerimeter();
+    virtual double CalcPerimeter() const;
 
     // CalcArea
-    virtual double CalcArea();
+    virtual double CalcArea() const;
     /*************************************************************/
 
   private :
-    float width;
-    float height;
+    int width;
+    int height;
+    int a;      // Ellipse major axis
+    int b;      // Ellipse minor axis
 };
 
 #endif // ELLIPSE_H

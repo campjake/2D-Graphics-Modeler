@@ -15,6 +15,12 @@ Line::Line(QPaintDevice* device, int anID, ShapeType shapeType, QPen thatPen, QB
     SetBrush(thatBrush);
 }
 
+// Parser Constructor
+Line::Line(int anID, QPoint first, QPoint last)
+    : point1{first}, point2{last}
+{
+    this->SetID(anID);
+}
 //operators
 bool Line::operator == (const Line& other)
 {

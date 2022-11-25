@@ -6,6 +6,7 @@
 #include <Qt>
 #include <QPainter>
 #include <QPaintDevice>
+#include <QPoint>
 //#include "vector.h"
 
 enum class ShapeType

@@ -7,6 +7,8 @@
 int main(int argc, char *argv[])
 {
     TextParser parser;
+    testimonial test;
+
     QApplication a(argc, argv);
     MainWindow w;
     LoginDialog login;

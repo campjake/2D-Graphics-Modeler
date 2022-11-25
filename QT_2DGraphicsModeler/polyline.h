@@ -1,7 +1,6 @@
 #ifndef POLYLINE_H
 #define POLYLINE_H
 
-#include "vector.h"
 #include "shape.h"
 
 class Polyline : public Shape
@@ -14,6 +13,9 @@ public:
     //constructor with pen and brush
     Polyline(QPaintDevice* device = nullptr, int anID = -1, ShapeType shapeType = ShapeType::Polyline,
         QPen thatPen = Qt::SolidLine, QBrush thatBrush = Qt::NoBrush);
+
+    // Parser Constructor
+    Polyline(int anID, QList<QPoint>* list);
 
     virtual ~Polyline() {}
 
