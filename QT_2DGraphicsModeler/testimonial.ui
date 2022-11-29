@@ -1,36 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>testimonial</class>
- <widget class="QDialog" name="testimonial">
+ <class>Testimonials</class>
+ <widget class="QDialog" name="Testimonials">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>865</width>
-    <height>631</height>
+    <width>640</width>
+    <height>480</height>
    </rect>
-  </property>
-  <property name="font">
-   <font>
-    <pointsize>20</pointsize>
-    <bold>true</bold>
-   </font>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="label_title">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>190</x>
      <y>10</y>
-     <width>351</width>
-     <height>81</height>
+     <width>281</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>20</pointsize>
+     <pointsize>15</pointsize>
      <bold>true</bold>
      <underline>true</underline>
     </font>
@@ -39,192 +33,161 @@
     <string>Customer Testimonials</string>
    </property>
   </widget>
-  <widget class="QGroupBox" name="groupBox">
+  <widget class="QLabel" name="label_test1">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>411</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string>A great drawing tool that is easy to use!</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_name1">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>100</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string>- Random Person</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_test2">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>70</y>
-     <width>841</width>
-     <height>531</height>
+     <y>130</y>
+     <width>511</width>
+     <height>71</height>
     </rect>
    </property>
-   <property name="title">
-    <string/>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <italic>true</italic>
+    </font>
    </property>
-   <widget class="QGroupBox" name="groupBox_2">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>321</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="title">
-     <string>Write your testimonial here:</string>
-    </property>
-    <widget class="QPlainTextEdit" name="plainTextEdit">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>311</width>
-       <height>121</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_4">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>20</y>
-      <width>321</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="title">
-     <string>Write your testimonial here:</string>
-    </property>
-    <widget class="QTextEdit" name="textEdit_3">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>30</y>
-       <width>321</width>
-       <height>111</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_3">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>170</y>
-      <width>321</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="title">
-     <string>Write your testimonial here:</string>
-    </property>
-    <widget class="QTextEdit" name="textEdit_2">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>30</y>
-       <width>321</width>
-       <height>111</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_5">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>170</y>
-      <width>321</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="title">
-     <string>Write your testimonial here:</string>
-    </property>
-    <widget class="QTextEdit" name="textEdit_4">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>30</y>
-       <width>321</width>
-       <height>111</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_6">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>330</y>
-      <width>321</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="title">
-     <string>Write your testimonial here:</string>
-    </property>
-    <widget class="QTextEdit" name="textEdit_5">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>30</y>
-       <width>321</width>
-       <height>111</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_7">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>340</y>
-      <width>321</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="title">
-     <string>Write your testimonial here:</string>
-    </property>
-    <widget class="QTextEdit" name="textEdit_6">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>30</y>
-       <width>321</width>
-       <height>111</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
+   <property name="text">
+    <string>I always have good experiences with Shapes R Us!</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_name2">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>180</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string>- Random Person</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_test3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>210</y>
+     <width>561</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string>10/10 Drawing Program. I am recommending this to everyone!</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_name3">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>260</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string>- Random Person</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_testTitle">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Write your own testimonial here:</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>310</y>
+     <width>611</width>
+     <height>131</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDialogButtonBox" name="button_Save">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>450</y>
+     <width>193</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Save</set>
+   </property>
   </widget>
  </widget>
  <resources/>
