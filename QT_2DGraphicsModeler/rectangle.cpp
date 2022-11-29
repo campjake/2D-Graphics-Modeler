@@ -1,7 +1,16 @@
 #include "rectangle.h"
 
-Rectangle::Rectangle(QPaintDevice* device, int anID, ShapeType shapeType, float width, float length)
+Rectangle::Rectangle(QPaintDevice* device, int anID,
+                     ShapeType shapeType, int width, int length)
     : Shape{device, anID, shapeType}, width{width}, length{length}{}
+
+// Parser Constructor
+Rectangle::Rectangle(int anID, QPoint aPos, int l, int w)
+    : width{w}, length{l}
+{
+    this->SetID(anID);
+    this->SetPos(aPos);
+}
 
 // Destructor
 Rectangle::~Rectangle(){}
@@ -44,19 +53,22 @@ void Rectangle::Draw(QPainter* painter)
 }
 
 // Move function
-void Rectangle::Move(QPoint pos)
+void Rectangle::Move(int xCoord, int yCoord)
 {
+    QPoint pos;
+    pos.setX(xCoord);
+    pos.setY(yCoord);
     this->SetPos(pos);
 }
 
 // CalcPerimeter
-double Rectangle::CalcPerimeter()
+double Rectangle::CalcPerimeter() const
 {
     return (width + length)*2;
 }
 
 // CalcArea
-double Rectangle::CalcArea()
+double Rectangle::CalcArea() const
 {
     return width*length;
 }

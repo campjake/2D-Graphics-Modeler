@@ -7,8 +7,10 @@ class Rectangle : public Shape
 {
 public:
     // Constructor
-    Rectangle(QPaintDevice* device, int anID, ShapeType shapeType, float width, float length);
+    Rectangle(QPaintDevice* device, int anID, ShapeType shapeType, int width, int length);
 
+    // Parser Constructor
+    Rectangle(int anID, QPoint aPos, int l, int w);
     // Destructor
     virtual ~Rectangle();
 
@@ -29,18 +31,18 @@ public:
     virtual void Draw(QPainter* painter);
 
     // Move function
-    virtual void Move(QPoint pos);
+    virtual void Move(int xCoord, int yCoord);
 
     // CalcPerimeter
-    virtual double CalcPerimeter();
+    virtual double CalcPerimeter() const;
 
     // CalcArea
-    virtual double CalcArea();
+    virtual double CalcArea() const;
     /*************************************************************/
 
   private :
-    float width;
-    float length;
+    int width;
+    int length;
 };
 
 #endif // RECTANGLE_H

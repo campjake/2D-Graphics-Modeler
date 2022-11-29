@@ -1,28 +1,37 @@
 #include "ellipse.h"
 
 // Constructor
-Ellipse::Ellipse(QPaintDevice* device, int anID, ShapeType shapeType, float width, float height)
+Ellipse::Ellipse(QPaintDevice* device, int anID,
+                 ShapeType shapeType, int width, int height)
     : Shape{device, anID, shapeType}, width{width}, height{height}{}
+
+// Parser Constructor
+Ellipse::Ellipse(int anID, QPoint qPos, int a, int b)
+    : a{a}, b{b}
+{
+    this->SetID(anID);
+    this->SetPos(qPos);
+}
 
 // Destructor
 Ellipse::~Ellipse(){}
 
-float Ellipse::getWidth()const
+int Ellipse::getWidth()const
 {
     return width;
 }
 
-float Ellipse::getHeight()const
+int Ellipse::getHeight()const
 {
     return height;
 }
 
-void Ellipse::setWidth(const float width)
+void Ellipse::setWidth(const int width)
 {
     this->width = width;
 }
 
-void Ellipse::setHeight(const float height)
+void Ellipse::setHeight(const int height)
 {
     this->height = height;
 }
@@ -31,23 +40,26 @@ void Ellipse::setHeight(const float height)
 // Draw function
 void Ellipse::Draw(QPainter* painter)
 {
-    painter->drawEllipse(0, 0, width, height);
+    painter->drawEllipse(a, b, width, height);
 }
 
 // Move function
-void Ellipse::Move(QPoint pos)
+void Ellipse::Move(int xCoord, int yCoord)
 {
+    QPoint pos;
+    pos.setX(xCoord);
+    pos.setY(yCoord);
     this->SetPos(pos);
 }
 
 // CalcPerimeter
-double Ellipse::CalcPerimeter()
+double Ellipse::CalcPerimeter() const
 {
     return (width + height)/2*PI;
 }
 
 // CalcArea
-double Ellipse::CalcArea()
+double Ellipse::CalcArea() const
 {
     return (width*height)/4*PI;
 }

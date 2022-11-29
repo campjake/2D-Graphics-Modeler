@@ -177,10 +177,11 @@ void Polygon::Draw(QPainter* painter)
 // Move Function for Polygon should use SetPoints?
 void Polygon::Move(int xCoord, int yCoord)
 {
-    pos.setX(xCoord);
-    pos.setY(yCoord);
+    QPoint qPos;
+    qPos.setX(xCoord);
+    qPos.setY(yCoord);
 
-    polyPoints->replace(0, pos);
+    polyPoints->replace(0, qPos);
 }
 
 // Calc Perimeter Function
@@ -217,7 +218,7 @@ double Polygon::CalcPerimeter() const
 // Calc Area Function
 // Pre-Condition - NONE
 // Post-Condition - Returns double for polygon area
-double Polygon::CalcArea()
+double Polygon::CalcArea() const
 {
     // Source -- Shoelace Formula
     // https://tinyurl.com/mvfjt3np (Wikipedia)

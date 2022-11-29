@@ -14,6 +14,9 @@ public:
     Line(QPaintDevice* device = nullptr, int anID = -1, ShapeType shapeType = ShapeType::Polyline,
         QPen thatPen = Qt::SolidLine, QBrush thatBrush = Qt::NoBrush);
 
+    // Constructor for Parser
+    Line(int anID, QPoint first, QPoint last);
+
     virtual ~Line() {}
 
     //Copy functions

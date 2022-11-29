@@ -13,6 +13,13 @@ Polyline::Polyline(QPaintDevice* device, int anID, ShapeType shapeType, QPen tha
     SetBrush(thatBrush);
 }
 
+// Parser Constructor
+Polyline::Polyline(int anID, QList<QPoint>* list)
+{
+    this->SetID(anID);
+    SetPoints(list);
+}
+
 //Abstract functions from base
 void Polyline::Draw(QPainter* painter)
 {

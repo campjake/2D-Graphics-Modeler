@@ -1,20 +1,17 @@
 #ifndef FILEPARSER_H_
 #define FILEPARSER_H_
 
-#include <Qt>
-#include <QString>
 #include <QFile>
 #include <QFileDialog>
 #include <QCoreApplication>
 #include <QMessageBox>
 #include <QDebug>
-#include <QPoint>
 #include <QFont>
 #include <QPen>
 #include <QColor>
 #include <QMap>
 #include "vector.h"
-#include "shape.h"
+//#include "shape.h"
 #include "line.h"
 #include "polyline.h"
 #include "polygon.h"
@@ -92,7 +89,7 @@ class TextParser
 
     // GetAlignment function
     // Pre-Conditions - Requires a QString
-    // Post-Conditions - Returns
+    // Post-Conditions - Returns an alignment flag
     Qt::AlignmentFlag GetAlignment(QString align);
 
 };

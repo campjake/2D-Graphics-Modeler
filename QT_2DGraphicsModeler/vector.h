@@ -74,7 +74,7 @@ template <class T>
 vector<T>::vector(vector&& src) noexcept
 : size_v{std::move(src.size_v)}, elem{std::move(src.elem)}, space{std::move(src.space)}
 {
-    src.size = 0;
+    src.size_v = 0;
     src.elem = NULL;
     src.space = 0;
 }
