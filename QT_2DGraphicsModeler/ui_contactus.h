@@ -51,13 +51,11 @@ public:
         label_email->setObjectName("label_email");
         label_email->setGeometry(QRect(30, 80, 261, 41));
         QFont font1;
-        font1.setPointSize(15);
         font1.setBold(true);
         label_email->setFont(font1);
         label_logo = new QLabel(groupBox);
         label_logo->setObjectName("label_logo");
         label_logo->setGeometry(QRect(0, 180, 601, 241));
-        label_logo->setPixmap(QPixmap(QString::fromUtf8("../../../../Pictures/qt pic/ShapesRUs.jpg")));
         label_logo->setScaledContents(true);
         label_logo->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         label_logo->setWordWrap(false);
