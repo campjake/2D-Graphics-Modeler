@@ -89,6 +89,9 @@
     <property name="text">
      <string/>
     </property>
+    <property name="pixmap">
+     <pixmap resource="logo.qrc">:/ShapesRUs.jpg</pixmap>
+    </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
@@ -104,6 +107,8 @@
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="logo.qrc"/>
+ </resources>
  <connections/>
 </ui>
