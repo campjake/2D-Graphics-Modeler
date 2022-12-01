@@ -37,13 +37,14 @@ public:
     QHBoxLayout *horizontalLayout_3;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
+    QLabel *label_logo;
 
     void setupUi(QDialog *LoginDialog)
     {
         if (LoginDialog->objectName().isEmpty())
             LoginDialog->setObjectName("LoginDialog");
         LoginDialog->setWindowModality(Qt::ApplicationModal);
-        LoginDialog->resize(461, 240);
+        LoginDialog->resize(681, 423);
         LoginDialog->setAcceptDrops(false);
         QIcon icon;
         QString iconThemeName = QString::fromUtf8("dialog-password");
@@ -57,7 +58,7 @@ public:
         LoginDialog->setModal(true);
         layoutWidget = new QWidget(LoginDialog);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(40, 60, 381, 101));
+        layoutWidget->setGeometry(QRect(150, 250, 381, 101));
         verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -97,7 +98,7 @@ public:
 
         layoutWidget1 = new QWidget(LoginDialog);
         layoutWidget1->setObjectName("layoutWidget1");
-        layoutWidget1->setGeometry(QRect(250, 190, 168, 26));
+        layoutWidget1->setGeometry(QRect(360, 380, 195, 31));
         horizontalLayout_3 = new QHBoxLayout(layoutWidget1);
         horizontalLayout_3->setObjectName("horizontalLayout_3");
         horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
@@ -111,6 +112,11 @@ public:
 
         horizontalLayout_3->addWidget(pushButton_2);
 
+        label_logo = new QLabel(LoginDialog);
+        label_logo->setObjectName("label_logo");
+        label_logo->setGeometry(QRect(20, 10, 651, 221));
+        label_logo->setPixmap(QPixmap(QString::fromUtf8("../../../Pictures/qt pic/ShapesRUs.jpg")));
+        label_logo->setScaledContents(true);
 
         retranslateUi(LoginDialog);
 
@@ -127,6 +133,7 @@ public:
         lineEdit_password->setPlaceholderText(QCoreApplication::translate("LoginDialog", "REMOVE LATER - Password = 12345", nullptr));
         pushButton->setText(QCoreApplication::translate("LoginDialog", "Login", nullptr));
         pushButton_2->setText(QCoreApplication::translate("LoginDialog", "Exit", nullptr));
+        label_logo->setText(QString());
     } // retranslateUi
 
 };
