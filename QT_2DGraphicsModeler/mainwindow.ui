@@ -20,7 +20,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -77,8 +77,14 @@
    </property>
   </action>
   <action name="actionCustomer_Testimonials">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
    <property name="text">
     <string>Customer Testimonials</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
    </property>
   </action>
   <action name="actionShape_Area_Listing">

@@ -2,17 +2,19 @@
 #include "logindialog.h"
 #include "contactus.h"
 #include <QApplication>
-#include "textparser.h"
+//#include "textparser.h"
 
 int main(int argc, char *argv[])
 {
-    TextParser parser;
-    testimonial test;
 
     QApplication a(argc, argv);
     MainWindow w;
     LoginDialog login;
     ContactUs contact;
+//    TextParser parser;
+//    parser.ReadFile();
+
+
     login.show();
     w.show();
 

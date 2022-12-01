@@ -5,14 +5,14 @@ Line::Line(QPaintDevice* device, int anID, ShapeType shapeType) : Shape(device, 
 {
 
     SetPen(Qt::SolidLine);
-    SetBrush(Qt::NoBrush);
 }
 
 //constructor with pen and brush
-Line::Line(QPaintDevice* device, int anID, ShapeType shapeType, QPen thatPen, QBrush thatBrush) : Shape(device, anID, shapeType)
+Line::Line(QPaintDevice* device, int anID,
+           ShapeType shapeType, QPen thatPen)
+    : Shape(device, anID, shapeType)
 {
     SetPen(thatPen);
-    SetBrush(thatBrush);
 }
 
 // Parser Constructor

@@ -12,7 +12,7 @@ Shape::Shape(QPaintDevice* device,
 
 {
     // set defaults so it compiles
-    count++;
+//    count++;
     shapePen = Qt::SolidLine;
     shapeBrush = Qt::NoBrush;
 //    qpainter.begin(device); // ?

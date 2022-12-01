@@ -156,14 +156,6 @@ void Polygon::SetPoints(QList<QPoint>* points)
     polyPoints = std::move(points);
 }
 
-// Our sweet sweet lil protected guy
-// Pre-conditions - NONE - Use Shape Protected function?
-// Post-Conditions - Returns a reference to a QPainter Object
-QPainter& Shape::get_qpainter()
-{
-    return qpainter;
-}
-
 // Draw Function for Polygon
 // Pre-conditions - QPaintClass pointer
 // Post-Conditions - Draws a Polygon

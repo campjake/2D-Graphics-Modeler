@@ -3,7 +3,8 @@
 // Constructor
 Ellipse::Ellipse(QPaintDevice* device, int anID,
                  ShapeType shapeType, int width, int height)
-    : Shape{device, anID, shapeType}, width{width}, height{height}{}
+    : Shape{device, anID, shapeType}, width{width}, height{height}
+{}
 
 // Parser Constructor
 Ellipse::Ellipse(int anID, QPoint qPos, int a, int b)

@@ -617,7 +617,7 @@ Shape* TextParser::ReadCircle(QTextStream &fin, int id)
     return circle;
 }
 
-Shape* ReadText(QTextStream &fin, int id)
+Shape* TextParser::ReadText(QTextStream &fin, int id)
 {
     QString text;
     QColor  color;

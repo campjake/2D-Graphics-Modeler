@@ -25,7 +25,7 @@ class Shape
           ShapeType shapeType = ShapeType::NoShape);
 
     // Destructor
-    virtual ~Shape() {--count;}
+    virtual ~Shape(){}
 
     // Copy Operations (delete them)
     Shape(const Shape& source) = delete;
@@ -117,7 +117,7 @@ class Shape
     QPen        shapePen;
     QBrush      shapeBrush;
     QPoint      shapePos;
-    static int  count;      // helps set unique ID
+//    static int  count;      // helps set unique ID
 
 };
 

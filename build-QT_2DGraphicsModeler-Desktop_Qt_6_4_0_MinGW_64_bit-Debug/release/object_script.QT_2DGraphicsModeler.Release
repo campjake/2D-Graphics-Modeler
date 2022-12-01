@@ -1,0 +1,17 @@
+release/ellipse.o
+release/line.o
+release/logindialog.o
+release/main.o
+release/mainwindow.o
+release/polygon.o
+release/polyline.o
+release/rectangle.o
+release/shape.o
+release/testimonial.o
+release/text.o
+release/textparser.o
+release/contactus.o
+release/moc_logindialog.o
+release/moc_mainwindow.o
+release/moc_testimonial.o
+release/moc_contactus.o

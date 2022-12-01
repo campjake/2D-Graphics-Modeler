@@ -12,7 +12,7 @@ public:
 
     //constructor with pen and brush
     Polyline(QPaintDevice* device = nullptr, int anID = -1, ShapeType shapeType = ShapeType::Polyline,
-        QPen thatPen = Qt::SolidLine, QBrush thatBrush = Qt::NoBrush);
+        QPen thatPen = Qt::SolidLine);
 
     // Parser Constructor
     Polyline(int anID, QList<QPoint>* list);
