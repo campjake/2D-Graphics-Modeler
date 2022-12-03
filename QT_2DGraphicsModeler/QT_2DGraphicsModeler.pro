@@ -31,6 +31,7 @@ HEADERS += \
     polygon.h \
     polyline.h \
     rectangle.h \
+    serializer.h \
     shape.h \
     testimonial.h \
     text.h \
