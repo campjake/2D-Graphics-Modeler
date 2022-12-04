@@ -15,6 +15,9 @@ public:
     explicit testimonial(QWidget *parent = nullptr);
     ~testimonial();
 
+private slots:
+    void on_button_Save_accepted();
+
 private:
     Ui::testimonial *ui;
 };
