@@ -115,7 +115,7 @@ public:
         label_logo = new QLabel(LoginDialog);
         label_logo->setObjectName("label_logo");
         label_logo->setGeometry(QRect(20, 10, 651, 221));
-        label_logo->setPixmap(QPixmap(QString::fromUtf8("../../../Pictures/qt pic/ShapesRUs.jpg")));
+        label_logo->setPixmap(QPixmap(QString::fromUtf8(":/ShapesRUs.jpg")));
         label_logo->setScaledContents(true);
 
         retranslateUi(LoginDialog);
