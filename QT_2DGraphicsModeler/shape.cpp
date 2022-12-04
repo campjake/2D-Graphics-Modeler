@@ -1,4 +1,5 @@
 #include "shape.h"
+#include <QDebug>
 
 // Default Shape Ctor
 // Pre-Conditions - NONE since parameters have default values
@@ -9,13 +10,9 @@ Shape::Shape(QPaintDevice* device,
     : qpainter{device},
       id{anID},
       shapeName{shapeType}
-
 {
-    // set defaults so it compiles
-//    count++;
     shapePen = Qt::SolidLine;
     shapeBrush = Qt::NoBrush;
-//    qpainter.begin(device); // ?
 }
 
 //COPY OPERATIONS DELETED

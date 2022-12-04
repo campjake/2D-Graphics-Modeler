@@ -32,6 +32,10 @@ public slots:
 
 protected:
     void paintEvent(QPaintEvent *event) override;
+    QPainter* getPainter()
+    {
+        return &painter;
+    }
 
 private:
     QPen pen;
@@ -40,6 +44,7 @@ private:
     bool transformed;
     QPixmap pixmap;
     vector<Shape*> shapeVector;
+    QPainter painter;
 };
 
 #endif // RENDERAREA_H

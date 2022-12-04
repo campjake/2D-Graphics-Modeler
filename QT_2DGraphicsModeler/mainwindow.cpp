@@ -44,11 +44,10 @@ void MainWindow::on_actionOpen_File_triggered()
         QMessageBox::information(this,"tip","Please choose file");
         return;
     }
+    TextParser parser;
 
-//    if(textParser) {
-//        setData(textParser->ReadFile(fileName));
-//        qDebug() << shapeVector.size();
-//    }
+    shapeVector = parser.ReadFile(fileName);
+
 }
 
 void MainWindow::createRenderArea()

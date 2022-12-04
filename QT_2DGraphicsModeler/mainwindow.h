@@ -36,7 +36,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
 
-//    vector<Shape*> shapeVector;
+    vector<Shape*> shapeVector;
     TextParser *textParser;
     RenderArea *renderArea;
     QLabel *shapeLabel;

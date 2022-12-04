@@ -56,6 +56,7 @@ public:
         label_logo = new QLabel(groupBox);
         label_logo->setObjectName("label_logo");
         label_logo->setGeometry(QRect(0, 180, 601, 241));
+        label_logo->setPixmap(QPixmap(QString::fromUtf8(":/ShapesRUs.jpg")));
         label_logo->setScaledContents(true);
         label_logo->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         label_logo->setWordWrap(false);

@@ -35,7 +35,6 @@ enum ShapeNames
 class TextParser
 {
     public :
-
     // Accept defaults of ctor, dtor, copy, move operations
 
     // Mutator - Read file

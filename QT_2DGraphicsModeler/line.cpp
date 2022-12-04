@@ -1,10 +1,12 @@
 #include "line.h"
+#include <QDebug>
 
 //Constructor
-Line::Line(QPaintDevice* device, int anID, ShapeType shapeType) : Shape(device, anID, shapeType)
+Line::Line(QPaintDevice* device, int anID, ShapeType shapeType)
+    : Shape{device, anID, shapeType}
 {
-
-    SetPen(Qt::SolidLine);
+    this->SetPen(Qt::SolidLine);
+//    this->SetBrush(Qt::NoBrush);
 }
 
 //constructor with pen and brush
@@ -19,7 +21,8 @@ Line::Line(QPaintDevice* device, int anID,
 Line::Line(int anID, QPoint first, QPoint last)
     : point1{first}, point2{last}
 {
-    this->SetID(anID);
+       this->SetID(anID);
+    qInfo() << "You constructed a Line\n";
 }
 //operators
 bool Line::operator == (const Line& other)

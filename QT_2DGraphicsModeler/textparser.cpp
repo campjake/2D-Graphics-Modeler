@@ -1,4 +1,6 @@
 #include "textparser.h"
+#include <map>
+
 
 const QMap<ShapeNames, QString> shapeMap = {
     {ShapeNames::LINE, "Line"},
@@ -235,8 +237,9 @@ Qt::AlignmentFlag TextParser::GetAlignment(QString align)
 vector<Shape*> TextParser::ReadFile(QString fileName)
 {
     vector<Shape*> v_Shapes;
+    QDir directory;
 
-    QString fullPath = QDir::currentPath() + fileName;
+    QString fullPath = directory.absoluteFilePath(fileName);
 
     qInfo() << fullPath << '\n';
 
@@ -273,7 +276,9 @@ vector<Shape*> TextParser::ReadFile(QString fileName)
 
         switch(type)
         {
-            case LINE 		: v_Shapes.push_back(ReadLine(fin, id));
+            case LINE 		:   qInfo() << "This is where you try to add a line\n";
+                                v_Shapes.push_back(ReadLine(fin, id));
+                                qInfo() << "You added a Line\n";
             break;
 
             case POLYLINE 	: v_Shapes.push_back(ReadPolyline(fin, id));
@@ -335,6 +340,8 @@ Shape* TextParser::ReadLine(QTextStream &fin, int id)
     penStyle = GetPenStyle(fin.readLine().remove(0, 10));
     capStyle = GetCapStyle(fin.readLine().remove(0, 13));
     joinStyle = GetPenJoinStyle(fin.readLine().remove(0, 14));
+
+    qInfo() << "You are about to try to dynamically make a Line\n";
 
     Line* line = new Line(id, front, end);
     line->SetPen(color, width, penStyle, capStyle, joinStyle);

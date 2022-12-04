@@ -2,7 +2,6 @@
 #include "logindialog.h"
 #include "contactus.h"
 #include <QApplication>
-//#include "textparser.h"
 
 int main(int argc, char *argv[])
 {
@@ -11,8 +10,6 @@ int main(int argc, char *argv[])
     MainWindow w;
     LoginDialog login;
     ContactUs contact;
-//    TextParser parser;
-//    parser.ReadFile();
 
 
     login.show();
