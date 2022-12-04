@@ -54,6 +54,16 @@ public:
     //deletes a specific point
     void deletePoint(const QPoint& point);
 
+    int GetNumPoints() const
+    {
+        return LinePoints->size();
+    }
+
+    QList<QPoint>* GetLinePoints() const
+    {
+        return LinePoints;
+    }
+
 
 private:
     QList<QPoint>* LinePoints;

@@ -34,8 +34,8 @@ class Shape
 
     // COME BACK AND FIGURE OUT IMPLEMENTATION
 
-//    // Move Operations
-//        // Move Ctor
+////    // Move Operations
+////        // Move Ctor
 //    Shape(Shape&& otherShape) noexcept;
 
 //        // Move Assignment

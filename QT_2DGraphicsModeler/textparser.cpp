@@ -236,7 +236,7 @@ vector<Shape*> TextParser::ReadFile(QString fileName)
 {
     vector<Shape*> v_Shapes;
 
-    QString fullPath = QDir::currentPath().split("CS1C_2D_Graphics_Modeler").at(0) + "CS1C_2D_Graphics_Modeler/QTPROJECT/" + fileName;
+    QString fullPath = QDir::currentPath() + fileName;
 
     qInfo() << fullPath << '\n';
 

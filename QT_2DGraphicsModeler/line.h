@@ -57,6 +57,12 @@ public:
     //sets point 2
     void setPoint2(const QPoint& P2);
 
+    // get point 1
+    QPoint getPoint1() const;
+
+    // get point 2
+    QPoint getPoint2() const;
+
 private:
     QPoint point1;
     QPoint point2;

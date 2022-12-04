@@ -4,13 +4,11 @@
 Polygon::Polygon(QPaintDevice *device,
                  int anID,
                  ShapeType shapeType)
-    : qpainter{device},
-      id{anID},
+    : Shape{device, anID, shapeType},
       polygName{shapeType}
 {
     pen = Qt::SolidLine;
     brush = Qt::NoBrush;
-//    qpainter.begin(device);
 }
 
 // Overloaded Ctor
@@ -18,6 +16,18 @@ Polygon::Polygon(int anID, QList<QPoint>* pointList)
 {
     id = anID;
     polyPoints = std::move(pointList);
+}
+
+// Move Ctor
+Polygon::Polygon(Polygon&& otherPolygon) noexcept
+    : id{std::move(otherPolygon.id)},
+      polygName{std::move(otherPolygon.polygName)},
+      pen{std::move(otherPolygon.pen)},
+      brush{std::move(otherPolygon.brush)},
+      pos{std::move(otherPolygon.pos)},
+      polyPoints{std::move(otherPolygon.polyPoints)}
+{
+    delete [] otherPolygon.polyPoints;
 }
 
 // Overloaded == op

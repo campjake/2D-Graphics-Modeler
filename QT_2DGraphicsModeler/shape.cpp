@@ -27,14 +27,14 @@ Shape::Shape(QPaintDevice* device,
 //// Pre-Conditions - R-value casted other shape object
 //// Post-Conditions - Constructs a Shape object
 //Shape::Shape(Shape&& otherShape) noexcept
-//    : qpainter{std::move(otherShape.qpainter)},
-//      id{std::move(otherShape.id)},
+//    : id{std::move(otherShape.id)},
 //      shapeName{std::move(otherShape.shapeName)},
 //      shapePen{std::move(otherShape.shapePen)},
 //      shapeBrush{std::move(otherShape.shapeBrush)},
 //      shapePos{std::move(otherShape.shapePos)}
 //{
-////    otherShape.qpainter = nullptr;
+//    qpainter = otherShape.get_qpainter();
+//    otherShape.qpainter = nullptr;
 //}
 
 //// Move Assignment

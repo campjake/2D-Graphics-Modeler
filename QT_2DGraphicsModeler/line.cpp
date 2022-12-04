@@ -96,3 +96,12 @@ void Line::setPoint2(const QPoint& P2) {
     point2 = P2;
 }
 
+QPoint Line::getPoint1() const
+{
+    return point1;
+}
+
+QPoint Line::getPoint2() const
+{
+    return point2;
+}

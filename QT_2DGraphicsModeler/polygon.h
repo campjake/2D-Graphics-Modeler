@@ -22,7 +22,7 @@ public:
     // COME BACK LATER AND FIGURE OUT THIS IMPLEMENTATION
 
 //    // Move Operations
-//    Polygon(Polygon&& otherPolygon) noexcept;
+    Polygon(Polygon&& otherPolygon) noexcept;
 //    Polygon& operator=(Polygon&& otherPolygon) noexcept;
 
     /******************* Overloaded Compare Operators *********************/
@@ -99,7 +99,6 @@ public:
 
 private :
 
-    QPainter qpainter;
     int id;
     ShapeType polygName = {ShapeType::Polygon};
     QPen pen;
