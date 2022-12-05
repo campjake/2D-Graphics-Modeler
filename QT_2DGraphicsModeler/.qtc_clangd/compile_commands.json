@@ -1854,10 +1854,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ui_contactus.h"
+        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ui_logindialog.h"
     ],
     "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ui_contactus.h"
+    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ui_logindialog.h"
 },
 {
     "arguments": [
@@ -1974,9 +1974,9 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ui_logindialog.h"
+        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ui_contactus.h"
     ],
     "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ui_logindialog.h"
+    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ui_contactus.h"
 }
 ]

@@ -37,7 +37,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     void createRenderArea();
-    QPainter painter;   // ?
+    QPainter* painter;   // ?
     vector<Shape*> shapeVector;
     TextParser *textParser;
     RenderArea *renderArea;
@@ -62,5 +62,6 @@ private slots:
     void shapeChanged(int);
     void penChanged(int);
     void brushChanged(int);
+    void on_addLine_clicked();
 };
 #endif // MAINWINDOW_H

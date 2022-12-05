@@ -232,7 +232,6 @@ void MainWindow::brushChanged(int)
 
 void MainWindow::on_addLine_clicked()
 {
-//    painter.begin(renderArea);
 
 }
 
