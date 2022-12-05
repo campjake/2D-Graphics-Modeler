@@ -44,9 +44,8 @@ void MainWindow::on_actionOpen_File_triggered()
         QMessageBox::information(this,"tip","Please choose file");
         return;
     }
-    TextParser parser;
 
-    shapeVector = parser.ReadFile(fileName);
+    shapeVector = textParser->ReadFile(fileName);
 
 }
 
@@ -230,3 +229,10 @@ void MainWindow::brushChanged(int)
         renderArea->setBrush(QBrush(Qt::green, style));
     }
 }
+
+void MainWindow::on_addLine_clicked()
+{
+//    painter.begin(renderArea);
+
+}
+

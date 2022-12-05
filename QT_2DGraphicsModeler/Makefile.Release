@@ -504,6 +504,7 @@ release/moc_mainwindow.cpp: mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qpen.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		vector.h \
 		textparser.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QFile \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qfile.h \
@@ -536,7 +537,6 @@ release/moc_mainwindow.cpp: mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPen \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QColor \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QMap \
-		vector.h \
 		line.h \
 		polyline.h \
 		polygon.h \
@@ -1168,7 +1168,8 @@ release/ellipse.o: ellipse.cpp ellipse.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfont.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontmetrics.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		vector.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\ellipse.o ellipse.cpp
 
 release/line.o: line.cpp line.h \
@@ -1271,7 +1272,18 @@ release/line.o: line.cpp line.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfont.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontmetrics.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		vector.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QDebug \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qdebug.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtextstream.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringconverter_base.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qmap.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qshareddata_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qset.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qhash.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qvarlengtharray.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\line.o line.cpp
 
 release/logindialog.o: logindialog.cpp logindialog.h \
@@ -1603,6 +1615,7 @@ release/main.o: main.cpp mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qpen.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		vector.h \
 		textparser.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QFile \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qfile.h \
@@ -1635,7 +1648,6 @@ release/main.o: main.cpp mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPen \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QColor \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QMap \
-		vector.h \
 		line.h \
 		polyline.h \
 		polygon.h \
@@ -1840,6 +1852,7 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qpen.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		vector.h \
 		textparser.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QFile \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qfile.h \
@@ -1872,7 +1885,6 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPen \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QColor \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QMap \
-		vector.h \
 		line.h \
 		polyline.h \
 		polygon.h \
@@ -1993,7 +2005,8 @@ release/polygon.o: polygon.cpp polygon.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfont.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontmetrics.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		vector.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\polygon.o polygon.cpp
 
 release/polyline.o: polyline.cpp polyline.h \
@@ -2096,7 +2109,8 @@ release/polyline.o: polyline.cpp polyline.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfont.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontmetrics.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		vector.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\polyline.o polyline.cpp
 
 release/rectangle.o: rectangle.cpp rectangle.h \
@@ -2199,7 +2213,8 @@ release/rectangle.o: rectangle.cpp rectangle.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfont.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontmetrics.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		vector.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\rectangle.o rectangle.cpp
 
 release/renderarea.o: renderarea.cpp renderarea.h \
@@ -2496,7 +2511,18 @@ release/shape.o: shape.cpp shape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfont.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontmetrics.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		vector.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QDebug \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qdebug.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtextstream.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringconverter_base.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qmap.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qshareddata_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qset.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qhash.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qvarlengtharray.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\shape.o shape.cpp
 
 release/testimonial.o: testimonial.cpp testimonial.h \
@@ -2740,6 +2766,7 @@ release/text.o: text.cpp text.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontmetrics.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		vector.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\text.o text.cpp
 

@@ -11,6 +11,7 @@
 #include <QSpinBox>
 #include <QGridLayout>
 #include <QDebug>
+#include <QObject>
 #include "shape.h"
 #include "textparser.h"
 #include "renderarea.h"
@@ -35,7 +36,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-
+    void createRenderArea();
+    QPainter painter;   // ?
     vector<Shape*> shapeVector;
     TextParser *textParser;
     RenderArea *renderArea;
@@ -55,8 +57,6 @@ private:
     QCheckBox *antialiasingCheckBox;
     QCheckBox *transformationsCheckBox;
 
-private:
-    void createRenderArea();
 
 private slots:
     void shapeChanged(int);

@@ -236,7 +236,7 @@ Qt::AlignmentFlag TextParser::GetAlignment(QString align)
 
 vector<Shape*> TextParser::ReadFile(QString fileName)
 {
-    vector<Shape*> v_Shapes;
+    vector<Shape*> v_Shapes(4);
     QDir directory;
 
     QString fullPath = directory.absoluteFilePath(fileName);
@@ -636,7 +636,7 @@ Shape* TextParser::ReadText(QTextStream &fin, int id)
     QList<int> points;
     int l;
     int w;
-    TextParser tempObj;
+//    TextParser tempObj;
 
     // 1) Get Dimensions
     // Get all the points
@@ -654,7 +654,7 @@ Shape* TextParser::ReadText(QTextStream &fin, int id)
     color = fin.readLine().remove(0, 11);
 
     // Get alignment
-    alignment = tempObj.GetAlignment(fin.readLine().remove(0, 15));
+    alignment = this->GetAlignment(fin.readLine().remove(0, 15));
 
     // Get point size
     textPointSize = fin.readLine().remove(0, 15).toInt();
@@ -668,7 +668,7 @@ Shape* TextParser::ReadText(QTextStream &fin, int id)
 
     // make a new shape
     Text* textObj = new Text(id, text,
-                             tempObj.CreateFont(fontFamily, textPointSize,
+                             this->CreateFont(fontFamily, textPointSize,
                                                 fontWeight, fontStyle),
                              color, pos, l, w, alignment);
 

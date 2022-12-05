@@ -13,6 +13,7 @@ Shape::Shape(QPaintDevice* device,
 {
     shapePen = Qt::SolidLine;
     shapeBrush = Qt::NoBrush;
+
 }
 
 //COPY OPERATIONS DELETED

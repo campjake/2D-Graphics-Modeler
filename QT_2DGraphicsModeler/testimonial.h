@@ -2,6 +2,7 @@
 #define TESTIMONIAL_H
 
 #include <QDialog>
+#include <QObject>
 
 namespace Ui {
 class testimonial;

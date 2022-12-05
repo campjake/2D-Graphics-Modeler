@@ -40,7 +40,7 @@ void RenderArea::setTransformed(bool transformed)
     update();
 }
 
-void RenderArea::paintEvent(QPaintEvent *event )
+void RenderArea::paintEvent(QPaintEvent *)
 {
 //    static const QPoint points[4] = {
 //        QPoint(10, 80),

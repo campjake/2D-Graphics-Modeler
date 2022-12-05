@@ -91,6 +91,8 @@ class TextParser
     // Post-Conditions - Returns an alignment flag
     Qt::AlignmentFlag GetAlignment(QString align);
 
+//    virtual void foo() = 0;
+
 };
 
 #endif // FILEPARSER_H_

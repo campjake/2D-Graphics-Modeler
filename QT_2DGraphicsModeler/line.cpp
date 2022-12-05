@@ -21,7 +21,8 @@ Line::Line(QPaintDevice* device, int anID,
 Line::Line(int anID, QPoint first, QPoint last)
     : point1{first}, point2{last}
 {
-       this->SetID(anID);
+    this->SetID(anID);
+    this->SetShapeType(ShapeType::Line);
     qInfo() << "You constructed a Line\n";
 }
 //operators
