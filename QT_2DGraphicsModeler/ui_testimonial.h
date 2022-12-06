@@ -15,7 +15,6 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QTextEdit>
 
 QT_BEGIN_NAMESPACE
@@ -32,7 +31,6 @@ public:
     QLabel *label_name3;
     QLabel *label_testTitle;
     QDialogButtonBox *button_Save;
-    QTextBrowser *textBrowser;
     QTextEdit *textEdit;
 
     void setupUi(QDialog *testimonial)
@@ -50,34 +48,34 @@ public:
         label_title->setFont(font);
         label_test1 = new QLabel(testimonial);
         label_test1->setObjectName("label_test1");
-        label_test1->setGeometry(QRect(110, 60, 411, 71));
+        label_test1->setGeometry(QRect(140, 80, 411, 71));
         QFont font1;
         font1.setPointSize(12);
         font1.setItalic(true);
         label_test1->setFont(font1);
         label_name1 = new QLabel(testimonial);
         label_name1->setObjectName("label_name1");
-        label_name1->setGeometry(QRect(300, 110, 161, 31));
+        label_name1->setGeometry(QRect(350, 140, 161, 31));
         label_name1->setFont(font1);
         label_test2 = new QLabel(testimonial);
         label_test2->setObjectName("label_test2");
-        label_test2->setGeometry(QRect(70, 120, 511, 71));
+        label_test2->setGeometry(QRect(100, 150, 511, 71));
         label_test2->setFont(font1);
         label_name2 = new QLabel(testimonial);
         label_name2->setObjectName("label_name2");
-        label_name2->setGeometry(QRect(340, 160, 161, 31));
+        label_name2->setGeometry(QRect(390, 200, 161, 31));
         label_name2->setFont(font1);
         label_test3 = new QLabel(testimonial);
         label_test3->setObjectName("label_test3");
-        label_test3->setGeometry(QRect(20, 170, 561, 71));
+        label_test3->setGeometry(QRect(30, 220, 561, 71));
         label_test3->setFont(font1);
         label_name3 = new QLabel(testimonial);
         label_name3->setObjectName("label_name3");
-        label_name3->setGeometry(QRect(370, 220, 181, 31));
+        label_name3->setGeometry(QRect(400, 280, 181, 31));
         label_name3->setFont(font1);
         label_testTitle = new QLabel(testimonial);
         label_testTitle->setObjectName("label_testTitle");
-        label_testTitle->setGeometry(QRect(10, 330, 311, 31));
+        label_testTitle->setGeometry(QRect(10, 300, 311, 31));
         QFont font2;
         font2.setPointSize(11);
         font2.setBold(true);
@@ -86,12 +84,9 @@ public:
         button_Save->setObjectName("button_Save");
         button_Save->setGeometry(QRect(420, 450, 193, 29));
         button_Save->setStandardButtons(QDialogButtonBox::Save);
-        textBrowser = new QTextBrowser(testimonial);
-        textBrowser->setObjectName("textBrowser");
-        textBrowser->setGeometry(QRect(10, 260, 601, 61));
         textEdit = new QTextEdit(testimonial);
         textEdit->setObjectName("textEdit");
-        textEdit->setGeometry(QRect(10, 360, 601, 71));
+        textEdit->setGeometry(QRect(10, 330, 601, 111));
 
         retranslateUi(testimonial);
 
