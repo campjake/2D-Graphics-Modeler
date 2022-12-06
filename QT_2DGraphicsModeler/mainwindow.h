@@ -57,6 +57,8 @@ private:
     QCheckBox *antialiasingCheckBox;
     QCheckBox *transformationsCheckBox;
 
+    bool isAdmin = true;
+
 
 private slots:
     void shapeChanged(int);

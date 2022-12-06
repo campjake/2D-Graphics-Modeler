@@ -31,7 +31,7 @@ public slots:
     void setTransformed(bool transformed);
 
 protected:
-    void paintEvent(QPaintEvent *) override;
+    void paintEvent(QPaintEvent *event) override;
     QPainter* getPainter()
     {
         return &painter;

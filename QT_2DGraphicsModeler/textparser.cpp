@@ -343,6 +343,7 @@ Shape* TextParser::ReadLine(QTextStream &fin, int id)
 
     qInfo() << "You are about to try to dynamically make a Line\n";
 
+//    Line* line = new Line(id, front, end);
     Line* line = new Line(id, front, end);
     line->SetPen(color, width, penStyle, capStyle, joinStyle);
 

@@ -2,6 +2,7 @@
 #include "renderarea.h"
 #include "ui_mainwindow.h"
 #include <QApplication>
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -232,6 +233,14 @@ void MainWindow::brushChanged(int)
 
 void MainWindow::on_addLine_clicked()
 {
+    // Add a line to the vector shapeVector
+    // Would require a new class AddLine
+    // Only for admins
 
+    if(isAdmin)
+    {
+        // Creates a Line pointer and needs to draw it.
+    }
 }
+
 

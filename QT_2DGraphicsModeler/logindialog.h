@@ -17,6 +17,10 @@ class LoginDialog : public QDialog
 public:
     explicit LoginDialog(QWidget *parent = nullptr);
     ~LoginDialog();
+    bool adminCredentials()
+    {
+        return match;
+    }
 
 private slots:
 

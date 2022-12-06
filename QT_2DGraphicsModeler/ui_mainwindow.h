@@ -21,6 +21,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
+#include <renderarea.h>
 
 QT_BEGIN_NAMESPACE
 
@@ -36,6 +37,7 @@ public:
     QAction *actionShape_Area_Listing;
     QAction *actionShape_Perimeter_Listing;
     QWidget *centralwidget;
+    RenderArea *renderArea;
     QMenuBar *menubar;
     QMenu *menuFile;
     QMenu *menuMenu;
@@ -77,6 +79,10 @@ public:
         actionShape_Perimeter_Listing->setObjectName("actionShape_Perimeter_Listing");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
+        renderArea = new RenderArea(centralwidget);
+        renderArea->setObjectName("renderArea");
+        renderArea->setGeometry(QRect(0, 0, 741, 561));
+        renderArea->setCursor(QCursor(Qt::ArrowCursor));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
