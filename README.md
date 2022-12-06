@@ -21,23 +21,23 @@ that can be integrated into an existing software suite.
 ## Progress on Deliverables
 - [x] Uses Qt
 - [x] Uses GIT/Github
-- [ ] Uses Doxygen
-- [ ] Base class definition
-- [ ] Base class member function definitions
+- [x] Uses Doxygen
+- [x] Base class definition
+- [x] Base class member function definitions
 - [x] Derived class definitions
 - [x] Derived class implementation
 - [x] Vector class definition
-- [ ] Vector class implementation
-- [ ] Text class definition
-- [ ] Text class member function definitions
+- [x] Vector class implementation
+- [x] Text class definition
+- [x] Text class member function definitions
 - [ ] Shape Move setter (mutator) (admin only)
 - [x] Read shape attributes from file (Text Parser)
 - [ ] Objects print
 - [ ] Add/Remove Objects
 - [ ] Shape List Report
 - [ ] Save changes between executions
-- [ ] Contact Us Method
-- [ ] Testimonials
+- [x] Contact Us Method
+- [x] Testimonials
 - [ ] Passes valgrind memory check
 - [x] Extra Credit: Uses Agile Planning tools (Projects, Issues & Actions)
 
