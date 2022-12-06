@@ -14,6 +14,10 @@ testimonial::~testimonial()
     delete ui;
 }
 
+
+
+
+
 void testimonial::on_button_Save_accepted()
 {
     QString fileName = QString("testimonial.txt");
@@ -30,6 +34,4 @@ void testimonial::on_button_Save_accepted()
 
     file.close();
 }
-
-
 
