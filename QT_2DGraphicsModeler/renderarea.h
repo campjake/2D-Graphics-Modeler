@@ -23,7 +23,7 @@ class RenderArea : public QWidget
 public:
     explicit RenderArea(QWidget *parent = nullptr);
 
-    void setData(const vector<Shape*> data);
+    void setData(vector<Shape*>* data);
 
 public slots:
     void setPen(const QPen &pen);
@@ -44,7 +44,7 @@ private:
     bool antialiased;
     bool transformed;
     QPixmap pixmap;
-    vector<Shape*> shapeVector;
+    vector<Shape*>* shapeVector;
     QPainter painter;
 };
 

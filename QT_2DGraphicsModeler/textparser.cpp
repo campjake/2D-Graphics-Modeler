@@ -5,6 +5,7 @@ const QMap<ShapeNames, QString> shapeMap = {
     {ShapeNames::POLYLINE, "Polyline"},
     {ShapeNames::POLYGON, "Polygon"},
     {ShapeNames::RECTANGLE, "Rectangle"},
+    {ShapeNames::SQUARE, "Square"},
     {ShapeNames::ELLIPSE, "Ellipse"},
     {ShapeNames::CIRCLE, "Circle"},
     {ShapeNames::TEXT, "Text"}
@@ -232,10 +233,9 @@ Qt::AlignmentFlag TextParser::GetAlignment(QString align)
 }
 
 
-vector<Shape*> TextParser::ReadFile(QString fileName,
+vector<Shape*>* TextParser::ReadFile(QString fileName,
                                     QPaintDevice* device)
 {
-    vector<Shape*> v_Shapes(4);
     QDir directory;
 
     QString fullPath = directory.absoluteFilePath(fileName);
@@ -251,7 +251,7 @@ vector<Shape*> TextParser::ReadFile(QString fileName,
     {
         QMessageBox::information(0, "file error", file.errorString());
 
-        return v_Shapes; // BUG??
+        return &v_Shapes; // BUG??
     }
     else
     {
@@ -281,43 +281,50 @@ vector<Shape*> TextParser::ReadFile(QString fileName,
             break;
 
             case POLYLINE 	: v_Shapes.push_back(ReadPolyline(fin, id, device));
+                                qInfo() << "You added a PolyLine\n";
             break;
 
             case POLYGON 	: v_Shapes.push_back(ReadPolygon(fin, id, device));
+                                qInfo() << "You added a Polygon\n";
             break;
 
             case RECTANGLE 	: v_Shapes.push_back(ReadRectangle(fin, id, device));
+                                qInfo() << "You added a Rect\n";
             break;
 
             case SQUARE		: v_Shapes.push_back(ReadSquare(fin, id, device));
+                                qInfo() << "You added a Square\n";
             break;
 
             case ELLIPSE 	: v_Shapes.push_back(ReadEllipse(fin, id, device));
+                                qInfo() << "You added an Ellipse\n";
             break;
 
             case CIRCLE		: v_Shapes.push_back(ReadCircle(fin, id, device));
+                                qInfo() << "You added a Circle\n";
             break;
 
             case TEXT 		: v_Shapes.push_back(ReadText(fin, id, device));
+                                qInfo() << "You added a TextBox\n";
             break;
 
-        default :     return v_Shapes;  // hmmm...
+        default :     return &v_Shapes;  // hmmm...
 
         }
-
+        count++;
 
     }
 
     qInfo("\nSuccessfully Loaded Vector\n");
     file.close();
-    return v_Shapes;
+    return &v_Shapes;
 }
 
 Shape* TextParser::ReadLine(QTextStream &fin, int id,
                             QPaintDevice* device)
 {
     QList<int> points;
-    QColor  color;
+    QString  col;
     int     width;
     Qt::PenStyle penStyle;
     Qt::PenCapStyle capStyle;
@@ -331,7 +338,8 @@ Shape* TextParser::ReadLine(QTextStream &fin, int id,
     QPoint end(points[2], points[3]);
 
     // Get color
-    color = fin.readLine().remove(0, 10);
+    col = fin.readLine().remove(0, 10);
+    QColor color(col);
 
     // Get width
     width = fin.readLine().remove(0, 10).toInt();
@@ -342,14 +350,14 @@ Shape* TextParser::ReadLine(QTextStream &fin, int id,
     joinStyle = GetPenJoinStyle(fin.readLine().remove(0, 14));
     QPen pen(Qt::NoBrush, width, penStyle,
              capStyle, joinStyle);
-    qInfo() << "You are about to try to dynamically make a Line\n";
+//    qInfo() << "You are about to try to dynamically make a Line\n";
 
 //    Line* line = new Line(id, front, end);
     Line* line = new Line(device, id,
                           ShapeType::Line, pen);
     line->setPoints(front, end);
 
-//    line->SetPen(color, width, penStyle, capStyle, joinStyle);
+    line->SetPen(color, width, penStyle, capStyle, joinStyle);
 
     // Note - Line has no Brush, so we can get by with just QColor & no setBrush fcn
 
@@ -362,7 +370,7 @@ Shape* TextParser::ReadPolyline(QTextStream &fin, int id,
 {
     QList<int> points;
     QList<QPoint> pointList;
-    QColor  color;
+    QString col;
     int     width;
     Qt::PenStyle penStyle;
     Qt::PenCapStyle capStyle;
@@ -397,7 +405,9 @@ Shape* TextParser::ReadPolyline(QTextStream &fin, int id,
     }while(invalid);
 
     // Get color
-    color = fin.readLine().remove(0, 10);
+//    col = fin.readLine().remove(0, 10);
+    col = (fin.readLine().remove(0, 10));
+       QColor color( 0, 128, 0);
 
     // Get width
     width = fin.readLine().remove(0, 10).toInt();
@@ -413,7 +423,7 @@ Shape* TextParser::ReadPolyline(QTextStream &fin, int id,
     Polyline* polyline = new Polyline(device, id,
                                       ShapeType::Polyline,
                                       pen);
-    polyline->SetPoints(&pointList);
+    polyline->SetPoints(pointList);
     polyline->SetPen(color, width, penStyle, capStyle, joinStyle);
 
     // Note - Polyline has no Brush, so we can get by with just QColor & no setBrush fcn
@@ -426,7 +436,7 @@ Shape* TextParser::ReadPolygon(QTextStream &fin, int id,
 {
     QList<int> points;
     QList<QPoint> pointList;
-    QColor  color;
+    QString  col;
     int     width;
     Qt::PenStyle penStyle;
     Qt::PenCapStyle capStyle;
@@ -460,8 +470,8 @@ Shape* TextParser::ReadPolygon(QTextStream &fin, int id,
     }while(invalid);
 
     // Get color
-    color = fin.readLine().remove(0, 10);
-
+    col = fin.readLine().remove(0, 10);
+    QColor color(col);
     // Get width
     width = fin.readLine().remove(0, 10).toInt();
 
@@ -478,7 +488,7 @@ Shape* TextParser::ReadPolygon(QTextStream &fin, int id,
     Polygon* polygon = new Polygon(device, id,
                                    ShapeType::Polygon);
 
-    polygon->SetPoints(&pointList);
+    polygon->SetPoints(pointList);
     polygon->SetPen(color, width, penStyle, capStyle, joinStyle);
     polygon->SetBrush(brushColor, GetBrushStyle(brushStyle));
 
@@ -489,7 +499,7 @@ Shape* TextParser::ReadRectangle(QTextStream &fin, int id,
                                  QPaintDevice* device)
 {
     QList<int> points;
-    QColor  color;
+    QString  col;
     int l;
     int w;
     int     penWidth;
@@ -506,8 +516,8 @@ Shape* TextParser::ReadRectangle(QTextStream &fin, int id,
     w = points[3];
 
     // Get color
-    color = fin.readLine().remove(0, 10);
-
+    col = fin.readLine().remove(0, 10);
+    QColor color(col);
     // Get width
     penWidth = fin.readLine().remove(0, 10).toInt();
 
@@ -517,12 +527,13 @@ Shape* TextParser::ReadRectangle(QTextStream &fin, int id,
     joinStyle = GetPenJoinStyle(fin.readLine().remove(0, 14));
 
     // Brush Properties
-    QColor brushColor = fin.readLine().remove(0, 12);
+    QString brushCol = fin.readLine().remove(0, 12);
+    QColor brushColor(brushCol);
     QString brushStyle = fin.readLine().remove(0, 12);
 
     Rectangle* rectangle = new Rectangle(device, id,
                                          ShapeType::Rectangle,
-                                         l, w);
+                                         w, l);
     rectangle->SetPos(pos);
     rectangle->SetPen(color, penWidth, penStyle, capStyle, joinStyle);
     rectangle->SetBrush(brushColor, GetBrushStyle(brushStyle));
@@ -533,7 +544,7 @@ Shape* TextParser::ReadSquare(QTextStream &fin, int id,
                               QPaintDevice* device)
 {
     QList<int> points;
-    QColor  color;
+    QString  col;
     int l;
     int     penWidth;
     Qt::PenStyle penStyle;
@@ -545,11 +556,11 @@ Shape* TextParser::ReadSquare(QTextStream &fin, int id,
 
     // Now create a QPoint variable
     QPoint pos(points[0], points[1]);
-    l = points[3];
+    l = points[2];
 
     // Get color
-    color = fin.readLine().remove(0, 10);
-
+    col = fin.readLine().remove(0, 10);
+    QColor color(col);
     // Get width
     penWidth = fin.readLine().remove(0, 10).toInt();
 
@@ -559,7 +570,8 @@ Shape* TextParser::ReadSquare(QTextStream &fin, int id,
     joinStyle = GetPenJoinStyle(fin.readLine().remove(0, 14));
 
     // Brush Properties
-    QColor brushColor = fin.readLine().remove(0, 12);
+    QString brushCol = fin.readLine().remove(0, 12);
+    QColor brushColor(brushCol);
     QString brushStyle = fin.readLine().remove(0, 12);
 
     Rectangle* square = new Rectangle(device, id,
@@ -574,8 +586,8 @@ Shape* TextParser::ReadSquare(QTextStream &fin, int id,
 Shape* TextParser::ReadEllipse(QTextStream &fin, int id,
                                QPaintDevice* device)
 {
-    QList<int> points(5);
-    QColor  color;
+    QList<int> points;
+    QString  col;
     int a;      // major axis
     int b;      // minor axis
     int     penWidth;
@@ -588,12 +600,12 @@ Shape* TextParser::ReadEllipse(QTextStream &fin, int id,
 
     // Now create a QPoint variable
     QPoint pos(points[0], points[1]);
-    a = points[3];
-    b = points[4];
+    a = points[2];
+    b = points[3];
 
     // Get color
-    color = fin.readLine().remove(0, 10);
-
+    col = fin.readLine().remove(0, 10);
+    QColor color(col);
     // Get width
     penWidth = fin.readLine().remove(0, 10).toInt();
 
@@ -603,7 +615,8 @@ Shape* TextParser::ReadEllipse(QTextStream &fin, int id,
     joinStyle = GetPenJoinStyle(fin.readLine().remove(0, 14));
 
     // Brush Properties
-    QColor brushColor = fin.readLine().remove(0, 12);
+    QString brushCol   = fin.readLine().remove(0, 12);
+    QColor  brushColor(brushCol);
     QString brushStyle = fin.readLine().remove(0, 12);
 
     Ellipse* ellipse = new Ellipse(device, id,
@@ -619,7 +632,7 @@ Shape* TextParser::ReadCircle(QTextStream &fin, int id,
                               QPaintDevice* device)
 {
     QList<int> points;
-    QColor  color;
+    QString  col;
     int r;
     int     penWidth;
     Qt::PenStyle penStyle;
@@ -631,11 +644,11 @@ Shape* TextParser::ReadCircle(QTextStream &fin, int id,
 
     // Now create a QPoint variable
     QPoint pos(points[0], points[1]);
-    r = points[3];
+    r = points[2];
 
     // Get color
-    color = fin.readLine().remove(0, 10);
-
+    col = fin.readLine().remove(0, 10);
+    QColor color(col);
     // Get width
     penWidth = fin.readLine().remove(0, 10).toInt();
 
@@ -645,7 +658,8 @@ Shape* TextParser::ReadCircle(QTextStream &fin, int id,
     joinStyle = GetPenJoinStyle(fin.readLine().remove(0, 14));
 
     // Brush Properties
-    QColor brushColor = fin.readLine().remove(0, 12);
+    QString brushCol   = fin.readLine().remove(0, 12);
+    QColor brushColor(brushCol);
     QString brushStyle = fin.readLine().remove(0, 12);
 
     Ellipse* circle = new Ellipse(device, id,
@@ -662,7 +676,7 @@ Shape* TextParser::ReadText(QTextStream &fin, int id,
                             QPaintDevice* device)
 {
     QString text;
-    QColor  color;
+    QString  col;
     Qt::AlignmentFlag     alignment;
     int     textPointSize;
     QString fontFamily;
@@ -679,15 +693,15 @@ Shape* TextParser::ReadText(QTextStream &fin, int id,
 
     // Now create a QPoint variable
     QPoint pos(points[0], points[1]);
-    l = points[3];
-    w = points[4];
+    l = points[2];
+    w = points[3];
 
     // Get text string
     text  = fin.readLine().remove(0, 12);
 
     // Get color
-    color = fin.readLine().remove(0, 11);
-
+    col = fin.readLine().remove(0, 11);
+    QColor color(col);
     // Get alignment
     alignment = this->GetAlignment(fin.readLine().remove(0, 15));
 
@@ -706,6 +720,7 @@ Shape* TextParser::ReadText(QTextStream &fin, int id,
 
     textObj->SetFont(CreateFont(fontFamily, textPointSize,
                                 fontWeight, fontStyle));
+
     textObj->SetTextString(text);
     textObj->SetColor(color);
     textObj->SetAlignment(alignment);

@@ -8,13 +8,14 @@ Polyline::Polyline(QPaintDevice* device, int anID, ShapeType shapeType) : Shape(
 //constructor with pen and brush
 Polyline::Polyline(QPaintDevice* device, int anID,
                    ShapeType shapeType, QPen thatPen)
-    : Shape(device, anID, shapeType)
+    : Shape(device, anID, shapeType),
+      LinePoints{new QList<QPoint>}
 {
     SetPen(thatPen);
 }
 
 // Parser Constructor
-Polyline::Polyline(int anID, QList<QPoint>* list)
+Polyline::Polyline(int anID, QList<QPoint> list)
 {
     this->SetID(anID);
     SetPoints(list);
@@ -23,9 +24,16 @@ Polyline::Polyline(int anID, QList<QPoint>* list)
 //Abstract functions from base
 void Polyline::Draw(QPainter* painter)
 {
+    // QPainter doesn't like this list, and wants an array
+    QPoint pointList[GetNumPoints()];
+    for(int i = 0; i < GetNumPoints(); i++)
+    {
+        pointList[i] = (*LinePoints)[i];
+    }
+
     painter->setPen(GetPen());
     painter->setBrush(GetBrush());
-    painter->drawPolyline(LinePoints->begin(), LinePoints->count());
+    painter->drawPolyline(pointList, GetNumPoints());
 }
 
 //Moves first point
@@ -93,9 +101,12 @@ void Polyline::addPoint(const QPoint& point)
     LinePoints->push_back(point);
 }
 
-void Polyline::SetPoints(QList<QPoint>* points)
+void Polyline::SetPoints(QList<QPoint> points)
 {
-    LinePoints = std::move(points);
+    for(int i = 0; i < points.size(); i++)
+    {
+        LinePoints->push_back(points[i]);
+    }
 }
 
 //Moves all points by an offset in x and y

@@ -38,11 +38,11 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    void createRenderArea();
+    RenderArea* createRenderArea();
     QPainter* painter;          // ?
-    vector<Shape*> shapeVector;
-    TextParser *textParser;
+    vector<Shape*>* shapeVector;
     RenderArea *renderArea;
+    TextParser *textParser;
     QLabel *shapeLabel;
     QLabel *penWidthLabel;
     QLabel *penStyleLabel;

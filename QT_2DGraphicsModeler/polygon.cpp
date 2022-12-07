@@ -4,7 +4,8 @@
 Polygon::Polygon(QPaintDevice *device,
                  int anID,
                  ShapeType shapeType)
-    : Shape{device, anID, shapeType}
+    : Shape{device, anID, shapeType},
+      polyPoints{new QList<QPoint>}
 {
     SetPen(Qt::SolidLine);
     SetBrush(Qt::black, Qt::BrushStyle::SolidPattern);
@@ -161,9 +162,12 @@ bool Polygon::operator==(const Polygon& otherPolygon)
 // SetPoints function uses QList move assignment
 // Pre-Conditions - A QList of QPoint variables
 // Post-Conditions - Sets new points for the Polygon
-void Polygon::SetPoints(QList<QPoint>* points)
+void Polygon::SetPoints(QList<QPoint> points)
 {
-    polyPoints = std::move(points);
+    for(int i = 0; i < points.size(); i++)
+    {
+        polyPoints->push_back(points[i]);
+    }
 }
 
 // Draw Function for Polygon
@@ -171,9 +175,16 @@ void Polygon::SetPoints(QList<QPoint>* points)
 // Post-Conditions - Draws a Polygon
 void Polygon::Draw(QPainter* painter)
 {
+    // QPainter doesn't like this list, and wants an array
+    QPoint pointList[GetPointCount()];
+    for(int i = 0; i < GetPointCount(); i++)
+    {
+        pointList[i] = (*polyPoints)[i];
+    }
+
     painter->setBrush(GetBrush());
     painter->setPen(GetPen());
-    painter->drawPolygon(polyPoints->begin(), polyPoints->count());
+    painter->drawPolygon(pointList, GetPointCount());
 }
 
 // Move Function for Polygon should use SetPoints?
@@ -226,9 +237,9 @@ double Polygon::CalcArea() const
     // https://tinyurl.com/mvfjt3np (Wikipedia)
 
     double area = 0;
-    int sizeCopy = polyPoints->size();
+    int sizeCopy = GetPointCount() - 1;
 
-    for(int i = 0; i < polyPoints->size(); i++)
+    for(int i = 0; i < GetPointCount(); i++)
     {
         area += ((polyPoints->at(sizeCopy).x() + polyPoints->at(i).x()) *
                  (polyPoints->at(sizeCopy).y() + polyPoints->at(i).y()));

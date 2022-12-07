@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "renderarea.h"
+#include "shape.h"
 #include "ui_mainwindow.h"
 #include <QApplication>
 
@@ -11,13 +12,12 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-//    textParser = new TextParser; // ?
     createRenderArea();
-    TextParser textParser(renderArea);
+    textParser = new TextParser;
     connect(ui->actionContact_Us,SIGNAL(triggered()),this,SLOT(on_actionContact_Us_triggered()));
     connect(ui->actionCustomer_Testimonials,SIGNAL(triggered()),this,SLOT(on_actionCustomer_Testimonials_triggered()));
-
+    shapeVector = textParser->ReadFile("shapes.txt", renderArea);
+    renderArea->setData(std::move(shapeVector));
 }
 
 MainWindow::~MainWindow()
@@ -53,14 +53,14 @@ void MainWindow::on_actionOpen_File_triggered()
 
     shapeVector = textParser->ReadFile(fileName, renderArea);
 
-    for( int i = 0; i < shapeVector.size(); i++)
+    for( int i = 0; i < shapeVector->size(); i++)
     {
-        qDebug() << "Shape #: " << shapeVector[i]->GetID();
+        qDebug() << "Shape #: " << (*shapeVector)[i]->GetID();
     }
 
 }
 
-void MainWindow::createRenderArea()
+RenderArea* MainWindow::createRenderArea()
 {
     renderArea = new RenderArea;
 
@@ -186,13 +186,14 @@ void MainWindow::createRenderArea()
     antialiasingCheckBox->setChecked(true);
 
     //    setWindowTitle(tr("Basic Drawing"));
+    return renderArea;
 }
 
 void MainWindow::shapeChanged(int)
 {
     ShapeNames shape = ShapeNames(shapeComboBox->itemData(
             shapeComboBox->currentIndex(), Qt::UserRole).toInt());
-    renderArea->setData(std::move(shapeVector));
+    renderArea->setData(shapeVector);
 }
 
 void MainWindow::penChanged(int)

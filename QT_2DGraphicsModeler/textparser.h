@@ -35,14 +35,21 @@ enum ShapeNames
 class TextParser
 {
     public :
-    TextParser(QPaintDevice* device = nullptr)
-        : device{device}
+    TextParser()
+        : count{0}
     {}
+    ~TextParser()
+    {
+        for(int i = 0; i < count; i++)
+        {
+            delete v_Shapes[i];
+        }
+    }
 
     // Mutator - Read file
     // Pre-conditions  : QString file
     // Post-conditions : Reurns a vector of Shape pointer(s)
-    vector<Shape*> ReadFile(QString file = "shapes.txt",
+    vector<Shape*>* ReadFile(QString file = "shapes.txt",
                             QPaintDevice* device = nullptr);
 
 //    private :
@@ -105,7 +112,9 @@ class TextParser
 //    virtual void foo() = 0;
 
 private:
-    QPaintDevice* device;
+//    QPaintDevice* device;
+    vector<Shape*> v_Shapes;
+    int count;
 
 };
 

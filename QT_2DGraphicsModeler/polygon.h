@@ -51,7 +51,10 @@ public:
     // Get List of Points of Polygon
     QList<QPoint>* GetPoints() const;
 
-    int GetPointCount() const;
+    int GetPointCount() const
+    {
+        return polyPoints->size();
+    }
 
     // MUTATORS / SETTERS
 
@@ -80,7 +83,7 @@ public:
 //    void SetPos(const QPoint thatPos);
 
     // Set QList of Points for Polygone Shape
-    void SetPoints(QList<QPoint>* points);
+    void SetPoints(QList<QPoint> points);
 
     /******************* OVERRIDE Pure Virtual Fcns ********************/
     // Draw function
