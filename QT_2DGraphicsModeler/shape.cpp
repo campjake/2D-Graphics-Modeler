@@ -1,5 +1,7 @@
 #include "shape.h"
+//#include "mainwindow.h"
 #include <QDebug>
+
 
 // Default Shape Ctor
 // Pre-Conditions - NONE since parameters have default values
@@ -11,6 +13,7 @@ Shape::Shape(QPaintDevice* device,
       id{anID},
       shapeName{shapeType}
 {
+//    QPainter painter(device);
     shapePen = Qt::SolidLine;
     shapeBrush = Qt::NoBrush;
 
@@ -177,7 +180,7 @@ void Shape::SetPos(const QPoint thatPos)
 // Our sweet sweet lil protected guy
 // Pre-conditions - NONE
 // Post-Conditions - Returns a reference to a QPainter Object
-QPainter& Shape::get_qpainter()
+QPainter* Shape::getPainter()
 {
-    return qpainter;
+    return &painter;
 }

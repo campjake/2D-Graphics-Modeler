@@ -41,6 +41,8 @@ void Ellipse::setHeight(const int height)
 // Draw function
 void Ellipse::Draw(QPainter* painter)
 {
+    painter->setPen(GetPen());
+    painter->setBrush(GetBrush());
     painter->drawEllipse(a, b, width, height);
 }
 

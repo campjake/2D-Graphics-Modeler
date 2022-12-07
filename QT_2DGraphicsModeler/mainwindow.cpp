@@ -3,7 +3,7 @@
 #include "ui_mainwindow.h"
 #include <QApplication>
 
-// static qpainter?
+
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -12,10 +12,12 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    textParser = new TextParser;
+//    textParser = new TextParser; // ?
     createRenderArea();
+    TextParser textParser(renderArea);
     connect(ui->actionContact_Us,SIGNAL(triggered()),this,SLOT(on_actionContact_Us_triggered()));
     connect(ui->actionCustomer_Testimonials,SIGNAL(triggered()),this,SLOT(on_actionCustomer_Testimonials_triggered()));
+
 }
 
 MainWindow::~MainWindow()
@@ -49,7 +51,12 @@ void MainWindow::on_actionOpen_File_triggered()
         return;
     }
 
-    shapeVector = textParser->ReadFile(fileName);
+    shapeVector = textParser->ReadFile(fileName, renderArea);
+
+    for( int i = 0; i < shapeVector.size(); i++)
+    {
+        qDebug() << "Shape #: " << shapeVector[i]->GetID();
+    }
 
 }
 
@@ -185,7 +192,7 @@ void MainWindow::shapeChanged(int)
 {
     ShapeNames shape = ShapeNames(shapeComboBox->itemData(
             shapeComboBox->currentIndex(), Qt::UserRole).toInt());
-//    renderArea->setData(shapeVector);
+    renderArea->setData(std::move(shapeVector));
 }
 
 void MainWindow::penChanged(int)

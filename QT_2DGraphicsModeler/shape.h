@@ -8,7 +8,7 @@
 #include <QPaintDevice>
 #include <QPoint>
 #include "vector.h"
-#include "renderarea.h"
+
 
 // GLOBAL QPAINTER VAR. -- ALL FILES THAT DRAW NEED THIS
 //QPainter qpainter;
@@ -24,7 +24,7 @@ class Shape
   public :
 
     // Constructor
-    Shape(QPaintDevice* device = qpainter.device(),
+    Shape(QPaintDevice* device = nullptr,
           int anID = -1,
           ShapeType shapeType = ShapeType::NoShape);
 
@@ -112,10 +112,10 @@ class Shape
     /*************************************************************/
 
   protected : //static
-  QPainter& get_qpainter();
+  QPainter* getPainter();
 
   private :
-    QPainter*    painter;
+    QPainter    painter;
     int   id;
     ShapeType   shapeName;
     QPen        shapePen;

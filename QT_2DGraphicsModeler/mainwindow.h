@@ -16,7 +16,7 @@
 #include "textparser.h"
 #include "renderarea.h"
 
-//QPainter painter;
+static QPainter staticQPainter;
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

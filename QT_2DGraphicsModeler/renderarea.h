@@ -16,9 +16,6 @@
 #include "ellipse.h"
 #include "text.h"
 
-// RenderArea should hold global qpainter?
-
-static QPainter qpainter;
 
 class RenderArea : public QWidget
 {

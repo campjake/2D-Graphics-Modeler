@@ -5,8 +5,8 @@
 Line::Line(QPaintDevice* device, int anID, ShapeType shapeType)
     : Shape{device, anID, shapeType}
 {
-    this->SetPen(Qt::SolidLine);
-//    this->SetBrush(Qt::NoBrush);
+    SetPen(Qt::SolidLine);
+//    SetBrush(Qt::NoBrush);
 }
 
 //constructor with pen and brush
@@ -15,6 +15,8 @@ Line::Line(QPaintDevice* device, int anID,
     : Shape(device, anID, shapeType)
 {
     SetPen(thatPen);
+//    SetBrush(Qt::NoBrush);
+
 }
 
 // Parser Constructor
@@ -45,13 +47,18 @@ bool Line::operator < (const Line& other)
 //Base class pure virtual functions
 
 //Draws line
-void Line::Draw(QPaintDevice* device)
+void Line::Draw(QPainter* painter)
 {
     // let global qpainter "painter" do the drawing
+    // ^^ so we don't need the parameter?
 
     painter->setPen(GetPen());
-    painter->setBrush(GetBrush());
+//    painter->setBrush(GetBrush());
     painter->drawLine(point1, point2);
+//    this->getPainter()->setPen(GetPen());
+//    this->getPainter()->setBrush(GetBrush());
+//    this->getPainter()->drawLine(point1, point2);
+
 }
 
 //Moves first point

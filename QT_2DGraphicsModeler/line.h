@@ -8,10 +8,10 @@ class Line : virtual public Shape
 public:
 public:
     //Constructor
-    Line(QPaintDevice* device = nullptr, int anID = -1, ShapeType shapeType = ShapeType::Polyline);
+    Line(QPaintDevice* device = nullptr, int anID = -1, ShapeType shapeType = ShapeType::Line);
 
     //constructor with pen and brush
-    Line(QPaintDevice* device = nullptr, int anID = -1, ShapeType shapeType = ShapeType::Polyline,
+    Line(QPaintDevice* device = nullptr, int anID = -1, ShapeType shapeType = ShapeType::Line,
         QPen thatPen = Qt::SolidLine);
 
     // Constructor for Parser

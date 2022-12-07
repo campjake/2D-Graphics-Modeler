@@ -35,25 +35,36 @@ enum ShapeNames
 class TextParser
 {
     public :
-    // Accept defaults of ctor, dtor, copy, move operations
+    TextParser(QPaintDevice* device = nullptr)
+        : device{device}
+    {}
 
     // Mutator - Read file
     // Pre-conditions  : QString file
     // Post-conditions : Reurns a vector of Shape pointer(s)
-    vector<Shape*> ReadFile(QString file = "shapes.txt");
+    vector<Shape*> ReadFile(QString file = "shapes.txt",
+                            QPaintDevice* device = nullptr);
 
 //    private :
     // ReadFile requires several helper functions
     // Make private because they are only called within ReadFile
 
-    Shape* ReadLine(QTextStream &fin, int id);
-    Shape* ReadPolyline(QTextStream &fin, int id);
-    Shape* ReadPolygon(QTextStream &fin, int id);
-    Shape* ReadRectangle(QTextStream &fin, int id);
-    Shape* ReadSquare(QTextStream &fin, int id);
-    Shape* ReadEllipse(QTextStream &fin, int id);
-    Shape* ReadCircle(QTextStream &fin, int id);
-    Shape* ReadText(QTextStream &fin, int id);
+    Shape* ReadLine(QTextStream &fin, int id,
+                    QPaintDevice* device);
+    Shape* ReadPolyline(QTextStream &fin, int id,
+                        QPaintDevice* device);
+    Shape* ReadPolygon(QTextStream &fin, int id,
+                       QPaintDevice* device);
+    Shape* ReadRectangle(QTextStream &fin, int id,
+                         QPaintDevice* device);
+    Shape* ReadSquare(QTextStream &fin, int id,
+                      QPaintDevice* device);
+    Shape* ReadEllipse(QTextStream &fin, int id,
+                       QPaintDevice* device);
+    Shape* ReadCircle(QTextStream &fin, int id,
+                      QPaintDevice* device);
+    Shape* ReadText(QTextStream &fin, int id,
+                    QPaintDevice* device);
 
     // Pen Properties
 
@@ -92,6 +103,9 @@ class TextParser
     Qt::AlignmentFlag GetAlignment(QString align);
 
 //    virtual void foo() = 0;
+
+private:
+    QPaintDevice* device;
 
 };
 
