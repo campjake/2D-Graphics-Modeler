@@ -1,6 +1,4 @@
 #include "textparser.h"
-#include <map>
-
 
 const QMap<ShapeNames, QString> shapeMap = {
     {ShapeNames::LINE, "Line"},

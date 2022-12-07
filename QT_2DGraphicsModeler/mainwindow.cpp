@@ -3,6 +3,9 @@
 #include "ui_mainwindow.h"
 #include <QApplication>
 
+// static qpainter?
+
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)

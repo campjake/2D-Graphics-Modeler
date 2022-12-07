@@ -7,7 +7,7 @@
 Shape::Shape(QPaintDevice* device,
              int anID,
              ShapeType shapeType)
-    : qpainter{device},
+    : painter{device},
       id{anID},
       shapeName{shapeType}
 {

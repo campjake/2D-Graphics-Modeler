@@ -62,7 +62,9 @@ void RenderArea::paintEvent(QPaintEvent *event)
 
     QPainter painter(this);
     painter.setPen(pen);
-    painter.setBrush(brush);
+    painter.setBrush(brush);    // delete?
+
+
     if (antialiased)
         painter.setRenderHint(QPainter::Antialiasing, true);
 
@@ -102,13 +104,8 @@ void RenderArea::paintEvent(QPaintEvent *event)
     }
 /***************************************************************/
 
-    painter.setRenderHint(QPainter::Antialiasing, false);
-    painter.setPen(palette().dark().color());
-    painter.setBrush(Qt::NoBrush);
-    painter.drawRect(QRect(0, 0, width() - 1, height() - 1));
-
     // Our implementation doesn't work  :(
-//    Rectangle* recta = new Rectangle(nullptr, 8, ShapeType::Rectangle,
+//    Shape* shape = new Shape(nullptr, 8, ShapeType::Rectangle,
 //                                    4, 4);
 //    shapeVector.push_back(recta);
 //    shapeVector.resize(1);
@@ -116,9 +113,16 @@ void RenderArea::paintEvent(QPaintEvent *event)
 //    {
 //        if(shapeVector.size() > 0)
 //        {
-//            shapeVector[index]->Draw(&painter);
+//            shapeVector[index]->Draw(this);
 //        }
 //    }
+
+    painter.setRenderHint(QPainter::Antialiasing, false);
+    painter.setPen(palette().dark().color());
+    painter.setBrush(Qt::NoBrush);
+    painter.drawRect(QRect(0, 0, width() - 1, height() - 1));
+
+
 
 
 }

@@ -8,6 +8,10 @@
 #include <QPaintDevice>
 #include <QPoint>
 #include "vector.h"
+#include "renderarea.h"
+
+// GLOBAL QPAINTER VAR. -- ALL FILES THAT DRAW NEED THIS
+//QPainter qpainter;
 
 enum class ShapeType
 {
@@ -20,7 +24,7 @@ class Shape
   public :
 
     // Constructor
-    Shape(QPaintDevice* device = nullptr,
+    Shape(QPaintDevice* device = qpainter.device(),
           int anID = -1,
           ShapeType shapeType = ShapeType::NoShape);
 
@@ -107,11 +111,11 @@ class Shape
     virtual double CalcArea() const = 0;
     /*************************************************************/
 
-  protected :
+  protected : //static
   QPainter& get_qpainter();
 
   private :
-    QPainter   qpainter;
+    QPainter*    painter;
     int   id;
     ShapeType   shapeName;
     QPen        shapePen;

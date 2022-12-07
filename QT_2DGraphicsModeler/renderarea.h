@@ -16,13 +16,17 @@
 #include "ellipse.h"
 #include "text.h"
 
+// RenderArea should hold global qpainter?
+
+static QPainter qpainter;
+
 class RenderArea : public QWidget
 {
     Q_OBJECT
 public:
     explicit RenderArea(QWidget *parent = nullptr);
 
-    void setData(vector<Shape*> data);
+    void setData(const vector<Shape*> data);
 
 public slots:
     void setPen(const QPen &pen);

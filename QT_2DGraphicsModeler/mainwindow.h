@@ -16,6 +16,8 @@
 #include "textparser.h"
 #include "renderarea.h"
 
+//QPainter painter;
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -37,7 +39,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     void createRenderArea();
-    QPainter* painter;   // ?
+    QPainter* painter;          // ?
     vector<Shape*> shapeVector;
     TextParser *textParser;
     RenderArea *renderArea;

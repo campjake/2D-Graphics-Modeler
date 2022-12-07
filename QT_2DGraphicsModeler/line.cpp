@@ -45,8 +45,10 @@ bool Line::operator < (const Line& other)
 //Base class pure virtual functions
 
 //Draws line
-void Line::Draw(QPainter* painter)
+void Line::Draw(QPaintDevice* device)
 {
+    // let global qpainter "painter" do the drawing
+
     painter->setPen(GetPen());
     painter->setBrush(GetBrush());
     painter->drawLine(point1, point2);
