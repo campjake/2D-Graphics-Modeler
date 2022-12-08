@@ -4,6 +4,10 @@
 A 2D graphic object modeling software for the fictional company 2D Graphics Modeler Inc. This is a 2D graphics rendering library 
 that can be integrated into an existing software suite.
 
+## Visualization of Time Spent on Project
+
+![Visualization of the codebase](./diagram.svg)
+
 ## Important Documents & Resources used for this project:
 
 ### [2D Graphics Modeler Class Project.pdf](https://github.com/campjake/2D-Graphics-Modeler/files/9841670/2D.Graphics.Modeler.Class.Project.1.pdf)
@@ -67,7 +71,4 @@ that can be integrated into an existing software suite.
 - Matthew Chin
   - Role: Product Owner
   
-## Visualization of Time Spent on Project
-
-![Visualization of the codebase](./diagram.svg)
 
