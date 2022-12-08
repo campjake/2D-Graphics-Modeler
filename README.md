@@ -4,7 +4,7 @@
 A 2D graphic object modeling software for the fictional company 2D Graphics Modeler Inc. This is a 2D graphics rendering library 
 that can be integrated into an existing software suite.
 
-## Visualization of Time Spent on Project
+## Visualization of Code Files
 
 ![Visualization of the codebase](./diagram.svg)
 
