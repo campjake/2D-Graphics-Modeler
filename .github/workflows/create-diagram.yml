@@ -13,4 +13,4 @@ jobs:
       - name: Update diagram
         uses: githubocto/repo-visualizer@main
         with:
-          excluded_paths: "ignore,.github"
+          excluded_paths: "ignore,.github,build-QT_2DGraphicsModeler-Desktop_Qt_6_4_0_MinGW_64_bit-Debug,QT_2DGraphicsModeler/.qtc_clangd,QT_2DGraphicsModeler/debug,2D-Graphics-Modeler/QT_2DGraphicsModeler/release,QT_2DGraphicsModeler/Makefile,QT_2DGraphicsModeler/Makefile.Debug,QT_2DGraphicsModeler/Makefile.Release,QT_2DGraphicsModeler/QT_2DGraphicsModeler.pro,QT_2DGraphicsModeler/QT_2DGraphicsModeler.pro.user,diagram "

@@ -36,8 +36,8 @@
   <widget class="QLabel" name="label_test1">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>50</y>
+     <x>140</x>
+     <y>80</y>
      <width>411</width>
      <height>71</height>
     </rect>
@@ -55,8 +55,8 @@
   <widget class="QLabel" name="label_name1">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>100</y>
+     <x>350</x>
+     <y>140</y>
      <width>161</width>
      <height>31</height>
     </rect>
@@ -74,8 +74,8 @@
   <widget class="QLabel" name="label_test2">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>130</y>
+     <x>100</x>
+     <y>150</y>
      <width>511</width>
      <height>71</height>
     </rect>
@@ -93,8 +93,8 @@
   <widget class="QLabel" name="label_name2">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>180</y>
+     <x>390</x>
+     <y>200</y>
      <width>161</width>
      <height>31</height>
     </rect>
@@ -112,8 +112,8 @@
   <widget class="QLabel" name="label_test3">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>210</y>
+     <x>30</x>
+     <y>220</y>
      <width>561</width>
      <height>71</height>
     </rect>
@@ -131,8 +131,8 @@
   <widget class="QLabel" name="label_name3">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>260</y>
+     <x>400</x>
+     <y>280</y>
      <width>181</width>
      <height>31</height>
     </rect>
@@ -151,7 +151,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>280</y>
+     <y>300</y>
      <width>311</width>
      <height>31</height>
     </rect>
@@ -166,16 +166,6 @@
     <string>Write your own testimonial here:</string>
    </property>
   </widget>
-  <widget class="QPlainTextEdit" name="plainTextEdit">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>310</y>
-     <width>611</width>
-     <height>131</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QDialogButtonBox" name="button_Save">
    <property name="geometry">
     <rect>
@@ -187,6 +177,16 @@
    </property>
    <property name="standardButtons">
     <set>QDialogButtonBox::Save</set>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>601</width>
+     <height>111</height>
+    </rect>
    </property>
   </widget>
  </widget>

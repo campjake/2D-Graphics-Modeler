@@ -17,3 +17,12 @@ ContactUs::~ContactUs()
 {
     delete ui;
 }
+
+
+
+
+void ContactUs::on_pushButton_clicked()
+{
+    this->close();
+}
+

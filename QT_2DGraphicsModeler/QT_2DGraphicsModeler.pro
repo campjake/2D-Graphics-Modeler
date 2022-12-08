@@ -54,7 +54,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     shape_input_file_specs.txt \
-    shapes.txt
+    shapes.txt \
+    testimonial.txt
 
 RESOURCES += \
     logo.qrc

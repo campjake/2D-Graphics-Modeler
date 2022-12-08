@@ -4,6 +4,10 @@
 A 2D graphic object modeling software for the fictional company 2D Graphics Modeler Inc. This is a 2D graphics rendering library 
 that can be integrated into an existing software suite.
 
+## Visualization of Code Files
+
+![Visualization of the codebase](./diagram.svg)
+
 ## Important Documents & Resources used for this project:
 
 ### [2D Graphics Modeler Class Project.pdf](https://github.com/campjake/2D-Graphics-Modeler/files/9841670/2D.Graphics.Modeler.Class.Project.1.pdf)
@@ -21,23 +25,23 @@ that can be integrated into an existing software suite.
 ## Progress on Deliverables
 - [x] Uses Qt
 - [x] Uses GIT/Github
-- [ ] Uses Doxygen
-- [ ] Base class definition
-- [ ] Base class member function definitions
+- [x] Uses Doxygen
+- [x] Base class definition
+- [x] Base class member function definitions
 - [x] Derived class definitions
 - [x] Derived class implementation
 - [x] Vector class definition
-- [ ] Vector class implementation
-- [ ] Text class definition
-- [ ] Text class member function definitions
+- [x] Vector class implementation
+- [x] Text class definition
+- [x] Text class member function definitions
 - [ ] Shape Move setter (mutator) (admin only)
 - [x] Read shape attributes from file (Text Parser)
 - [ ] Objects print
 - [ ] Add/Remove Objects
 - [ ] Shape List Report
 - [ ] Save changes between executions
-- [ ] Contact Us Method
-- [ ] Testimonials
+- [x] Contact Us Method
+- [x] Testimonials
 - [ ] Passes valgrind memory check
 - [x] Extra Credit: Uses Agile Planning tools (Projects, Issues & Actions)
 
@@ -67,7 +71,4 @@ that can be integrated into an existing software suite.
 - Matthew Chin
   - Role: Product Owner
   
-## Visualization of Time Spent on Project
-
-![Visualization of the codebase](./diagram.svg)
 
