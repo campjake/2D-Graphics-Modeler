@@ -4,7 +4,7 @@
 #include "ui_mainwindow.h"
 #include <QApplication>
 
-
+static int  count = 9;
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -251,6 +251,10 @@ void MainWindow::on_addLine_clicked()
     if(isAdmin)
     {
         // Creates a Line pointer and needs to draw it.
+
+
+
+//        Line* line = new Line(renderArea, )
     }
 }
 

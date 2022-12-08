@@ -23,7 +23,8 @@ void WriteToFile(const vector<T*>& list,
                  QString fileName = "shapes.txt")
 {
     ShapeType   shape;
-    QColor      color;
+    QColor     color;
+
 
     // ASK How are these different? VVVV
     // QString fullPath = QCoreApplication::applicationDirPath();
@@ -54,10 +55,10 @@ void WriteToFile(const vector<T*>& list,
         {
         case ShapeType::Line :  shapeName = "Line";
                                 dimensions.resize(4);
-                                dimensions[0] = QString::number(shapeObj->Line::getPoint1().x()) + ", ";
-                                dimensions[1] = QString::number(shapeObj->Line::getPoint1().y()) + ", ";
-                                dimensions[2] = QString::number(shapeObj->Line::getPoint2().x()) + ", ";
-                                dimensions[3] = QString::number(shapeObj->Line::getPoint2().y());
+                                dimensions[0] = QString::number(shapeObj->Line::GetPoint1().x()) + ", ";
+                                dimensions[1] = QString::number(shapeObj->Line::GetPoint1().y()) + ", ";
+                                dimensions[2] = QString::number(shapeObj->Line::GetPoint2().x()) + ", ";
+                                dimensions[3] = QString::number(shapeObj->Line::GetPoint2().y());
             break;
         case ShapeType::Polyline :  shapeName = "Polyline";
                                     dimensions.resize(list[index]->Polyline::GetNumPoints());
@@ -104,8 +105,8 @@ void WriteToFile(const vector<T*>& list,
                                     dimensions[0] = QString::number(shapeObj->Shape::GetPos().x() + ", ");
                                     dimensions[1] = QString::number(shapeObj->Shape::GetPos().y() + ", ");
 
-                                    dimensions[2] = QString::number(shapeObj->Rectangle::getWidth() + ", ");
-                                    dimensions[3] = QString::number(shapeObj->Rectangle::getHeight());
+                                    dimensions[2] = QString::number(shapeObj->Rectangle::GetWidth() + ", ");
+                                    dimensions[3] = QString::number(shapeObj->Rectangle::GetHeight());
             break;
 
         case ShapeType::Square :    shapeName = "Square";
@@ -113,8 +114,8 @@ void WriteToFile(const vector<T*>& list,
                                     dimensions[0] = QString::number(shapeObj->Shape::GetPos().x() + ", ");
                                     dimensions[1] = QString::number(shapeObj->Shape::GetPos().y() + ", ");
 
-                                    dimensions[2] = QString::number(shapeObj->Rectangle::getWidth() + ", ");
-                                    dimensions[3] = QString::number(shapeObj->Rectangle::getHeight());
+                                    dimensions[2] = QString::number(shapeObj->Rectangle::GetWidth() + ", ");
+                                    dimensions[3] = QString::number(shapeObj->Rectangle::GetHeight());
                                     break;
 
         case ShapeType::Ellipse :   shapeName = "Ellipse";
@@ -122,8 +123,8 @@ void WriteToFile(const vector<T*>& list,
                                     dimensions[0] = QString::number(shapeObj->GetPos().x() + ", ");
                                     dimensions[1] = QString::number(shapeObj->GetPos().y() + "m ");
 
-                                    dimensions[2] = QString::number(shapeObj->getWidth() + ", ");
-                                    dimensions[3] = QString::number(shapeObj->getHeight());
+                                    dimensions[2] = QString::number(shapeObj->GetWidth() + ", ");
+                                    dimensions[3] = QString::number(shapeObj->GetHeight());
                                     break;
 
         case ShapeType::Circle :    shapeName = "Circle";
@@ -131,8 +132,8 @@ void WriteToFile(const vector<T*>& list,
                                     dimensions[0] = QString::number(shapeObj->GetPos().x() + ", ");
                                     dimensions[1] = QString::number(shapeObj->GetPos().y() + "m ");
 
-                                    dimensions[2] = QString::number(shapeObj->getWidth() + ", ");
-                                    dimensions[3] = QString::number(shapeObj->getWidth());
+                                    dimensions[2] = QString::number(shapeObj->GetWidth() + ", ");
+                                    dimensions[3] = QString::number(shapeObj->GetWidth());
                                     break;
 
         case ShapeType::Text :      shapeName = "Text";
@@ -140,8 +141,8 @@ void WriteToFile(const vector<T*>& list,
                                     dimensions[0] = QString::number(shapeObj->GetPos().x() + ", ");
                                     dimensions[1] = QString::number(shapeObj->GetPos().y() + "m ");
 
-                                    dimensions[2] = QString::number(shapeObj->getWidth() + ", ");
-                                    dimensions[3] = QString::number(shapeObj->getHeight());
+                                    dimensions[2] = QString::number(shapeObj->GetWidth() + ", ");
+                                    dimensions[3] = QString::number(shapeObj->GetHeight());
                                     break;
 
         default : shapeName = "NoShape";
@@ -153,8 +154,147 @@ void WriteToFile(const vector<T*>& list,
         fout << "\nShapeDimensions: ";
         for(int i = 0; i <= dimensions.size(); i++)
         {
-            fout << dimensions[i];
+            fout << dimensions[i] << ", ";
         }
+
+        QString colorName;
+        if(shape != ShapeType::Text)
+        {
+            color = list[index]->GetPen().color();
+
+            if(color  == QColor(Qt::red))
+            {
+                colorName = "red";
+            }
+            else if(color == QColor(Qt::green))
+            {
+                colorName = "green";
+
+            }
+            else if(color == QColor(Qt::blue))
+            {
+                colorName = "blue";
+            }
+            else if(color == QColor(Qt::yellow))
+            {
+                colorName = "yellow";
+            }
+            else if(color == QColor(Qt::cyan))
+            {
+                colorName = "cyan";
+            }
+            else if(color == QColor(Qt::magenta))
+            {
+                colorName = "magenta";
+            }
+            else if(color == QColor(Qt::white))
+            {
+                colorName = "white";
+            }
+            else if(color == QColor(Qt::black))
+            {
+                colorName = "black";
+            }
+            else if(color == QColor(Qt::gray))
+            {
+                colorName = "gray";
+            }
+
+            fout << "\nPenColor: " << colorName;
+            fout << "\nPenWidth: " << list[index]->GetPen().width();
+
+            switch(list[index]->GetPen().style())
+              {
+                  case 0: style = "NoPen";
+                          break;
+                  case 1: style = "SolidLine";
+                          break;
+                  case 2: style = "DashLine";
+                          break;
+                  case 3: style = "DotLine";
+                          break;
+                  case 4: style = "DashDotLine";
+                          break;
+                  case 5: style = "DashDotDotLine";
+                          break;
+                  case 6: style = "CustomDashLine";
+                          break;
+                  case 15: style = "MPenStyle";
+              }
+
+            fout << "\nPenStyle: " << style;
+
+            switch(list[index]->GetPen().capStyle())
+            {
+                case 0: style = "FlatCap";
+                        break;
+                case 16: style = "SquareCap";
+                         break;
+                case 32: style = "RoundCap";
+                         break;
+                case 48: style = "MPenCapStyle";
+            }
+
+            fout << "\nPenCapStyle: " << style;
+
+            switch(list[index]->GetPen().joinStyle())
+            {
+                case 0: style = "MiterJoin";
+                        break;
+                case 64: style = "BevelJoin";
+                         break;
+                case 128: style = "RoundJoin";
+                          break;
+                case 256: style = "SvgMiterJoin";
+                          break;
+                case 448: style = "MPenJoinStyle";
+            }
+
+            fout << "\nPenJoinStyle: " << style;
+
+        } // END IF
+
+        if(shape != ShapeType::Line && shape != ShapeType::Polyline)
+        {
+                color = list[index]->GetBrush().color;
+        }
+
+        if(color  == QColor(Qt::red))
+        {
+            colorName = "red";
+        }
+            else if(color == QColor(Qt::green))
+            {
+                colorName = "green";
+            }
+            else if(color == QColor(Qt::blue))
+            {
+                        colorName = "blue";
+                    }
+                    else if(color == QColor(Qt::yellow))
+                    {
+                        colorName = "yellow";
+                    }
+                    else if(color == QColor(Qt::cyan))
+                    {
+                        colorName = "cyan";
+                    }
+                    else if(color == QColor(Qt::magenta))
+                    {
+                        colorName = "magenta";
+                    }
+                    else if(color == QColor(Qt::white))
+                    {
+                        colorName = "white";
+                    }
+                    else if(color == QColor(Qt::black))
+                    {
+                        colorName = "black";
+                    }
+                    else if(color == QColor(Qt::gray))
+                    {
+                        colorName = "gray";
+                    }
     }
 }
 
