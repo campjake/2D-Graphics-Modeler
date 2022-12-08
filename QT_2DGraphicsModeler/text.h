@@ -8,16 +8,16 @@ class Text : public Shape
 {
 	public:
 		//Constructor
-		Text(QPaintDevice* device = nullptr, int newID = -1, ShapeType newShapeType = ShapeType::Polygon);
+        Text(QPaintDevice* device = nullptr, int newID = -1, ShapeType newShapeType = ShapeType::Text);
 
 		//Alternate Constructor
 		//In order : ID, Text, Font, Color, Position, Height, Width, Alignment
-		Text(int newId, QString newString, QFont newFont, QColor newColor, QPoint newPos,
+        Text(int newId, QString newString, QFont newFont, QColor newColor, QPoint newPos,
              int newHeight, int newWidth, Qt::AlignmentFlag newAlign);
 
 		/***********
 		* ACCESSOR
-		 ***********/
+         ***********/
         QString GetTextString() const;
 
 		/***********

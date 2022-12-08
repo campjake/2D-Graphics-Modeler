@@ -1,10 +1,12 @@
 #include "line.h"
+#include <QDebug>
 
 //Constructor
-Line::Line(QPaintDevice* device, int anID, ShapeType shapeType) : Shape(device, anID, shapeType)
+Line::Line(QPaintDevice* device, int anID, ShapeType shapeType)
+    : Shape{device, anID, shapeType}
 {
-
     SetPen(Qt::SolidLine);
+//    SetBrush(Qt::NoBrush);
 }
 
 //constructor with pen and brush
@@ -13,6 +15,8 @@ Line::Line(QPaintDevice* device, int anID,
     : Shape(device, anID, shapeType)
 {
     SetPen(thatPen);
+//    SetBrush(Qt::NoBrush);
+
 }
 
 // Parser Constructor
@@ -20,6 +24,8 @@ Line::Line(int anID, QPoint first, QPoint last)
     : point1{first}, point2{last}
 {
     this->SetID(anID);
+    this->SetShapeType(ShapeType::Line);
+    qInfo() << "You constructed a Line\n";
 }
 //operators
 bool Line::operator == (const Line& other)
@@ -43,9 +49,16 @@ bool Line::operator < (const Line& other)
 //Draws line
 void Line::Draw(QPainter* painter)
 {
+    // let global qpainter "painter" do the drawing
+    // ^^ so we don't need the parameter?
+
     painter->setPen(GetPen());
-    painter->setBrush(GetBrush());
+//    painter->setBrush(GetBrush());
     painter->drawLine(point1, point2);
+//    this->getPainter()->setPen(GetPen());
+//    this->getPainter()->setBrush(GetBrush());
+//    this->getPainter()->drawLine(point1, point2);
+
 }
 
 //Moves first point
@@ -96,3 +109,12 @@ void Line::setPoint2(const QPoint& P2) {
     point2 = P2;
 }
 
+QPoint Line::getPoint1() const
+{
+    return point1;
+}
+
+QPoint Line::getPoint2() const
+{
+    return point2;
+}

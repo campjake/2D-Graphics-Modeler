@@ -7,7 +7,11 @@
 #include <QPainter>
 #include <QPaintDevice>
 #include <QPoint>
-//#include "vector.h"
+#include "vector.h"
+
+
+// GLOBAL QPAINTER VAR. -- ALL FILES THAT DRAW NEED THIS
+//QPainter qpainter;
 
 enum class ShapeType
 {
@@ -34,8 +38,8 @@ class Shape
 
     // COME BACK AND FIGURE OUT IMPLEMENTATION
 
-//    // Move Operations
-//        // Move Ctor
+////    // Move Operations
+////        // Move Ctor
 //    Shape(Shape&& otherShape) noexcept;
 
 //        // Move Assignment
@@ -107,11 +111,11 @@ class Shape
     virtual double CalcArea() const = 0;
     /*************************************************************/
 
-  protected :
-  QPainter& get_qpainter();
+  protected : //static
+  QPainter* getPainter();
 
   private :
-    QPainter   qpainter;
+    QPainter    painter;
     int   id;
     ShapeType   shapeName;
     QPen        shapePen;

@@ -10,6 +10,7 @@ ContactUs::ContactUs() :
     setWindowFlags(Qt::Widget | Qt::MSWindowsFixedSizeDialogHint);
     QPixmap pix("ShapesRUs.jpg");
     ui->label_logo->setPixmap(pix.scaled(1000,1000,Qt::KeepAspectRatio));
+
 }
 
 ContactUs::~ContactUs()

@@ -8,6 +8,7 @@
 
 #include <memory>
 #include "../mainwindow.h"
+#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'mainwindow.h' doesn't include <QObject>."
@@ -26,11 +27,16 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_MainWindow_t {
-    uint offsetsAndSizes[8];
+    uint offsetsAndSizes[18];
     char stringdata0[11];
     char stringdata1[30];
     char stringdata2[1];
     char stringdata3[41];
+    char stringdata4[29];
+    char stringdata5[13];
+    char stringdata6[11];
+    char stringdata7[13];
+    char stringdata8[19];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_MainWindow_t::offsetsAndSizes) + ofs), len 
@@ -39,12 +45,22 @@ Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_Main
         QT_MOC_LITERAL(0, 10),  // "MainWindow"
         QT_MOC_LITERAL(11, 29),  // "on_actionContact_Us_triggered"
         QT_MOC_LITERAL(41, 0),  // ""
-        QT_MOC_LITERAL(42, 40)   // "on_actionCustomer_Testimonial..."
+        QT_MOC_LITERAL(42, 40),  // "on_actionCustomer_Testimonial..."
+        QT_MOC_LITERAL(83, 28),  // "on_actionOpen_File_triggered"
+        QT_MOC_LITERAL(112, 12),  // "shapeChanged"
+        QT_MOC_LITERAL(125, 10),  // "penChanged"
+        QT_MOC_LITERAL(136, 12),  // "brushChanged"
+        QT_MOC_LITERAL(149, 18)   // "on_addLine_clicked"
     },
     "MainWindow",
     "on_actionContact_Us_triggered",
     "",
-    "on_actionCustomer_Testimonials_triggered"
+    "on_actionCustomer_Testimonials_triggered",
+    "on_actionOpen_File_triggered",
+    "shapeChanged",
+    "penChanged",
+    "brushChanged",
+    "on_addLine_clicked"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -55,7 +71,7 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       7,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -63,11 +79,21 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   26,    2, 0x08,    1 /* Private */,
-       3,    0,   27,    2, 0x08,    2 /* Private */,
+       1,    0,   56,    2, 0x08,    1 /* Private */,
+       3,    0,   57,    2, 0x08,    2 /* Private */,
+       4,    0,   58,    2, 0x08,    3 /* Private */,
+       5,    1,   59,    2, 0x08,    4 /* Private */,
+       6,    1,   62,    2, 0x08,    6 /* Private */,
+       7,    1,   65,    2, 0x08,    8 /* Private */,
+       8,    0,   68,    2, 0x08,   10 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,    2,
+    QMetaType::Void, QMetaType::Int,    2,
+    QMetaType::Void, QMetaType::Int,    2,
     QMetaType::Void,
 
        0        // eod
@@ -85,6 +111,19 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'on_actionContact_Us_triggered'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_actionCustomer_Testimonials_triggered'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_actionOpen_File_triggered'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'shapeChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'penChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'brushChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'on_addLine_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -98,10 +137,14 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->on_actionContact_Us_triggered(); break;
         case 1: _t->on_actionCustomer_Testimonials_triggered(); break;
+        case 2: _t->on_actionOpen_File_triggered(); break;
+        case 3: _t->shapeChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 4: _t->penChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 5: _t->brushChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 6: _t->on_addLine_clicked(); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *MainWindow::metaObject() const
@@ -123,13 +166,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 7)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 7;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 7)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 7;
     }
     return _id;
 }

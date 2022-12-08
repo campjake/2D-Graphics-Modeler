@@ -1,9 +1,12 @@
 #include "ellipse.h"
+#define _USE_MATH_DEFINES
+
+#include <cmath>
 
 // Constructor
 Ellipse::Ellipse(QPaintDevice* device, int anID,
-                 ShapeType shapeType, int width, int height)
-    : Shape{device, anID, shapeType}, width{width}, height{height}
+                 ShapeType shapeType, int a, int b)
+    : Shape{device, anID, shapeType}, a{a}, b{b}
 {}
 
 // Parser Constructor
@@ -41,7 +44,9 @@ void Ellipse::setHeight(const int height)
 // Draw function
 void Ellipse::Draw(QPainter* painter)
 {
-    painter->drawEllipse(a, b, width, height);
+    painter->setPen(GetPen());
+    painter->setBrush(GetBrush());
+    painter->drawEllipse(GetPos(), a, b);
 }
 
 // Move function
@@ -56,12 +61,20 @@ void Ellipse::Move(int xCoord, int yCoord)
 // CalcPerimeter
 double Ellipse::CalcPerimeter() const
 {
-    return (width + height)/2*PI;
+    if(a == b)
+    {
+        return 2 * (M_PI * (double)a);
+    }
+
+    // approximation
+
+    return 2 * M_PI * sqrt((double)((a*a) + (b  * b)) /
+                           2 );
 }
 
 // CalcArea
 double Ellipse::CalcArea() const
 {
-    return (width*height)/4*PI;
+    return (double)(a*b)*M_PI;
 }
 /*************************************************************/

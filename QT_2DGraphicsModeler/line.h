@@ -8,10 +8,10 @@ class Line : virtual public Shape
 public:
 public:
     //Constructor
-    Line(QPaintDevice* device = nullptr, int anID = -1, ShapeType shapeType = ShapeType::Polyline);
+    Line(QPaintDevice* device = nullptr, int anID = -1, ShapeType shapeType = ShapeType::Line);
 
     //constructor with pen and brush
-    Line(QPaintDevice* device = nullptr, int anID = -1, ShapeType shapeType = ShapeType::Polyline,
+    Line(QPaintDevice* device = nullptr, int anID = -1, ShapeType shapeType = ShapeType::Line,
         QPen thatPen = Qt::SolidLine);
 
     // Constructor for Parser
@@ -56,6 +56,12 @@ public:
 
     //sets point 2
     void setPoint2(const QPoint& P2);
+
+    // get point 1
+    QPoint getPoint1() const;
+
+    // get point 2
+    QPoint getPoint2() const;
 
 private:
     QPoint point1;

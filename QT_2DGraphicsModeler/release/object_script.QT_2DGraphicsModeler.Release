@@ -6,12 +6,15 @@ release/mainwindow.o
 release/polygon.o
 release/polyline.o
 release/rectangle.o
+release/renderarea.o
 release/shape.o
 release/testimonial.o
 release/text.o
 release/textparser.o
 release/contactus.o
+release/qrc_logo.o
 release/moc_logindialog.o
 release/moc_mainwindow.o
+release/moc_renderarea.o
 release/moc_testimonial.o
 release/moc_contactus.o

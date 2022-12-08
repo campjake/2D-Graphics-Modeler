@@ -10,7 +10,7 @@ class Ellipse : public Shape
     public :
     // Constructor
     Ellipse(QPaintDevice* device, int anID,
-            ShapeType shapeType, int width, int height);
+            ShapeType shapeType, int a, int b);
 
     // Parser Constructor
     Ellipse(int anID, QPoint qPos, int a, int b);

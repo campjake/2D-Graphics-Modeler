@@ -6,12 +6,15 @@ debug/mainwindow.o
 debug/polygon.o
 debug/polyline.o
 debug/rectangle.o
+debug/renderarea.o
 debug/shape.o
 debug/testimonial.o
 debug/text.o
 debug/textparser.o
 debug/contactus.o
+debug/qrc_logo.o
 debug/moc_logindialog.o
 debug/moc_mainwindow.o
+debug/moc_renderarea.o
 debug/moc_testimonial.o
 debug/moc_contactus.o

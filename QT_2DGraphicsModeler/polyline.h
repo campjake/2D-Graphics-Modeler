@@ -15,7 +15,7 @@ public:
         QPen thatPen = Qt::SolidLine);
 
     // Parser Constructor
-    Polyline(int anID, QList<QPoint>* list);
+    Polyline(int anID, QList<QPoint> list);
 
     virtual ~Polyline() {}
 
@@ -46,13 +46,23 @@ public:
     //adds point to QList
     void addPoint(const QPoint& point);
 
-    void SetPoints(QList<QPoint>* points);
+    void SetPoints(QList<QPoint> points);
 
     //Moves all points by an offset in x and y
     void moveOffset(int xOffset, int yOffset);
 
     //deletes a specific point
     void deletePoint(const QPoint& point);
+
+    int GetNumPoints() const
+    {
+        return LinePoints->size();
+    }
+
+    QList<QPoint>* GetLinePoints() const
+    {
+        return LinePoints;
+    }
 
 
 private:

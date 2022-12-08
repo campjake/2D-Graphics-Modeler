@@ -17,6 +17,7 @@ SOURCES += \
     polygon.cpp \
     polyline.cpp \
     rectangle.cpp \
+    renderarea.cpp \
     shape.cpp \
     testimonial.cpp \
     text.cpp \
@@ -31,6 +32,8 @@ HEADERS += \
     polygon.h \
     polyline.h \
     rectangle.h \
+    renderarea.h \
+    serializer.h \
     shape.h \
     testimonial.h \
     text.h \

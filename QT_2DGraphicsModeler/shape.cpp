@@ -1,4 +1,7 @@
 #include "shape.h"
+//#include "mainwindow.h"
+#include <QDebug>
+
 
 // Default Shape Ctor
 // Pre-Conditions - NONE since parameters have default values
@@ -6,16 +9,14 @@
 Shape::Shape(QPaintDevice* device,
              int anID,
              ShapeType shapeType)
-    : qpainter{device},
+    : painter{device},
       id{anID},
       shapeName{shapeType}
-
 {
-    // set defaults so it compiles
-//    count++;
+//    QPainter painter(device);
     shapePen = Qt::SolidLine;
     shapeBrush = Qt::NoBrush;
-//    qpainter.begin(device); // ?
+
 }
 
 //COPY OPERATIONS DELETED
@@ -27,14 +28,14 @@ Shape::Shape(QPaintDevice* device,
 //// Pre-Conditions - R-value casted other shape object
 //// Post-Conditions - Constructs a Shape object
 //Shape::Shape(Shape&& otherShape) noexcept
-//    : qpainter{std::move(otherShape.qpainter)},
-//      id{std::move(otherShape.id)},
+//    : id{std::move(otherShape.id)},
 //      shapeName{std::move(otherShape.shapeName)},
 //      shapePen{std::move(otherShape.shapePen)},
 //      shapeBrush{std::move(otherShape.shapeBrush)},
 //      shapePos{std::move(otherShape.shapePos)}
 //{
-////    otherShape.qpainter = nullptr;
+//    qpainter = otherShape.get_qpainter();
+//    otherShape.qpainter = nullptr;
 //}
 
 //// Move Assignment
@@ -179,7 +180,7 @@ void Shape::SetPos(const QPoint thatPos)
 // Our sweet sweet lil protected guy
 // Pre-conditions - NONE
 // Post-Conditions - Returns a reference to a QPainter Object
-QPainter& Shape::get_qpainter()
+QPainter* Shape::getPainter()
 {
-    return qpainter;
+    return &painter;
 }

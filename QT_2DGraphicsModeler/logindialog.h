@@ -2,6 +2,7 @@
 #define LOGINDIALOG_H
 
 #include <QDialog>
+#include <QObject>
 #include <QMessageBox>
 #include <QCloseEvent>
 
@@ -16,6 +17,10 @@ class LoginDialog : public QDialog
 public:
     explicit LoginDialog(QWidget *parent = nullptr);
     ~LoginDialog();
+    bool adminCredentials()
+    {
+        return match;
+    }
 
 private slots:
 

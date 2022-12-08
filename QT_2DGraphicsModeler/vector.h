@@ -52,7 +52,7 @@ vector<T>::vector(int s) : size_v{s}, elem{new T[s]}, space{s} {}
 template <class T>
 vector<T>::vector(const vector &src) : size_v{src.size_v}, elem{new double[src.size_v]}, space{src.space}
 {
-    copy(src.elem, src.elem + size_v, elem);
+    std::copy(src.elem, src.elem + size_v, elem);
 }
 
 template <class T>
@@ -61,7 +61,7 @@ vector<T>& vector<T>::operator=(const vector& rhs)
     if (this != &rhs)
     {
         T *p = new T[rhs.size_v];
-        copy(rhs.elem, rhs.elem + rhs.size_v, p);
+       std::copy(rhs.elem, rhs.elem + rhs.size_v, p);
         delete[] elem;
         elem = p;
         size_v = rhs.size_v;
@@ -83,11 +83,17 @@ template <class T>
 vector<T>& vector<T>::operator=(vector&& rhs) noexcept
 {
     delete[] elem;
-    size_v = std::move(rhs.size_v);
-    elem = std::move(rhs.elem);
-    space = std::move(rhs.space);
+
+//    size_v = std::move(rhs.size_v);
+//    elem = std::move(rhs.elem);
+//    space = std::move(rhs.space);
+
+    size_v = rhs.size_v;
+    elem = rhs.elem;
+    space = rhs.space;
+
     rhs.size_v = 0;
-    rhs.elem = NULL;
+    rhs.elem = nullptr;
     rhs.space = 0;
 
     return *this;

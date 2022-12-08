@@ -34,53 +34,56 @@ public:
     // ACCESSORS / GETTERS
 
     // Get Unique ID for Shape Object
-    int GetID() const;
+//    int GetID() const;
 
     // Get Shape Type (convert ShapeType to string in implementation)
-    ShapeType GetShapeType() const;
+//    ShapeType GetShapeType() const;
 
     // Get Pen Properties
-    QPen GetPen() const;
+//    QPen GetPen() const;
 
     // Get Brush Properties
-    QBrush GetBrush() const;
+//    QBrush GetBrush() const;
 
     // Get Position on X, Y Plane
-    QPoint GetPos() const;
+//    QPoint GetPos() const;
 
     // Get List of Points of Polygon
     QList<QPoint>* GetPoints() const;
 
-    int GetPointCount() const;
+    int GetPointCount() const
+    {
+        return polyPoints->size();
+    }
 
     // MUTATORS / SETTERS
 
     // Set Unique ID for Shape Object
-    void SetID(const int theID);
+//    void SetID(const int theID);
 
     // Set Shape Type
-    void SetShapeType(const ShapeType type);
+//    void SetShapeType(const ShapeType type);
 
     // Set Pen Properties
-    void SetPen(const QColor color, const int size,
-                const Qt::PenStyle penStyle,
-                const Qt::PenCapStyle capStyle,
-                const Qt::PenJoinStyle joinStyle);
+//    void SetPen(const QColor color, const int size,
+//                const Qt::PenStyle penStyle,
+//                const Qt::PenCapStyle capStyle,
+//                const Qt::PenJoinStyle joinStyle);
 
-    // Overloaded SetPen incase its already defined?
-    void SetPen(const QPen thatPen);
+//    // Overloaded SetPen incase its already defined?
+//    void SetPen(const QPen thatPen);
 
-    // Set Brush Properties
-    void SetBrush(const QColor aColor, const Qt::BrushStyle brushStyle);
+//    // Set Brush Properties
+//    void SetBrush(const QColor aColor, const Qt::BrushStyle brushStyle);
 
-    // Overloaded Set Brush?
-    void SetBrush(const QBrush thatBrush);
+//    // Overloaded Set Brush?
+//    void SetBrush(const QBrush thatBrush);
 
-    // Set Position on X, Y Plane
-    void SetPos(const QPoint thatPos);
+//    // Set Position on X, Y Plane
+//    void SetPos(const QPoint thatPos);
 
     // Set QList of Points for Polygone Shape
-    void SetPoints(QList<QPoint>* points);
+    void SetPoints(QList<QPoint> points);
 
     /******************* OVERRIDE Pure Virtual Fcns ********************/
     // Draw function
@@ -99,12 +102,11 @@ public:
 
 private :
 
-    QPainter qpainter;
-    int id;
-    ShapeType polygName = {ShapeType::Polygon};
-    QPen pen;
-    QBrush brush;
-    QPoint pos;
+//    int id;
+//    ShapeType polygName = {ShapeType::Polygon};
+//    QPen pen;
+//    QBrush brush;
+//    QPoint pos;
     QList<QPoint>* polyPoints;
 
 };
