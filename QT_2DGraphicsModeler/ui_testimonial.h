@@ -75,7 +75,7 @@ public:
         label_name3->setFont(font1);
         label_testTitle = new QLabel(testimonial);
         label_testTitle->setObjectName("label_testTitle");
-        label_testTitle->setGeometry(QRect(10, 300, 311, 31));
+        label_testTitle->setGeometry(QRect(0, 300, 631, 31));
         QFont font2;
         font2.setPointSize(11);
         font2.setBold(true);
@@ -103,7 +103,7 @@ public:
         label_name2->setText(QCoreApplication::translate("testimonial", "- Random Person", nullptr));
         label_test3->setText(QCoreApplication::translate("testimonial", "10/10 Drawing Program. I am recommending this to everyone!", nullptr));
         label_name3->setText(QCoreApplication::translate("testimonial", "- Random Person", nullptr));
-        label_testTitle->setText(QCoreApplication::translate("testimonial", "Write your own testimonial here:", nullptr));
+        label_testTitle->setText(QCoreApplication::translate("testimonial", "Write your own testimonial here and send it to us by using the address on our Contact Us", nullptr));
     } // retranslateUi
 
 };

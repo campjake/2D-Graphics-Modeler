@@ -91,7 +91,8 @@ OBJECTS       = release/ellipse.o \
 		release/moc_contactus.o
 
 DIST          = shape_input_file_specs.txt \
-		shapes.txt ellipse.h \
+		shapes.txt \
+		testimonial.txt ellipse.h \
 		line.h \
 		logindialog.h \
 		mainwindow.h \
@@ -2892,7 +2893,18 @@ release/testimonial.o: testimonial.cpp testimonial.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QSizeF \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QTransform \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
-		ui_testimonial.h
+		ui_testimonial.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QFileDialog \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qfiledialog.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qdir.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfile.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfiledevice.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfileinfo.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qdatetime.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcalendar.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\testimonial.o testimonial.cpp
 
 release/text.o: text.cpp text.h \

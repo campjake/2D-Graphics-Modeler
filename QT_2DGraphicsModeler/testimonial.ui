@@ -150,9 +150,9 @@
   <widget class="QLabel" name="label_testTitle">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>0</x>
      <y>300</y>
-     <width>311</width>
+     <width>631</width>
      <height>31</height>
     </rect>
    </property>
@@ -163,7 +163,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Write your own testimonial here:</string>
+    <string>Write your own testimonial here and send it to us by using the address on our Contact Us</string>
    </property>
   </widget>
   <widget class="QDialogButtonBox" name="button_Save">
