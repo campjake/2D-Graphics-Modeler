@@ -15,7 +15,7 @@ public:
         QPen thatPen = Qt::SolidLine);
 
     // Constructor for Parser
-    Line(int anID, QPoint first, QPoint last);
+    Line(int anID, QPoint first, QPoint last);   
 
     virtual ~Line() {}
 

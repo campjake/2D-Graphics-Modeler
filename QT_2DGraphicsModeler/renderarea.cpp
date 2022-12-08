@@ -1,5 +1,5 @@
 #include "renderarea.h"
-#include "mainwindow.h"
+//#include "mainwindow.h"
 
 RenderArea::RenderArea(QWidget *parent) : QWidget(parent)
 {

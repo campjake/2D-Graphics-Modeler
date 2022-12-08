@@ -51,7 +51,7 @@
       <item>
        <widget class="QLineEdit" name="lineEdit_username">
         <property name="placeholderText">
-         <string>REMOVE LATER - Username = USER</string>
+         <string>Enter username here</string>
         </property>
        </widget>
       </item>
@@ -81,7 +81,7 @@
          <enum>QLineEdit::Password</enum>
         </property>
         <property name="placeholderText">
-         <string>REMOVE LATER - Password = 12345</string>
+         <string>Enter password here</string>
         </property>
         <property name="clearButtonEnabled">
          <bool>false</bool>

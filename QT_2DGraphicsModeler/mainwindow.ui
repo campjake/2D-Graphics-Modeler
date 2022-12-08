@@ -60,9 +60,16 @@
     <addaction name="actionShape_Area_Listing"/>
     <addaction name="actionShape_Perimeter_Listing"/>
    </widget>
+   <widget class="QMenu" name="menuAccount">
+    <property name="title">
+     <string>Account</string>
+    </property>
+    <addaction name="actionLogin"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuMenu"/>
    <addaction name="menuReports"/>
+   <addaction name="menuAccount"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QDockWidget" name="dockWidget">
@@ -230,6 +237,11 @@
   <action name="actionShape_Perimeter_Listing">
    <property name="text">
     <string>Shape Perimeter Listing</string>
+   </property>
+  </action>
+  <action name="actionLogin">
+   <property name="text">
+    <string>Login</string>
    </property>
   </action>
  </widget>

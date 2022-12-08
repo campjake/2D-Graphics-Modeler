@@ -20,6 +20,15 @@ class Text : public Shape
          ***********/
         QString GetTextString() const;
 
+        Qt::AlignmentFlag GetAlign() const
+        {
+            return textAlignment;
+        }
+        QFont GetFont() const
+        {
+            return textFont;
+        }
+
 		/***********
 		 * MUTATORS
 		 ***********/

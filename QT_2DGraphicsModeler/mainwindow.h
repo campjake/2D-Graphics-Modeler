@@ -15,6 +15,7 @@
 #include "shape.h"
 #include "textparser.h"
 #include "renderarea.h"
+#include "serializer.h"
 
 static QPainter staticQPainter;
 
@@ -23,12 +24,18 @@ namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
-{
+{ friend class LoginDialog;
     Q_OBJECT
 
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+    void setCredentials(bool admin)
+    {
+        isAdmin = admin;
+    }
+
 private slots:
     void on_actionContact_Us_triggered();
 
@@ -36,8 +43,11 @@ private slots:
 
     void on_actionOpen_File_triggered();
 
+
+
 private:
     Ui::MainWindow *ui;
+    LoginDialog l;
     RenderArea* createRenderArea();
     QPainter* painter;          // ?
     vector<Shape*>* shapeVector;
@@ -59,7 +69,7 @@ private:
     QCheckBox *antialiasingCheckBox;
     QCheckBox *transformationsCheckBox;
 
-    bool isAdmin = true;
+    bool isAdmin;
 
 
 private slots:
@@ -67,5 +77,6 @@ private slots:
     void penChanged(int);
     void brushChanged(int);
     void on_addLine_clicked();
+    void on_addPolyline_clicked();
 };
 #endif // MAINWINDOW_H

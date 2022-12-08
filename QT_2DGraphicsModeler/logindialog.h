@@ -13,14 +13,24 @@ class LoginDialog;
 class LoginDialog : public QDialog
 {
     Q_OBJECT
-
+    friend class MainWindow;
 public:
     explicit LoginDialog(QWidget *parent = nullptr);
     ~LoginDialog();
-    bool adminCredentials()
+    bool getMatch() const
     {
         return match;
     }
+    bool adminCredentials() const
+    {
+        return admin;
+    }
+    void setAdmin(bool check)
+    {
+        admin = check;
+    }
+
+
 
 private slots:
 
@@ -35,6 +45,7 @@ private:
     bool match;
     bool locked;
     int count;
+    bool admin;
 
 };
 

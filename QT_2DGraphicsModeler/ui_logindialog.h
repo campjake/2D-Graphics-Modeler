@@ -128,10 +128,10 @@ public:
     {
         LoginDialog->setWindowTitle(QCoreApplication::translate("LoginDialog", "Login", nullptr));
         label->setText(QCoreApplication::translate("LoginDialog", "Username", nullptr));
-        lineEdit_username->setPlaceholderText(QCoreApplication::translate("LoginDialog", "REMOVE LATER - Username = USER", nullptr));
+        lineEdit_username->setPlaceholderText(QCoreApplication::translate("LoginDialog", "Enter username here", nullptr));
         label_2->setText(QCoreApplication::translate("LoginDialog", "Password", nullptr));
         lineEdit_password->setText(QString());
-        lineEdit_password->setPlaceholderText(QCoreApplication::translate("LoginDialog", "REMOVE LATER - Password = 12345", nullptr));
+        lineEdit_password->setPlaceholderText(QCoreApplication::translate("LoginDialog", "Enter password here", nullptr));
         pushButton->setText(QCoreApplication::translate("LoginDialog", "Login", nullptr));
         pushButton_2->setText(QCoreApplication::translate("LoginDialog", "Exit", nullptr));
         label_logo->setText(QString());

@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "renderarea.h"
 #include "shape.h"
+#include "vector.h"
 #include "ui_mainwindow.h"
 #include <QApplication>
 
@@ -18,10 +19,15 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->actionCustomer_Testimonials,SIGNAL(triggered()),this,SLOT(on_actionCustomer_Testimonials_triggered()));
     shapeVector = textParser->ReadFile("shapes.txt", renderArea);
     renderArea->setData(std::move(shapeVector));
+    l.show();
 }
 
 MainWindow::~MainWindow()
 {
+    // Keep this format to save in the future not just on quit
+//    vector<Shape*> temp;
+
+//    WriteToFile(std::move(shapeVector), "shapes.txt");
     delete ui;
 }
 
@@ -248,14 +254,59 @@ void MainWindow::on_addLine_clicked()
     // Would require a new class AddLine
     // Only for admins
 
+
+
+    setCredentials(l.adminCredentials());
+
     if(isAdmin)
     {
-        // Creates a Line pointer and needs to draw it.
+        QPoint front, end;
+        front.setX(1); front.setY(1);
+        end.setX(500); end.setY(500);
+        Line* line = new Line(renderArea, 8, ShapeType::Line, Qt::SolidLine);
+        line->setPoint1(front);
+        line->setPoint2(end);
 
-
-
-//        Line* line = new Line(renderArea, )
+        shapeVector->push_back(line);
+        createRenderArea();
     }
+    else
+    {
+        QMessageBox sorry;
+        sorry.warning(this, "Add Line Failed",
+                      "Only Admins can add Shapes");
+    }
+
+
 }
 
+
+
+void MainWindow::on_addPolyline_clicked()
+{
+    if(isAdmin)
+    {
+        QList<QPoint> list;
+        QPoint p1, p2, p3, p4;
+        p1.setX(50); p1.setY(1);
+        p2.setX(1); p2.setY(100);
+        p3.setX(33); p3.setY(55);
+        p4.setX(187); p4.setY(9);
+        list.push_back(p1);
+        list.push_back(p2);
+        list.push_back(p3);
+        list.push_back(p4);
+        Polyline* polyline = new Polyline(renderArea, 8, ShapeType::Polyline, Qt::DashLine);
+        polyline->SetPoints(list);
+
+        shapeVector->push_back(polyline);
+        createRenderArea();
+    }
+    else
+    {
+        QMessageBox sorry;
+        sorry.warning(this, "Add Polyline Failed",
+                      "Only Admins can add Shapes");
+    }
+}
 

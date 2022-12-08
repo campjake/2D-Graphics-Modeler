@@ -6,14 +6,16 @@
 int main(int argc, char *argv[])
 {
 
-    QApplication a(argc, argv);
-    MainWindow w;
-    LoginDialog login;
+    QApplication a(argc, argv);    
+//    LoginDialog login;
+
     ContactUs contact;
 
 
-    login.show();
-    w.show();
+//    login.show();
+
+    MainWindow w;
+    w.showMaximized();
 
 
 

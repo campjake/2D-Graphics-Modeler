@@ -36,12 +36,14 @@ public:
     QAction *actionCustomer_Testimonials;
     QAction *actionShape_Area_Listing;
     QAction *actionShape_Perimeter_Listing;
+    QAction *actionLogin;
     QWidget *centralwidget;
     RenderArea *renderArea;
     QMenuBar *menubar;
     QMenu *menuFile;
     QMenu *menuMenu;
     QMenu *menuReports;
+    QMenu *menuAccount;
     QStatusBar *statusbar;
     QDockWidget *dockWidget;
     QWidget *dockWidgetContents;
@@ -77,6 +79,8 @@ public:
         actionShape_Area_Listing->setObjectName("actionShape_Area_Listing");
         actionShape_Perimeter_Listing = new QAction(MainWindow);
         actionShape_Perimeter_Listing->setObjectName("actionShape_Perimeter_Listing");
+        actionLogin = new QAction(MainWindow);
+        actionLogin->setObjectName("actionLogin");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         renderArea = new RenderArea(centralwidget);
@@ -93,6 +97,8 @@ public:
         menuMenu->setObjectName("menuMenu");
         menuReports = new QMenu(menubar);
         menuReports->setObjectName("menuReports");
+        menuAccount = new QMenu(menubar);
+        menuAccount->setObjectName("menuAccount");
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -139,6 +145,7 @@ public:
         menubar->addAction(menuFile->menuAction());
         menubar->addAction(menuMenu->menuAction());
         menubar->addAction(menuReports->menuAction());
+        menubar->addAction(menuAccount->menuAction());
         menuFile->addAction(actionNew);
         menuFile->addAction(actionOpen_File);
         menuFile->addAction(actionSave);
@@ -147,6 +154,7 @@ public:
         menuMenu->addAction(actionCustomer_Testimonials);
         menuReports->addAction(actionShape_Area_Listing);
         menuReports->addAction(actionShape_Perimeter_Listing);
+        menuAccount->addAction(actionLogin);
 
         retranslateUi(MainWindow);
 
@@ -164,9 +172,11 @@ public:
         actionCustomer_Testimonials->setText(QCoreApplication::translate("MainWindow", "Customer Testimonials", nullptr));
         actionShape_Area_Listing->setText(QCoreApplication::translate("MainWindow", "Shape Area Listing", nullptr));
         actionShape_Perimeter_Listing->setText(QCoreApplication::translate("MainWindow", "Shape Perimeter Listing", nullptr));
+        actionLogin->setText(QCoreApplication::translate("MainWindow", "Login", nullptr));
         menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
         menuMenu->setTitle(QCoreApplication::translate("MainWindow", "Menu", nullptr));
         menuReports->setTitle(QCoreApplication::translate("MainWindow", "Reports", nullptr));
+        menuAccount->setTitle(QCoreApplication::translate("MainWindow", "Account", nullptr));
         addLine->setText(QCoreApplication::translate("MainWindow", "Line", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Add Shape", nullptr));
         addPolyline->setText(QCoreApplication::translate("MainWindow", "Polyline", nullptr));

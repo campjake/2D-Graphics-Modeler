@@ -7,7 +7,8 @@ LoginDialog::LoginDialog(QWidget *parent) :
     ui(new Ui::LoginDialog),
     match{false},
     locked{false},
-    count{0}
+    count{0},
+    admin{false}
 {
     ui->setupUi(this);
 
@@ -26,17 +27,26 @@ void LoginDialog::on_pushButton_clicked()
     QString username = ui->lineEdit_username->text();
     QString password = ui->lineEdit_password->text();
 
-    if(username == "USER" && password == "12345" && !locked)
+    if((username == "USER" && password == "12345" && !locked))
     {
         match = true;
+        admin = true;
     }
     else
     {
-        if(!locked)
+        if(username == "GUEST" && password == "12345" && !locked)
         {
-            loginRejected.warning(this, "Login Failed", "Incorrect username and/or password");
-            match = false;
-            count++;
+            match = true;
+            admin = false;
+        }
+        else
+        {
+            if(!locked)
+            {
+                loginRejected.warning(this, "Login Failed", "Incorrect username and/or password");
+                match = false;
+                count++;
+            }
         }
     }
 
@@ -59,6 +69,7 @@ void LoginDialog::on_pushButton_2_clicked()
 {
     QCoreApplication::quit();
 }
+
 
 
 
