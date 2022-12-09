@@ -62,11 +62,11 @@ void Line::Draw(QPainter* painter)
 }
 
 //Moves first point
-void Line::Move(int xCoord, int yCoord)
-{
-    point1.setX(xCoord);
-    point1.setY(yCoord);
-}
+//void Line::Move(int xCoord, int yCoord)
+//{
+//    point1.setX(xCoord);
+//    point1.setY(yCoord);
+//}
 
 //Calculates distance
 double Line::CalcPerimeter() const
@@ -83,14 +83,14 @@ double Line::CalcArea() const
 //Class specific functions
 
 //Moves all points by offset in x and y
-void Line::moveOffset(int offsetX, int offsetY)
-{
-    point1.setX(point1.x() + offsetX);
-    point1.setY(point1.y() + offsetY);
+//void Line::moveOffset(int offsetX, int offsetY)
+//{
+//    point1.setX(point1.x() + offsetX);
+//    point1.setY(point1.y() + offsetY);
 
-    point2.setX(point2.x() + offsetX);
-    point2.setY(point2.y() + offsetY);
-}
+//    point2.setX(point2.x() + offsetX);
+//    point2.setY(point2.y() + offsetY);
+//}
 
 //sets both ends of line
 void Line::setPoints(const QPoint& P1, const QPoint& P2)

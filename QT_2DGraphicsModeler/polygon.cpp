@@ -188,14 +188,14 @@ void Polygon::Draw(QPainter* painter)
 }
 
 // Move Function for Polygon should use SetPoints?
-void Polygon::Move(int xCoord, int yCoord)
-{
-    QPoint qPos;
-    qPos.setX(xCoord);
-    qPos.setY(yCoord);
+//void Polygon::Move(int xCoord, int yCoord)
+//{
+//    QPoint qPos;
+//    qPos.setX(xCoord);
+//    qPos.setY(yCoord);
 
-    polyPoints->replace(0, qPos);
-}
+//    polyPoints->replace(0, qPos);
+//}
 
 // Calc Perimeter Function
 // Pre-Conditions - NONE

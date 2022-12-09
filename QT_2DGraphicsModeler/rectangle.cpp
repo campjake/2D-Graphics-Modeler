@@ -53,13 +53,13 @@ void Rectangle::Draw(QPainter* painter)
 }
 
 // Move function
-void Rectangle::Move(int xCoord, int yCoord)
-{
-    QPoint pos;
-    pos.setX(xCoord);
-    pos.setY(yCoord);
-    this->SetPos(pos);
-}
+//void Rectangle::Move(int xCoord, int yCoord)
+//{
+//    QPoint pos;
+//    pos.setX(xCoord);
+//    pos.setY(yCoord);
+//    this->SetPos(pos);
+//}
 
 // CalcPerimeter
 double Rectangle::CalcPerimeter() const

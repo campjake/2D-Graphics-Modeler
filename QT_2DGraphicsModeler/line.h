@@ -46,7 +46,7 @@ public:
     //Class specific functions
 
     //Moves all points by offset in x and y
-    void moveOffset(int offsetX, int offsetY);
+//    void moveOffset(int offsetX, int offsetY);
 
     //sets both ends of line
     void setPoints(const QPoint& P1, const QPoint& P2);

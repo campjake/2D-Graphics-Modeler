@@ -27,7 +27,7 @@ public:
     void Draw(QPainter* painter);
 
     //Moves first point
-    void Move(int xCoord, int yCoord);
+//    void Move(int xCoord, int yCoord);
 
     //calculates line length
     double CalcPerimeter() const;
@@ -49,7 +49,7 @@ public:
     void SetPoints(QList<QPoint> points);
 
     //Moves all points by an offset in x and y
-    void moveOffset(int xOffset, int yOffset);
+//    void moveOffset(int xOffset, int yOffset);
 
     //deletes a specific point
     void deletePoint(const QPoint& point);

@@ -36,7 +36,7 @@ class Ellipse : public Shape
     virtual void Draw(QPainter* painter);
 
     // Move function
-    virtual void Move(int xCoor, int yCoord);
+//    virtual void Move(int xCoor, int yCoord);
 
     // CalcPerimeter
     virtual double CalcPerimeter() const;

@@ -37,11 +37,11 @@ void Polyline::Draw(QPainter* painter)
 }
 
 //Moves first point
-void Polyline::Move(int xCoord, int yCoord)
-{
-    QPoint temp(xCoord, yCoord);
-    LinePoints->replace(0, temp);
-}
+//void Polyline::Move(int xCoord, int yCoord)
+//{
+//    QPoint temp(xCoord, yCoord);
+//    LinePoints->replace(0, temp);
+//}
 
 //calculates line length
 double Polyline::CalcPerimeter() const
@@ -110,14 +110,14 @@ void Polyline::SetPoints(QList<QPoint> points)
 }
 
 //Moves all points by an offset in x and y
-void Polyline::moveOffset(int xOffset, int yOffset)
-{
-    for (QList<QPoint>::iterator it = LinePoints->begin(); it != LinePoints->end(); ++it)
-    {
-        it->setX(it->x() + xOffset);
-        it->setY(it->y() + yOffset);
-    }
-}
+//void Polyline::moveOffset(int xOffset, int yOffset)
+//{
+//    for (QList<QPoint>::iterator it = LinePoints->begin(); it != LinePoints->end(); ++it)
+//    {
+//        it->setX(it->x() + xOffset);
+//        it->setY(it->y() + yOffset);
+//    }
+//}
 
 //deletes a specific point
 void Polyline::deletePoint(const QPoint& point)

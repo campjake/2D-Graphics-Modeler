@@ -74,6 +74,10 @@ bool Shape::operator==(const Shape& otherShape)
 
 // Overloaded < Operator ??
 // to be defined later if necessary
+bool Shape::operator<(const Shape& otherShape)
+{
+    return id < otherShape.id;
+}
 
 /************ BEGIN ACCESSORS / GETTERS ************/
 
@@ -176,6 +180,13 @@ void Shape::SetPos(const QPoint thatPos)
     shapePos = thatPos;
 }
 
+void Shape::Move(int xCoord, int yCoord)
+{
+    QPoint pos;
+    pos.setX(xCoord);
+    pos.setY(yCoord);
+    this->SetPos(pos);
+}
 
 // Our sweet sweet lil protected guy
 // Pre-conditions - NONE
@@ -184,3 +195,4 @@ QPainter* Shape::getPainter()
 {
     return &painter;
 }
+

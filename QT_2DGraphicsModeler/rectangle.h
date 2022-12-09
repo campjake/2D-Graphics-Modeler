@@ -31,7 +31,7 @@ public:
     virtual void Draw(QPainter* painter);
 
     // Move function
-    virtual void Move(int xCoord, int yCoord);
+//    virtual void Move(int xCoord, int yCoord);
 
     // CalcPerimeter
     virtual double CalcPerimeter() const;

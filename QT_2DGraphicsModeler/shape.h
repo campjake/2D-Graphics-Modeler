@@ -48,7 +48,7 @@ class Shape
     /******************* Overloaded Compare Operators *********************/
     // Equality operator
     bool operator==(const Shape& otherShape);
-//    bool operator<(const Shape& otherShape);  DO WE NEED THIS?
+    bool operator<(const Shape& otherShape);
     /********************************************************************/
 
     // ACCESSORS / GETTERS
@@ -96,13 +96,14 @@ class Shape
     // Set Position on X, Y Plane
     void SetPos(const QPoint thatPos);
 
+    void Move(int xCoord, int yCoord);
 
     /******************* Pure Virtual Fcns **************************/
     // Draw function
     virtual void Draw(QPainter* painter) = 0;
 
     // Move function
-    virtual void Move(int xCoord, int yCoord) = 0;
+//    virtual void Move(int xCoord, int yCoord) = 0;
 
     // CalcPerimeter
     virtual double CalcPerimeter() const = 0;

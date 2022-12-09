@@ -50,13 +50,13 @@ void Ellipse::Draw(QPainter* painter)
 }
 
 // Move function
-void Ellipse::Move(int xCoord, int yCoord)
-{
-    QPoint pos;
-    pos.setX(xCoord);
-    pos.setY(yCoord);
-    this->SetPos(pos);
-}
+//void Ellipse::Move(int xCoord, int yCoord)
+//{
+//    QPoint pos;
+//    pos.setX(xCoord);
+//    pos.setY(yCoord);
+//    this->SetPos(pos);
+//}
 
 // CalcPerimeter
 double Ellipse::CalcPerimeter() const

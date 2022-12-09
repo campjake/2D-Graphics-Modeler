@@ -125,9 +125,9 @@ void Text::Draw(QPainter* painter) {
 * written on the text variable then outputs the text within the given
 * boundary box.
 *********************************************************************/
-void Text::Move(int xCoord, int yCoord){
-	Shape::SetPos(QPoint(xCoord, yCoord));
-}
+//void Text::Move(int xCoord, int yCoord){
+//	Shape::SetPos(QPoint(xCoord, yCoord));
+//}
 
 //-1 as text shouldnt have perimeter/area
 double Text::CalcPerimeter() const{
