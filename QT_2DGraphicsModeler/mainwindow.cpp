@@ -4,6 +4,8 @@
 #include "vector.h"
 #include "ui_mainwindow.h"
 #include <QApplication>
+#include <iostream>
+#include <algorithm>
 
 static int  count = 9;
 
@@ -345,6 +347,10 @@ void MainWindow::on_addPolyline_clicked()
 
         shapeVector->push_back(polyline);
         renderArea->setVector(shapeVector);
+
+        std::sort(list.begin(), list.end(), Cmp_by_id());
+        std::sort(list.begin(), list.end(), Cmp_by_perimeter());
+        std::sort(list.begin(), list.end(), Cmp_by_area());
     }
     else
     {
