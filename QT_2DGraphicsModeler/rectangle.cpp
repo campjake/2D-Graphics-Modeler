@@ -24,6 +24,24 @@ Rectangle::~Rectangle(){}
 
 //        // Move Assignment
 //    Shape& operator=(Shape&& otherShape) noexcept;
+Rectangle::Rectangle(Rectangle&& otherRectangle) noexcept
+: Shape(Shape&& otherRectangle) noexcept
+{
+    width = std::move(otherRectangle.width);
+    length = std::move(otherRectangle.length);
+}
+
+//// Move Assignment
+//// Pre-Conditions - R-value casted other shape object
+//// Post-Conditions - Returns a shape object
+Rectangle& Rectangle::operator=(Rectangle&& otherRectangle) noexcept
+{
+    *this = std::move(Shape(otherRectangle));
+    width = std::move(otherRectangle.width);
+    length = std::move(otherRectangle.length);
+
+    return *this;
+}
 
 float Rectangle::getWidth()const
 {
