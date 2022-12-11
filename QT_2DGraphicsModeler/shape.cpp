@@ -172,6 +172,11 @@ void Shape::SetBrush(const QColor aColor,
     shapeBrush.setStyle(brushStyle);
 }
 
+void Shape::SetBrush(const QBrush thatBrush)
+{
+    shapeBrush = thatBrush;
+}
+
 // Overloaded SetPos function
 // Pre-Conditions - a QPoint
 // Post-conditions - NONE

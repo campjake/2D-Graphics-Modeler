@@ -31,6 +31,8 @@ enum ShapeNames
     TEXT
 };
 
+
+
 // Parser is an abstract class, you should not be able to declare it
 class TextParser
 {

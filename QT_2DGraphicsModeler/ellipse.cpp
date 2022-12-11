@@ -47,6 +47,10 @@ void Ellipse::Draw(QPainter* painter)
     painter->setPen(GetPen());
     painter->setBrush(GetBrush());
     painter->drawEllipse(GetPos(), a, b);
+
+    painter->drawText(GetPos(), QString::number(GetID()));
+
+
 }
 
 // Move function

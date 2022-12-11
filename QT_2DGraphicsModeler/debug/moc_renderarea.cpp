@@ -26,7 +26,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_RenderArea_t {
-    uint offsetsAndSizes[20];
+    uint offsetsAndSizes[26];
     char stringdata0[11];
     char stringdata1[7];
     char stringdata2[1];
@@ -37,6 +37,9 @@ struct qt_meta_stringdata_RenderArea_t {
     char stringdata7[12];
     char stringdata8[15];
     char stringdata9[12];
+    char stringdata10[8];
+    char stringdata11[7];
+    char stringdata12[6];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_RenderArea_t::offsetsAndSizes) + ofs), len 
@@ -51,7 +54,10 @@ Q_CONSTINIT static const qt_meta_stringdata_RenderArea_t qt_meta_stringdata_Rend
         QT_MOC_LITERAL(38, 14),  // "setAntialiased"
         QT_MOC_LITERAL(53, 11),  // "antialiased"
         QT_MOC_LITERAL(65, 14),  // "setTransformed"
-        QT_MOC_LITERAL(80, 11)   // "transformed"
+        QT_MOC_LITERAL(80, 11),  // "transformed"
+        QT_MOC_LITERAL(92, 7),  // "setMove"
+        QT_MOC_LITERAL(100, 6),  // "newPos"
+        QT_MOC_LITERAL(107, 5)   // "theID"
     },
     "RenderArea",
     "setPen",
@@ -62,7 +68,10 @@ Q_CONSTINIT static const qt_meta_stringdata_RenderArea_t qt_meta_stringdata_Rend
     "setAntialiased",
     "antialiased",
     "setTransformed",
-    "transformed"
+    "transformed",
+    "setMove",
+    "newPos",
+    "theID"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -73,7 +82,7 @@ Q_CONSTINIT static const uint qt_meta_data_RenderArea[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -81,16 +90,18 @@ Q_CONSTINIT static const uint qt_meta_data_RenderArea[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   38,    2, 0x0a,    1 /* Public */,
-       4,    1,   41,    2, 0x0a,    3 /* Public */,
-       6,    1,   44,    2, 0x0a,    5 /* Public */,
-       8,    1,   47,    2, 0x0a,    7 /* Public */,
+       1,    1,   44,    2, 0x0a,    1 /* Public */,
+       4,    1,   47,    2, 0x0a,    3 /* Public */,
+       6,    1,   50,    2, 0x0a,    5 /* Public */,
+       8,    1,   53,    2, 0x0a,    7 /* Public */,
+      10,    2,   56,    2, 0x0a,    9 /* Public */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::QPen,    3,
     QMetaType::Void, QMetaType::QBrush,    5,
     QMetaType::Void, QMetaType::Bool,    7,
     QMetaType::Void, QMetaType::Bool,    9,
+    QMetaType::Void, QMetaType::QPoint, QMetaType::Int,   11,   12,
 
        0        // eod
 };
@@ -115,7 +126,11 @@ Q_CONSTINIT const QMetaObject RenderArea::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<bool, std::false_type>,
         // method 'setTransformed'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<bool, std::false_type>
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'setMove'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QPoint, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>
     >,
     nullptr
 } };
@@ -130,6 +145,7 @@ void RenderArea::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 1: _t->setBrush((*reinterpret_cast< std::add_pointer_t<QBrush>>(_a[1]))); break;
         case 2: _t->setAntialiased((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
         case 3: _t->setTransformed((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 4: _t->setMove((*reinterpret_cast< std::add_pointer_t<QPoint>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
         default: ;
         }
     }
@@ -154,13 +170,13 @@ int RenderArea::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 5;
     }
     return _id;
 }

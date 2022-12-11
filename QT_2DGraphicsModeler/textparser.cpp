@@ -1,5 +1,6 @@
 #include "textparser.h"
 
+
 const QMap<ShapeNames, QString> shapeMap = {
     {ShapeNames::LINE, "Line"},
     {ShapeNames::POLYLINE, "Polyline"},
@@ -11,7 +12,6 @@ const QMap<ShapeNames, QString> shapeMap = {
     {ShapeNames::TEXT, "Text"}
 
 };
-
 
 Qt::PenStyle TextParser::GetPenStyle(QString penStyle)
 {
@@ -427,7 +427,7 @@ Shape* TextParser::ReadPolyline(QTextStream &fin, int id,
     polyline->SetPen(color, width, penStyle, capStyle, joinStyle);
 
     // Note - Polyline has no Brush, so we can get by with just QColor & no setBrush fcn
-
+//    int numPoint = polyline->GetNumPoints();
     return polyline;
 }
 

@@ -26,6 +26,16 @@
     <property name="cursor">
      <cursorShape>ArrowCursor</cursorShape>
     </property>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>490</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -66,10 +76,17 @@
     </property>
     <addaction name="actionLogin"/>
    </widget>
+   <widget class="QMenu" name="menuShapes">
+    <property name="title">
+     <string>Shapes</string>
+    </property>
+    <addaction name="actionMove_Shape"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuMenu"/>
    <addaction name="menuReports"/>
    <addaction name="menuAccount"/>
+   <addaction name="menuShapes"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QDockWidget" name="dockWidget">
@@ -191,6 +208,16 @@
       <string notr="true">buttonGroup</string>
      </attribute>
     </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>460</y>
+       <width>291</width>
+       <height>80</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
   </widget>
   <action name="actionNew">
@@ -242,6 +269,11 @@
   <action name="actionLogin">
    <property name="text">
     <string>Login</string>
+   </property>
+  </action>
+  <action name="actionMove_Shape">
+   <property name="text">
+    <string>Move Shape</string>
    </property>
   </action>
  </widget>

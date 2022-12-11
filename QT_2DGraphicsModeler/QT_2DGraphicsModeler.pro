@@ -14,6 +14,7 @@ SOURCES += \
     logindialog.cpp \
     main.cpp \
     mainwindow.cpp \
+    moveshape.cpp \
     polygon.cpp \
     polyline.cpp \
     rectangle.cpp \
@@ -29,6 +30,7 @@ HEADERS += \
     line.h \
     logindialog.h \
     mainwindow.h \
+    moveshape.h \
     polygon.h \
     polyline.h \
     rectangle.h \
@@ -45,6 +47,7 @@ FORMS += \
     logindialog.ui \
     mainwindow.ui \
     contactus.ui \
+    moveshape.ui \
     testimonial.ui
 
 # Default rules for deployment.

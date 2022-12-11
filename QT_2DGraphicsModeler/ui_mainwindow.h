@@ -15,6 +15,7 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDockWidget>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -37,13 +38,16 @@ public:
     QAction *actionShape_Area_Listing;
     QAction *actionShape_Perimeter_Listing;
     QAction *actionLogin;
+    QAction *actionMove_Shape;
     QWidget *centralwidget;
     RenderArea *renderArea;
+    QLineEdit *lineEdit;
     QMenuBar *menubar;
     QMenu *menuFile;
     QMenu *menuMenu;
     QMenu *menuReports;
     QMenu *menuAccount;
+    QMenu *menuShapes;
     QStatusBar *statusbar;
     QDockWidget *dockWidget;
     QWidget *dockWidgetContents;
@@ -54,6 +58,7 @@ public:
     QPushButton *addEllipse;
     QPushButton *addRect;
     QPushButton *addPolygon;
+    QWidget *widget;
     QButtonGroup *buttonGroup;
 
     void setupUi(QMainWindow *MainWindow)
@@ -81,12 +86,17 @@ public:
         actionShape_Perimeter_Listing->setObjectName("actionShape_Perimeter_Listing");
         actionLogin = new QAction(MainWindow);
         actionLogin->setObjectName("actionLogin");
+        actionMove_Shape = new QAction(MainWindow);
+        actionMove_Shape->setObjectName("actionMove_Shape");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         renderArea = new RenderArea(centralwidget);
         renderArea->setObjectName("renderArea");
         renderArea->setGeometry(QRect(0, 0, 741, 561));
         renderArea->setCursor(QCursor(Qt::ArrowCursor));
+        lineEdit = new QLineEdit(renderArea);
+        lineEdit->setObjectName("lineEdit");
+        lineEdit->setGeometry(QRect(130, 490, 113, 24));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -99,6 +109,8 @@ public:
         menuReports->setObjectName("menuReports");
         menuAccount = new QMenu(menubar);
         menuAccount->setObjectName("menuAccount");
+        menuShapes = new QMenu(menubar);
+        menuShapes->setObjectName("menuShapes");
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -139,6 +151,9 @@ public:
         buttonGroup->addButton(addPolygon);
         addPolygon->setObjectName("addPolygon");
         addPolygon->setGeometry(QRect(10, 90, 61, 24));
+        widget = new QWidget(dockWidgetContents);
+        widget->setObjectName("widget");
+        widget->setGeometry(QRect(10, 460, 291, 80));
         dockWidget->setWidget(dockWidgetContents);
         MainWindow->addDockWidget(Qt::LeftDockWidgetArea, dockWidget);
 
@@ -146,6 +161,7 @@ public:
         menubar->addAction(menuMenu->menuAction());
         menubar->addAction(menuReports->menuAction());
         menubar->addAction(menuAccount->menuAction());
+        menubar->addAction(menuShapes->menuAction());
         menuFile->addAction(actionNew);
         menuFile->addAction(actionOpen_File);
         menuFile->addAction(actionSave);
@@ -155,6 +171,7 @@ public:
         menuReports->addAction(actionShape_Area_Listing);
         menuReports->addAction(actionShape_Perimeter_Listing);
         menuAccount->addAction(actionLogin);
+        menuShapes->addAction(actionMove_Shape);
 
         retranslateUi(MainWindow);
 
@@ -173,10 +190,12 @@ public:
         actionShape_Area_Listing->setText(QCoreApplication::translate("MainWindow", "Shape Area Listing", nullptr));
         actionShape_Perimeter_Listing->setText(QCoreApplication::translate("MainWindow", "Shape Perimeter Listing", nullptr));
         actionLogin->setText(QCoreApplication::translate("MainWindow", "Login", nullptr));
+        actionMove_Shape->setText(QCoreApplication::translate("MainWindow", "Move Shape", nullptr));
         menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
         menuMenu->setTitle(QCoreApplication::translate("MainWindow", "Menu", nullptr));
         menuReports->setTitle(QCoreApplication::translate("MainWindow", "Reports", nullptr));
         menuAccount->setTitle(QCoreApplication::translate("MainWindow", "Account", nullptr));
+        menuShapes->setTitle(QCoreApplication::translate("MainWindow", "Shapes", nullptr));
         addLine->setText(QCoreApplication::translate("MainWindow", "Line", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Add Shape", nullptr));
         addPolyline->setText(QCoreApplication::translate("MainWindow", "Polyline", nullptr));

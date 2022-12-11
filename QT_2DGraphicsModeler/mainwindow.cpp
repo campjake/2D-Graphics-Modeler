@@ -13,19 +13,27 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    createRenderArea();
     textParser = new TextParser;
+    renderArea = new RenderArea;
     connect(ui->actionContact_Us,SIGNAL(triggered()),this,SLOT(on_actionContact_Us_triggered()));
     connect(ui->actionCustomer_Testimonials,SIGNAL(triggered()),this,SLOT(on_actionCustomer_Testimonials_triggered()));
+    connect(ui->actionMove_Shape,SIGNAL(triggered()),this,SLOT(actionMove_Shape_triggered()));
+
     shapeVector = textParser->ReadFile("shapes.txt", renderArea);
-    renderArea->setData(std::move(shapeVector));
+
+    renderArea = createRenderArea();
+
+    renderArea->setData((*shapeVector)[0]);
+    renderArea->setVector(shapeVector);
     l.show();
+
 }
 
 MainWindow::~MainWindow()
 {
     // Keep this format to save in the future not just on quit
 //    vector<Shape*> temp;
+
 
 //    WriteToFile(std::move(shapeVector), "shapes.txt");
     delete ui;
@@ -44,6 +52,17 @@ void MainWindow::on_actionCustomer_Testimonials_triggered()
     testimonial* window;
     window = new testimonial();
     window->exec();
+}
+
+void MainWindow::on_actionMove_Shape_triggered()
+{
+    moveWindow = new MoveShape();
+//    moveWindow->setVector(renderArea->getVector());
+    moveWindow->exec();
+    QPoint point(50, 50);
+
+    renderArea->setMove(point, 1);
+    (*shapeVector)[0]->Move(50, 50);
 }
 
 void MainWindow::on_actionOpen_File_triggered()
@@ -68,18 +87,21 @@ void MainWindow::on_actionOpen_File_triggered()
 
 RenderArea* MainWindow::createRenderArea()
 {
-    renderArea = new RenderArea;
 
-    shapeComboBox = new QComboBox;
-    shapeComboBox->addItem(tr("Line"), ShapeNames::LINE);
-    shapeComboBox->addItem(tr("Polyline"), ShapeNames::POLYLINE);
-    shapeComboBox->addItem(tr("Polygon"), ShapeNames::POLYGON);
-    shapeComboBox->addItem(tr("Rectangle"), ShapeNames::RECTANGLE);
-    shapeComboBox->addItem(tr("Ellipse"), ShapeNames::ELLIPSE);
-    shapeComboBox->addItem(tr("Text"), ShapeNames::TEXT);
+//    renderArea = new RenderArea;
+    shapeIDBox = new QSpinBox;
+//    shapeIDBox->setWrapping(true);
+    shapeIDBox->setRange(1, shapeVector->size());
 
-    shapeLabel = new QLabel(tr("&Shape:"));
-    shapeLabel->setBuddy(shapeComboBox);
+    //    shapeComboBox->addItem(tr("Line"), ShapeNames::LINE);
+//    shapeComboBox->addItem(tr("Polyline"), ShapeNames::POLYLINE);
+//    shapeComboBox->addItem(tr("Polygon"), ShapeNames::POLYGON);
+//    shapeComboBox->addItem(tr("Rectangle"), ShapeNames::RECTANGLE);
+//    shapeComboBox->addItem(tr("Ellipse"), ShapeNames::ELLIPSE);
+//    shapeComboBox->addItem(tr("Text"), ShapeNames::TEXT);
+
+    shapeLabel = new QLabel(tr("&ID:"));
+    shapeLabel->setBuddy(shapeIDBox);
 
     penWidthSpinBox = new QSpinBox;
     penWidthSpinBox->setRange(0, 20);
@@ -115,27 +137,27 @@ RenderArea* MainWindow::createRenderArea()
     penJoinLabel = new QLabel(tr("Pen &Join:"));
     penJoinLabel->setBuddy(penJoinComboBox);
     brushStyleComboBox = new QComboBox;
-    brushStyleComboBox->addItem(tr("Linear Gradient"),
-            static_cast<int>(Qt::LinearGradientPattern));
-    brushStyleComboBox->addItem(tr("Radial Gradient"),
-            static_cast<int>(Qt::RadialGradientPattern));
-    brushStyleComboBox->addItem(tr("Conical Gradient"),
-            static_cast<int>(Qt::ConicalGradientPattern));
-    brushStyleComboBox->addItem(tr("Texture"), static_cast<int>(Qt::TexturePattern));
+//    brushStyleComboBox->addItem(tr("Linear Gradient"),
+//            static_cast<int>(Qt::LinearGradientPattern));
+//    brushStyleComboBox->addItem(tr("Radial Gradient"),
+//            static_cast<int>(Qt::RadialGradientPattern));
+//    brushStyleComboBox->addItem(tr("Conical Gradient"),
+//            static_cast<int>(Qt::ConicalGradientPattern));
+//    brushStyleComboBox->addItem(tr("Texture"), static_cast<int>(Qt::TexturePattern));
     brushStyleComboBox->addItem(tr("Solid"), static_cast<int>(Qt::SolidPattern));
     brushStyleComboBox->addItem(tr("Horizontal"), static_cast<int>(Qt::HorPattern));
     brushStyleComboBox->addItem(tr("Vertical"), static_cast<int>(Qt::VerPattern));
-    brushStyleComboBox->addItem(tr("Cross"), static_cast<int>(Qt::CrossPattern));
-    brushStyleComboBox->addItem(tr("Backward Diagonal"), static_cast<int>(Qt::BDiagPattern));
-    brushStyleComboBox->addItem(tr("Forward Diagonal"), static_cast<int>(Qt::FDiagPattern));
-    brushStyleComboBox->addItem(tr("Diagonal Cross"), static_cast<int>(Qt::DiagCrossPattern));
-    brushStyleComboBox->addItem(tr("Dense 1"), static_cast<int>(Qt::Dense1Pattern));
-    brushStyleComboBox->addItem(tr("Dense 2"), static_cast<int>(Qt::Dense2Pattern));
-    brushStyleComboBox->addItem(tr("Dense 3"), static_cast<int>(Qt::Dense3Pattern));
-    brushStyleComboBox->addItem(tr("Dense 4"), static_cast<int>(Qt::Dense4Pattern));
-    brushStyleComboBox->addItem(tr("Dense 5"), static_cast<int>(Qt::Dense5Pattern));
-    brushStyleComboBox->addItem(tr("Dense 6"), static_cast<int>(Qt::Dense6Pattern));
-    brushStyleComboBox->addItem(tr("Dense 7"), static_cast<int>(Qt::Dense7Pattern));
+//    brushStyleComboBox->addItem(tr("Cross"), static_cast<int>(Qt::CrossPattern));
+//    brushStyleComboBox->addItem(tr("Backward Diagonal"), static_cast<int>(Qt::BDiagPattern));
+//    brushStyleComboBox->addItem(tr("Forward Diagonal"), static_cast<int>(Qt::FDiagPattern));
+//    brushStyleComboBox->addItem(tr("Diagonal Cross"), static_cast<int>(Qt::DiagCrossPattern));
+//    brushStyleComboBox->addItem(tr("Dense 1"), static_cast<int>(Qt::Dense1Pattern));
+//    brushStyleComboBox->addItem(tr("Dense 2"), static_cast<int>(Qt::Dense2Pattern));
+//    brushStyleComboBox->addItem(tr("Dense 3"), static_cast<int>(Qt::Dense3Pattern));
+//    brushStyleComboBox->addItem(tr("Dense 4"), static_cast<int>(Qt::Dense4Pattern));
+//    brushStyleComboBox->addItem(tr("Dense 5"), static_cast<int>(Qt::Dense5Pattern));
+//    brushStyleComboBox->addItem(tr("Dense 6"), static_cast<int>(Qt::Dense6Pattern));
+//    brushStyleComboBox->addItem(tr("Dense 7"), static_cast<int>(Qt::Dense7Pattern));
     brushStyleComboBox->addItem(tr("None"), static_cast<int>(Qt::NoBrush));
 
     brushStyleLabel = new QLabel(tr("&Brush:"));
@@ -144,9 +166,11 @@ RenderArea* MainWindow::createRenderArea()
     antialiasingCheckBox = new QCheckBox(tr("&Antialiasing"));
     transformationsCheckBox = new QCheckBox(tr("&Transformations"));
 
-    connect(shapeComboBox,SIGNAL(activated(int)),this,SLOT(shapeChanged(int)));
 
-    connect(penWidthSpinBox,SIGNAL(valueChanged(int)),this,SLOT(penChanged(int)));
+
+    connect(shapeIDBox,SIGNAL(QSpinBox::valueChanged(int)),this,SLOT(shapeChanged(int)));
+
+    connect(penWidthSpinBox,SIGNAL(QSpinBox::valueChanged(int)),this,SLOT(penChanged(int)));
 
     connect(penStyleComboBox,SIGNAL(activated(int)),this,SLOT(penChanged(int)));
 
@@ -166,7 +190,7 @@ RenderArea* MainWindow::createRenderArea()
     mainLayout->setColumnStretch(3, 1);
     mainLayout->addWidget(renderArea, 0, 0, 1, 4);
     mainLayout->addWidget(shapeLabel, 2, 0, Qt::AlignRight);
-    mainLayout->addWidget(shapeComboBox, 2, 1);
+    mainLayout->addWidget(shapeIDBox, 2, 1);
     mainLayout->addWidget(penWidthLabel, 3, 0, Qt::AlignRight);
     mainLayout->addWidget(penWidthSpinBox, 3, 1);
     mainLayout->addWidget(penStyleLabel, 4, 0, Qt::AlignRight);
@@ -186,23 +210,21 @@ RenderArea* MainWindow::createRenderArea()
     w->setLayout(mainLayout);
     this->setCentralWidget(w);
 
-    shapeChanged(0);
-    penChanged(0);
-    brushChanged(0);
+//    shapeChanged(shapeIDBox->value());
+//    penChanged(shapeIDBox->value());
+//    brushChanged(shapeIDBox->value());
     antialiasingCheckBox->setChecked(true);
 
     //    setWindowTitle(tr("Basic Drawing"));
     return renderArea;
 }
 
-void MainWindow::shapeChanged(int)
+void MainWindow::shapeChanged(int val)
 {
-    ShapeNames shape = ShapeNames(shapeComboBox->itemData(
-            shapeComboBox->currentIndex(), Qt::UserRole).toInt());
-    renderArea->setData(shapeVector);
+    renderArea->setData((*shapeVector)[val]);
 }
 
-void MainWindow::penChanged(int)
+void MainWindow::penChanged(int val)
 {
     int width = penWidthSpinBox->value();
     Qt::PenStyle style = Qt::PenStyle(penStyleComboBox->itemData(
@@ -212,10 +234,15 @@ void MainWindow::penChanged(int)
     Qt::PenJoinStyle join = Qt::PenJoinStyle(penJoinComboBox->itemData(
             penJoinComboBox->currentIndex(), Qt::UserRole).toInt());
 
-    renderArea->setPen(QPen(Qt::blue, width, style, cap, join));
+    QPen newPen(renderArea->getData()->GetPen().color(),
+                     width, style, cap, join);
+
+    renderArea->setPen(newPen);
+
+    (*shapeVector)[val]->SetPen(newPen);
 }
 
-void MainWindow::brushChanged(int)
+void MainWindow::brushChanged(int val)
 {
     Qt::BrushStyle style = Qt::BrushStyle(brushStyleComboBox->itemData(
             brushStyleComboBox->currentIndex(), Qt::UserRole).toInt());
@@ -227,12 +254,19 @@ void MainWindow::brushChanged(int)
         linearGradient.setColorAt(1.0, Qt::black);
         renderArea->setBrush(linearGradient);
 
+        QBrush brush(linearGradient);
+        (*shapeVector)[val]->SetBrush(brush);
+
     } else if (style == Qt::RadialGradientPattern) {
         QRadialGradient radialGradient(50, 50, 50, 70, 70);
         radialGradient.setColorAt(0.0, Qt::white);
         radialGradient.setColorAt(0.2, Qt::green);
         radialGradient.setColorAt(1.0, Qt::black);
         renderArea->setBrush(radialGradient);
+
+        QBrush brush(radialGradient);
+        (*shapeVector)[val]->SetBrush(brush);
+
     } else if (style == Qt::ConicalGradientPattern) {
         QConicalGradient conicalGradient(50, 50, 150);
         conicalGradient.setColorAt(0.0, Qt::white);
@@ -240,11 +274,19 @@ void MainWindow::brushChanged(int)
         conicalGradient.setColorAt(1.0, Qt::black);
         renderArea->setBrush(conicalGradient);
 
+        QBrush brush(conicalGradient);
+        (*shapeVector)[val]->SetBrush(brush);
+
     } else if (style == Qt::TexturePattern) {
-        renderArea->setBrush(QBrush(QPixmap(":/images/brick.png")));
+
+        QBrush brush(QPixmap(":/images/brick.png"));
+        renderArea->setBrush(brush);
+        (*shapeVector)[val]->SetBrush(brush);
 
     } else {
-        renderArea->setBrush(QBrush(Qt::green, style));
+        QBrush brush(Qt::green, style);
+        renderArea->setBrush(brush);
+        (*shapeVector)[val]->SetBrush(brush);
     }
 }
 
@@ -268,7 +310,9 @@ void MainWindow::on_addLine_clicked()
         line->setPoint2(end);
 
         shapeVector->push_back(line);
-        createRenderArea();
+//        RenderArea();
+        renderArea->setVector(shapeVector);
+
     }
     else
     {
@@ -300,7 +344,7 @@ void MainWindow::on_addPolyline_clicked()
         polyline->SetPoints(list);
 
         shapeVector->push_back(polyline);
-        createRenderArea();
+        renderArea->setVector(shapeVector);
     }
     else
     {

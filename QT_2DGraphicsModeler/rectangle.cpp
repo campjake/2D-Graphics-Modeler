@@ -49,7 +49,9 @@ void Rectangle::setLength(const float length)
 // Draw function
 void Rectangle::Draw(QPainter* painter)
 {
-    painter->drawRect(0, 0, width, length);
+    painter->drawRect(GetPos().x(), GetPos().y(), width, length);
+
+    painter->drawText(GetPos(), QString::number(GetID()));
 }
 
 // Move function

@@ -59,6 +59,9 @@ void Line::Draw(QPainter* painter)
 //    this->getPainter()->setBrush(GetBrush());
 //    this->getPainter()->drawLine(point1, point2);
 
+
+    painter->drawText(point1,  QString::number(GetID()));
+
 }
 
 //Moves first point

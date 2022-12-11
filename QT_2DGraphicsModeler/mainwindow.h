@@ -3,6 +3,7 @@
 #include "contactus.h"
 #include "logindialog.h"
 #include "testimonial.h"
+#include "moveshape.h"
 #include <QMainWindow>
 #include <QGridLayout>
 #include <QCheckBox>
@@ -43,16 +44,23 @@ private slots:
 
     void on_actionOpen_File_triggered();
 
+    void on_actionMove_Shape_triggered();
+
+
 
 
 private:
     Ui::MainWindow *ui;
     LoginDialog l;
+
     RenderArea* createRenderArea();
+
     QPainter* painter;          // ?
     vector<Shape*>* shapeVector;
     RenderArea *renderArea;
     TextParser *textParser;
+    RenderArea* setRenderArea(RenderArea* rA);
+
     QLabel *shapeLabel;
     QLabel *penWidthLabel;
     QLabel *penStyleLabel;
@@ -60,7 +68,7 @@ private:
     QLabel *penJoinLabel;
     QLabel *brushStyleLabel;
     QLabel *otherOptionsLabel;
-    QComboBox *shapeComboBox;
+    QSpinBox *shapeIDBox;
     QSpinBox *penWidthSpinBox;
     QComboBox *penStyleComboBox;
     QComboBox *penCapComboBox;
@@ -68,14 +76,14 @@ private:
     QComboBox *brushStyleComboBox;
     QCheckBox *antialiasingCheckBox;
     QCheckBox *transformationsCheckBox;
-
+    MoveShape* moveWindow;
     bool isAdmin;
 
 
 private slots:
-    void shapeChanged(int);
-    void penChanged(int);
-    void brushChanged(int);
+    void shapeChanged(int val);
+    void penChanged(int val);
+    void brushChanged(int val);
     void on_addLine_clicked();
     void on_addPolyline_clicked();
 };

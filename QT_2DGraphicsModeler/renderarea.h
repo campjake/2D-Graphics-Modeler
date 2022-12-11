@@ -23,13 +23,26 @@ class RenderArea : public QWidget
 public:
     explicit RenderArea(QWidget *parent = nullptr);
 
-    void setData(vector<Shape*>* data);
+    void setData(Shape* data);
+
+    void setVector(vector<Shape*>* vector);
+
+    vector<Shape*>* getVector() const
+    {
+        return shapeVector;
+    }
+
+    Shape* getData() const
+    {
+        return shape;
+    }
 
 public slots:
     void setPen(const QPen &pen);
     void setBrush(const QBrush &brush);
     void setAntialiased(bool antialiased);
     void setTransformed(bool transformed);
+    void setMove(QPoint newPos, int theID);
 
 protected:
     void paintEvent(QPaintEvent *event) override;
@@ -46,6 +59,7 @@ private:
     QPixmap pixmap;
     vector<Shape*>* shapeVector;
     QPainter painter;
+    Shape*   shape;
 };
 
 #endif // RENDERAREA_H

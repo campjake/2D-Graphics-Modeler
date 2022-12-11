@@ -8,13 +8,18 @@ RenderArea::RenderArea(QWidget *parent) : QWidget(parent)
 //    pixmap.load(":/images/qt-logo.png");
 
     setBackgroundRole(QPalette::Base);
-    setAutoFillBackground(true);
+    setAutoFillBackground(true);          
 }
 
-void RenderArea::setData(vector<Shape*>* data)
+void RenderArea::setData(Shape* data)
 {
-    shapeVector = data;
+    this->shape = data;
     update();
+}
+
+void RenderArea::setVector(vector<Shape*>* vector)
+{
+    shapeVector = vector;
 }
 
 void RenderArea::setPen(const QPen &pen)
@@ -22,7 +27,13 @@ void RenderArea::setPen(const QPen &pen)
     this->pen = pen;
     update();
 }
+void RenderArea::setMove(QPoint newPos, int theID)
+{
+    (*shapeVector)[theID]->Move(newPos.x(), newPos.y());
+    update();
 
+
+}
 void RenderArea::setBrush(const QBrush &brush)
 {
     this->brush = brush;
@@ -139,8 +150,11 @@ void RenderArea::paintEvent(QPaintEvent *event)
 
             qDebug()  << " Perimeter: " << (*shapeVector)[index]->CalcPerimeter();
             qDebug()  << "Area: " << (*shapeVector)[index]->CalcArea();
+            painter.restore();
         }
     }
+
+
 
 //    painter.setRenderHint(QPainter::Antialiasing, false);
 //    painter.setPen(palette().dark().color());
