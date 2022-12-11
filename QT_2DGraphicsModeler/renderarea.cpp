@@ -145,6 +145,7 @@ void RenderArea::paintEvent(QPaintEvent *event)
         if(shapeVector->size() > 0)
         {
             painter.save();
+
             (*shapeVector)[index]->Draw(&painter);
             painter.restore();
 

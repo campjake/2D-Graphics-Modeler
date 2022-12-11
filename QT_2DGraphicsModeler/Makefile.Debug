@@ -324,7 +324,7 @@ debug/moc_logindialog.cpp: logindialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QCloseEvent \
 		debug/moc_predefs.h \
 		C:/Qt/6.4.0/mingw_64/bin/moc.exe
-	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include logindialog.h -o debug\moc_logindialog.cpp
+	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include logindialog.h -o debug\moc_logindialog.cpp
 
 debug/moc_mainwindow.cpp: mainwindow.h \
 		contactus.h \
@@ -561,7 +561,7 @@ debug/moc_mainwindow.cpp: mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
 		debug/moc_predefs.h \
 		C:/Qt/6.4.0/mingw_64/bin/moc.exe
-	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include mainwindow.h -o debug\moc_mainwindow.cpp
+	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include mainwindow.h -o debug\moc_mainwindow.cpp
 
 debug/moc_moveshape.cpp: moveshape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QDialog \
@@ -760,7 +760,7 @@ debug/moc_moveshape.cpp: moveshape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QString \
 		debug/moc_predefs.h \
 		C:/Qt/6.4.0/mingw_64/bin/moc.exe
-	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include moveshape.h -o debug\moc_moveshape.cpp
+	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include moveshape.h -o debug\moc_moveshape.cpp
 
 debug/moc_renderarea.cpp: renderarea.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QBrush \
@@ -957,7 +957,7 @@ debug/moc_renderarea.cpp: renderarea.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QString \
 		debug/moc_predefs.h \
 		C:/Qt/6.4.0/mingw_64/bin/moc.exe
-	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include renderarea.h -o debug\moc_renderarea.cpp
+	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include renderarea.h -o debug\moc_renderarea.cpp
 
 debug/moc_testimonial.cpp: testimonial.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QDialog \
@@ -1098,7 +1098,7 @@ debug/moc_testimonial.cpp: testimonial.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.4.0/mingw_64/bin/moc.exe
-	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include testimonial.h -o debug\moc_testimonial.cpp
+	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include testimonial.h -o debug\moc_testimonial.cpp
 
 debug/moc_contactus.cpp: contactus.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QDialog \
@@ -1240,7 +1240,7 @@ debug/moc_contactus.cpp: contactus.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QWidget \
 		debug/moc_predefs.h \
 		C:/Qt/6.4.0/mingw_64/bin/moc.exe
-	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include contactus.h -o debug\moc_contactus.cpp
+	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include contactus.h -o debug\moc_contactus.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -1833,6 +1833,52 @@ debug/logindialog.o: logindialog.cpp logindialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QCloseEvent \
 		ui_logindialog.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QIcon \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qjnitypes.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtsan_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\logindialog.o logindialog.cpp
 
@@ -2310,11 +2356,29 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		serializer.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
 		ui_mainwindow.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/QAction \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qinputmethod.h \
-		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication_platform.h
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QButtonGroup \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qbuttongroup.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QDockWidget \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdockwidget.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMenu \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qstatusbar.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o mainwindow.cpp
 
 debug/moveshape.o: moveshape.cpp moveshape.h \
@@ -2512,7 +2576,33 @@ debug/moveshape.o: moveshape.cpp moveshape.h \
 		ellipse.h \
 		text.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QString \
-		ui_moveshape.h
+		ui_moveshape.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QAbstractButton \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QDialogButtonBox \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QSpinBox \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qspinbox.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QSplitter \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qsplitter.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\moveshape.o moveshape.cpp
 
 debug/polygon.o: polygon.cpp polygon.h \
@@ -3273,6 +3363,46 @@ debug/testimonial.o: testimonial.cpp testimonial.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QTransform \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
 		ui_testimonial.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QAbstractButton \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qjnitypes.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtsan_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QDialogButtonBox \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QTextEdit \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qtextedit.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpen.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QFileDialog \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qfiledialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qdir.h \
@@ -3281,7 +3411,6 @@ debug/testimonial.o: testimonial.cpp testimonial.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qfileinfo.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qdatetime.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qcalendar.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\testimonial.o testimonial.cpp
@@ -3719,6 +3848,40 @@ debug/contactus.o: contactus.cpp contactus.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QWidget \
 		ui_contactus.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qjnitypes.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtsan_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\contactus.o contactus.cpp
 

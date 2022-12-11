@@ -5,28 +5,7 @@
 
 #include <iostream>
 // using namespace std;
-struct Cmp_by_id
-{
-    bool operator()(const Shape* s1, const Shape* s2) const
-    { 
-        return s1->id < s2->id; 
-    }
-}
 
-struct Cmp_by_perimeter 
-{
-    bool operator()(const Shape* s1, const Shape* s2) const
-    { 
-        return s1->calc_perimeter() < s2->calc_perimeter(); 
-    }
-};
-
-struct Cmp_by_area {
-    bool operator()(const Shape* s1, const Shape* s2) const
-    {
-        return s1->calc_area() < s2->calc_area(); 
-    }
-};
 
 template <typename T>
 class vector
