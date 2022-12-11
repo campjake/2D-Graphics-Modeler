@@ -30,12 +30,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -54,10 +54,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ellipse.cpp"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ellipse.cpp"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ellipse.cpp"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ellipse.cpp"
 },
 {
     "arguments": [
@@ -90,12 +90,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -114,10 +114,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\line.cpp"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\line.cpp"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/line.cpp"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/line.cpp"
 },
 {
     "arguments": [
@@ -150,12 +150,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -174,10 +174,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\logindialog.cpp"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\logindialog.cpp"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/logindialog.cpp"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/logindialog.cpp"
 },
 {
     "arguments": [
@@ -210,12 +210,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -234,10 +234,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\main.cpp"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\main.cpp"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/main.cpp"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/main.cpp"
 },
 {
     "arguments": [
@@ -270,12 +270,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -294,10 +294,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\mainwindow.cpp"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\mainwindow.cpp"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/mainwindow.cpp"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/mainwindow.cpp"
 },
 {
     "arguments": [
@@ -330,12 +330,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -354,10 +354,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\moveshape.cpp"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\moveshape.cpp"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/moveshape.cpp"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/moveshape.cpp"
 },
 {
     "arguments": [
@@ -390,12 +390,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -414,10 +414,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\polygon.cpp"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\polygon.cpp"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/polygon.cpp"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/polygon.cpp"
 },
 {
     "arguments": [
@@ -450,12 +450,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -474,10 +474,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\polyline.cpp"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\polyline.cpp"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/polyline.cpp"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/polyline.cpp"
 },
 {
     "arguments": [
@@ -510,12 +510,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -534,10 +534,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\rectangle.cpp"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\rectangle.cpp"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/rectangle.cpp"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/rectangle.cpp"
 },
 {
     "arguments": [
@@ -570,12 +570,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -594,10 +594,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\renderarea.cpp"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\renderarea.cpp"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/renderarea.cpp"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/renderarea.cpp"
 },
 {
     "arguments": [
@@ -630,12 +630,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -654,10 +654,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\shape.cpp"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\shape.cpp"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/shape.cpp"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/shape.cpp"
 },
 {
     "arguments": [
@@ -690,12 +690,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -714,10 +714,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\testimonial.cpp"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\testimonial.cpp"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/testimonial.cpp"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/testimonial.cpp"
 },
 {
     "arguments": [
@@ -750,12 +750,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -774,10 +774,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\text.cpp"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\text.cpp"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/text.cpp"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/text.cpp"
 },
 {
     "arguments": [
@@ -810,12 +810,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -834,10 +834,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\textparser.cpp"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\textparser.cpp"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/textparser.cpp"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/textparser.cpp"
 },
 {
     "arguments": [
@@ -870,12 +870,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -894,10 +894,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\contactus.cpp"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\contactus.cpp"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/contactus.cpp"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/contactus.cpp"
 },
 {
     "arguments": [
@@ -930,12 +930,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -954,10 +954,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ellipse.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ellipse.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ellipse.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ellipse.h"
 },
 {
     "arguments": [
@@ -990,12 +990,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1014,10 +1014,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\line.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\line.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/line.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/line.h"
 },
 {
     "arguments": [
@@ -1050,12 +1050,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1074,10 +1074,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\logindialog.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\logindialog.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/logindialog.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/logindialog.h"
 },
 {
     "arguments": [
@@ -1110,12 +1110,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1134,10 +1134,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\mainwindow.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\mainwindow.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/mainwindow.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/mainwindow.h"
 },
 {
     "arguments": [
@@ -1170,12 +1170,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1194,10 +1194,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\moveshape.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\moveshape.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/moveshape.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/moveshape.h"
 },
 {
     "arguments": [
@@ -1230,12 +1230,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1254,10 +1254,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\polygon.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\polygon.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/polygon.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/polygon.h"
 },
 {
     "arguments": [
@@ -1290,12 +1290,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1314,10 +1314,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\polyline.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\polyline.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/polyline.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/polyline.h"
 },
 {
     "arguments": [
@@ -1350,12 +1350,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1374,10 +1374,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\rectangle.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\rectangle.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/rectangle.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/rectangle.h"
 },
 {
     "arguments": [
@@ -1410,12 +1410,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1434,10 +1434,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\renderarea.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\renderarea.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/renderarea.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/renderarea.h"
 },
 {
     "arguments": [
@@ -1470,12 +1470,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1494,10 +1494,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\serializer.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\serializer.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/serializer.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/serializer.h"
 },
 {
     "arguments": [
@@ -1530,12 +1530,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1554,10 +1554,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\shape.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\shape.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/shape.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/shape.h"
 },
 {
     "arguments": [
@@ -1590,12 +1590,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1614,10 +1614,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\testimonial.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\testimonial.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/testimonial.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/testimonial.h"
 },
 {
     "arguments": [
@@ -1650,12 +1650,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1674,10 +1674,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\text.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\text.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/text.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/text.h"
 },
 {
     "arguments": [
@@ -1710,12 +1710,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1734,10 +1734,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\textparser.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\textparser.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/textparser.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/textparser.h"
 },
 {
     "arguments": [
@@ -1770,12 +1770,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1794,10 +1794,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\vector.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\vector.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/vector.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/vector.h"
 },
 {
     "arguments": [
@@ -1830,12 +1830,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1854,10 +1854,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\contactus.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\contactus.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/contactus.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/contactus.h"
 },
 {
     "arguments": [
@@ -1890,12 +1890,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1914,10 +1914,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ui_mainwindow.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ui_mainwindow.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ui_mainwindow.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ui_mainwindow.h"
 },
 {
     "arguments": [
@@ -1950,12 +1950,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -1974,10 +1974,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ui_moveshape.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ui_logindialog.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ui_moveshape.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ui_logindialog.h"
 },
 {
     "arguments": [
@@ -2010,12 +2010,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -2034,10 +2034,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ui_contactus.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ui_contactus.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ui_contactus.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ui_contactus.h"
 },
 {
     "arguments": [
@@ -2070,12 +2070,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -2094,10 +2094,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ui_logindialog.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ui_moveshape.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ui_logindialog.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ui_moveshape.h"
 },
 {
     "arguments": [
@@ -2130,12 +2130,12 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
+        "-IC:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\debug",
         "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
         "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
@@ -2154,9 +2154,9 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\jacob\\OneDrive\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ui_testimonial.h"
+        "C:\\Users\\jacob\\Documents\\GitHub\\2D-Graphics-Modeler\\QT_2DGraphicsModeler\\ui_testimonial.h"
     ],
-    "directory": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
-    "file": "C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ui_testimonial.h"
+    "directory": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/.qtc_clangd",
+    "file": "C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/ui_testimonial.h"
 }
 ]

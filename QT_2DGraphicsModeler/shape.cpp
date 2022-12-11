@@ -9,11 +9,10 @@
 Shape::Shape(QPaintDevice* device,
              int anID,
              ShapeType shapeType)
-    : painter{device},
-      id{anID},
+    : id{anID},
       shapeName{shapeType}
 {
-//    QPainter painter(device);
+    painter = new QPainter(device);
     shapePen = Qt::SolidLine;
     shapeBrush = Qt::NoBrush;
 
@@ -24,9 +23,9 @@ Shape::Shape(QPaintDevice* device,
 
 // Move Operations
 
-//// Move Ctor
-//// Pre-Conditions - R-value casted other shape object
-//// Post-Conditions - Constructs a Shape object
+// Move Ctor
+// Pre-Conditions - R-value casted other shape object
+// Post-Conditions - Constructs a Shape object
 //Shape::Shape(Shape&& otherShape) noexcept
 //    : id{std::move(otherShape.id)},
 //      shapeName{std::move(otherShape.shapeName)},
@@ -34,8 +33,8 @@ Shape::Shape(QPaintDevice* device,
 //      shapeBrush{std::move(otherShape.shapeBrush)},
 //      shapePos{std::move(otherShape.shapePos)}
 //{
-//    qpainter = otherShape.get_qpainter();
-//    otherShape.qpainter = nullptr;
+//    &painter(&otherShape.painter.device());
+//    otherShape.painter;
 //}
 
 //// Move Assignment
@@ -198,6 +197,7 @@ void Shape::Move(int xCoord, int yCoord)
 // Post-Conditions - Returns a reference to a QPainter Object
 QPainter* Shape::getPainter()
 {
-    return &painter;
+    return painter;
 }
+
 
