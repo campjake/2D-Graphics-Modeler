@@ -26,7 +26,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_RenderArea_t {
-    uint offsetsAndSizes[26];
+    uint offsetsAndSizes[24];
     char stringdata0[11];
     char stringdata1[7];
     char stringdata2[1];
@@ -39,7 +39,6 @@ struct qt_meta_stringdata_RenderArea_t {
     char stringdata9[12];
     char stringdata10[8];
     char stringdata11[7];
-    char stringdata12[6];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_RenderArea_t::offsetsAndSizes) + ofs), len 
@@ -56,8 +55,7 @@ Q_CONSTINIT static const qt_meta_stringdata_RenderArea_t qt_meta_stringdata_Rend
         QT_MOC_LITERAL(65, 14),  // "setTransformed"
         QT_MOC_LITERAL(80, 11),  // "transformed"
         QT_MOC_LITERAL(92, 7),  // "setMove"
-        QT_MOC_LITERAL(100, 6),  // "newPos"
-        QT_MOC_LITERAL(107, 5)   // "theID"
+        QT_MOC_LITERAL(100, 6)   // "newPos"
     },
     "RenderArea",
     "setPen",
@@ -70,8 +68,7 @@ Q_CONSTINIT static const qt_meta_stringdata_RenderArea_t qt_meta_stringdata_Rend
     "setTransformed",
     "transformed",
     "setMove",
-    "newPos",
-    "theID"
+    "newPos"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -94,14 +91,14 @@ Q_CONSTINIT static const uint qt_meta_data_RenderArea[] = {
        4,    1,   47,    2, 0x0a,    3 /* Public */,
        6,    1,   50,    2, 0x0a,    5 /* Public */,
        8,    1,   53,    2, 0x0a,    7 /* Public */,
-      10,    2,   56,    2, 0x0a,    9 /* Public */,
+      10,    1,   56,    2, 0x0a,    9 /* Public */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::QPen,    3,
     QMetaType::Void, QMetaType::QBrush,    5,
     QMetaType::Void, QMetaType::Bool,    7,
     QMetaType::Void, QMetaType::Bool,    9,
-    QMetaType::Void, QMetaType::QPoint, QMetaType::Int,   11,   12,
+    QMetaType::Void, QMetaType::QPoint,   11,
 
        0        // eod
 };
@@ -129,8 +126,7 @@ Q_CONSTINIT const QMetaObject RenderArea::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<bool, std::false_type>,
         // method 'setMove'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QPoint, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>
+        QtPrivate::TypeAndForceComplete<QPoint, std::false_type>
     >,
     nullptr
 } };
@@ -145,7 +141,7 @@ void RenderArea::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 1: _t->setBrush((*reinterpret_cast< std::add_pointer_t<QBrush>>(_a[1]))); break;
         case 2: _t->setAntialiased((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
         case 3: _t->setTransformed((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
-        case 4: _t->setMove((*reinterpret_cast< std::add_pointer_t<QPoint>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 4: _t->setMove((*reinterpret_cast< std::add_pointer_t<QPoint>>(_a[1]))); break;
         default: ;
         }
     }

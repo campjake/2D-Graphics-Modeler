@@ -77,8 +77,8 @@ void MainWindow::on_actionMove_Shape_triggered()
     moveWindow->exec();
     QPoint point(50, 50);
 
-    renderArea->setMove(point, 1);
-    (*shapeVector)[0]->Move(50, 50);
+//    renderArea->setMove(point, 1);
+//    (*shapeVector)[0]->Move(50, 50);
 }
 
 void MainWindow::on_actionOpen_File_triggered()
@@ -105,6 +105,18 @@ RenderArea* MainWindow::createRenderArea()
 {
 
 //    renderArea = new RenderArea;
+
+    xmoveShapeSpinBox = new QSpinBox;
+    ymoveShapeSpinBox = new QSpinBox;
+
+    xmoveShapeSpinBox->setRange(0, 1000);
+    ymoveShapeSpinBox->setRange(0, 1000);
+
+    xmoveShapeLabel = new QLabel(tr("&Move X:"));
+    xmoveShapeLabel->setBuddy(xmoveShapeSpinBox);
+    ymoveShapeLabel = new QLabel(tr("&Move Y:"));
+    ymoveShapeLabel->setBuddy(ymoveShapeSpinBox);
+
     shapeIDBox = new QSpinBox;
 //    shapeIDBox->setWrapping(true);
 
@@ -188,7 +200,6 @@ RenderArea* MainWindow::createRenderArea()
     transformationsCheckBox = new QCheckBox(tr("&Transformations"));
 
 
-
     connect(shapeIDBox,SIGNAL(QSpinBox::valueChanged(int)),this,SLOT(shapeChanged(int)));
 
     connect(penWidthSpinBox,SIGNAL(QSpinBox::valueChanged(int)),this,SLOT(penChanged(int)));
@@ -200,6 +211,10 @@ RenderArea* MainWindow::createRenderArea()
     connect(penJoinComboBox,SIGNAL(activated(int)),this,SLOT(penChanged(int)));
 
     connect(brushStyleComboBox,SIGNAL(activated(int)),this,SLOT(brushChanged(int)));
+
+    connect(xmoveShapeSpinBox,SIGNAL(QSpinBox::valueChanged(int)),this,SLOT(moveChanged(int)));
+
+    connect(ymoveShapeSpinBox,SIGNAL(QSpinBox::valueChanged(int)),this,SLOT(moveChanged(int)));
 
     connect(antialiasingCheckBox,SIGNAL(toggled(bool)),renderArea,SLOT(setAntialiased(bool)));
 
@@ -222,6 +237,10 @@ RenderArea* MainWindow::createRenderArea()
     mainLayout->addWidget(penJoinComboBox, 2, 3);
     mainLayout->addWidget(brushStyleLabel, 4, 2, Qt::AlignRight);
     mainLayout->addWidget(brushStyleComboBox, 4, 3);
+    mainLayout->addWidget(xmoveShapeLabel, 4, 4, Qt::AlignRight);
+    mainLayout->addWidget(xmoveShapeSpinBox, 4, 5);
+    mainLayout->addWidget(ymoveShapeLabel, 5, 4, Qt::AlignRight);
+    mainLayout->addWidget(ymoveShapeSpinBox, 5, 5);
     mainLayout->addWidget(otherOptionsLabel, 5, 0, Qt::AlignRight);
     mainLayout->addWidget(antialiasingCheckBox, 5, 1, 1, 1, Qt::AlignRight);
     mainLayout->addWidget(transformationsCheckBox, 5, 2, 1, 2, Qt::AlignRight);
@@ -255,6 +274,7 @@ void MainWindow::shapeChanged(int)
 //    Shape* shape(renderArea, (*shapeVector)[shapeIDBox->value()],
 //                 (*shapeVector)[shapeIDBox->value()]->GetShapeType());
     renderArea->setData((*shapeVector)[shapeIDBox->value() - 1]);
+
 }
 
 void MainWindow::penChanged(int)
@@ -321,6 +341,17 @@ void MainWindow::brushChanged(int)
         renderArea->setBrush(brush);
         (*shapeVector)[shapeIDBox->value() - 1]->SetBrush(brush);
     }
+}
+
+void MainWindow::moveChanged(int)
+{
+    QPoint newPos;
+    newPos.setX(xmoveShapeSpinBox->value());
+    newPos.setY(ymoveShapeSpinBox->value());
+    renderArea->setMove(newPos);
+    (*shapeVector)[shapeIDBox->value() - 1]->SetPos(newPos);
+
+
 }
 
 //void MainWindow::on_addLine_clicked()

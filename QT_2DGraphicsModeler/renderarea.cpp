@@ -27,9 +27,11 @@ void RenderArea::setPen(const QPen &pen)
     this->pen = pen;
     update();
 }
-void RenderArea::setMove(QPoint newPos, int theID)
+void RenderArea::setMove(QPoint newPos)
 {
-    (*shapeVector)[theID]->Move(newPos.x(), newPos.y());
+    this->shape->SetPos(newPos);
+
+//    (*shapeVector)[theID]->Move(newPos.x(), newPos.y());
     update();
 
 

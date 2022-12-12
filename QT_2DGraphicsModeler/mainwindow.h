@@ -61,7 +61,8 @@ private:
     RenderArea *renderArea;
     TextParser *textParser;
     RenderArea* setRenderArea(RenderArea* rA);
-
+    QLabel *xmoveShapeLabel;
+    QLabel *ymoveShapeLabel;
     QLabel *shapeLabel;
     QLabel *penWidthLabel;
     QLabel *penStyleLabel;
@@ -69,6 +70,8 @@ private:
     QLabel *penJoinLabel;
     QLabel *brushStyleLabel;
     QLabel *otherOptionsLabel;
+    QSpinBox *xmoveShapeSpinBox;
+    QSpinBox *ymoveShapeSpinBox;
     QSpinBox *shapeIDBox;
     QSpinBox *penWidthSpinBox;
     QComboBox *penStyleComboBox;
@@ -86,6 +89,7 @@ private slots:
     void shapeChanged(int);
     void penChanged(int);
     void brushChanged(int);
+    void moveChanged(int);
 //    void on_addLine_clicked();
 //    void on_addPolyline_clicked();
 //    void on_addShapeCombo_currentIndexChanged(int index);

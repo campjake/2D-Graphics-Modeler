@@ -42,7 +42,7 @@ public slots:
     void setBrush(const QBrush &brush);
     void setAntialiased(bool antialiased);
     void setTransformed(bool transformed);
-    void setMove(QPoint newPos, int theID);
+    void setMove(QPoint newPos);
 
 protected:
     void paintEvent(QPaintEvent *event) override;
