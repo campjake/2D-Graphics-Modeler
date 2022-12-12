@@ -100,11 +100,14 @@ void Line::setPoints(const QPoint& P1, const QPoint& P2)
 {
     point1 = P1;
     point2 = P2;
+
+    SetPos(point1);
 }
 
 //sets point 1
 void Line::setPoint1(const QPoint& P1) {
     point1 = P1;
+    SetPos(P1);
 }
 
 //sets point 2

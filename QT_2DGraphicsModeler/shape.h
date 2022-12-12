@@ -31,7 +31,7 @@ class Shape
           ShapeType shapeType = ShapeType::NoShape);
 
     // Destructor
-    virtual ~Shape(){}
+    virtual ~Shape(){delete painter;}
 
     // Copy Operations (delete them)
     Shape(const Shape& source) = delete;
@@ -42,10 +42,10 @@ class Shape
 
 //    // Move Operations
 //        // Move Ctor
-//    Shape(Shape&& otherShape) noexcept;
+    Shape(Shape&& otherShape) noexcept;
 
 //        // Move Assignment
-//    Shape& operator=(Shape&& otherShape) noexcept;
+    Shape& operator=(Shape&& otherShape) noexcept;
 
     /******************* Overloaded Compare Operators *********************/
     // Equality operator

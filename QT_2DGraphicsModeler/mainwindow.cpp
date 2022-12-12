@@ -21,12 +21,24 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->actionCustomer_Testimonials,SIGNAL(triggered()),this,SLOT(on_actionCustomer_Testimonials_triggered()));
     connect(ui->actionMove_Shape,SIGNAL(triggered()),this,SLOT(actionMove_Shape_triggered()));
 
+    // Shapes get defined and vector is filled here
+    // renderArea is the paintdevice for the shapes painter ptr
     shapeVector = textParser->ReadFile("shapes.txt", renderArea);
 
     renderArea = createRenderArea();
 
-    renderArea->setData((*shapeVector)[0]);
-    renderArea->setVector(shapeVector);
+    // Copy operations were deleted
+    // Must use move ctor
+     // This is where we pass it the vector
+//    renderArea->setData((*shapeVector)[0]);
+    renderArea->setVector(std::move(shapeVector));
+
+    // This is where we set the active shape ?
+        shapeChanged(shapeIDBox->value());
+//        penChanged(shapeIDBox->value());
+//        brushChanged(shapeIDBox->value());
+
+
     l.show();
 
 }
@@ -212,9 +224,7 @@ RenderArea* MainWindow::createRenderArea()
     w->setLayout(mainLayout);
     this->setCentralWidget(w);
 
-//    shapeChanged(shapeIDBox->value());
-//    penChanged(shapeIDBox->value());
-//    brushChanged(shapeIDBox->value());
+
     antialiasingCheckBox->setChecked(true);
 
     //    setWindowTitle(tr("Basic Drawing"));

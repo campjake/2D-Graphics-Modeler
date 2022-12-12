@@ -11,7 +11,7 @@
 #include <QColor>
 #include <QMap>
 #include "vector.h"
-//#include "shape.h"
+#include "shape.h"
 #include "line.h"
 #include "polyline.h"
 #include "polygon.h"

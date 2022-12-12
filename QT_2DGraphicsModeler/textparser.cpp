@@ -622,7 +622,20 @@ Shape* TextParser::ReadEllipse(QTextStream &fin, int id,
     Ellipse* ellipse = new Ellipse(device, id,
                                    ShapeType::Ellipse,
                                    a, b);
-    ellipse->SetPos(pos);
+
+    QPoint offsetPos;
+    if(pos.x() > pos.y())
+    {
+        offsetPos.setX(pos.x() + a);
+        offsetPos.setY(pos.y() + b);
+    }
+    else
+    {
+        offsetPos.setX(pos.x() + b);
+        offsetPos.setY(pos.y() + a);
+    }
+
+    ellipse->SetPos(offsetPos);
     ellipse->SetPen(color, penWidth, penStyle, capStyle, joinStyle);
     ellipse->SetBrush(brushColor, GetBrushStyle(brushStyle));
 
@@ -665,7 +678,13 @@ Shape* TextParser::ReadCircle(QTextStream &fin, int id,
     Ellipse* circle = new Ellipse(device, id,
                                   ShapeType::Circle,
                                   r, r);
-    circle->SetPos(pos);
+
+
+    QPoint offsetPos;
+    offsetPos.setX(pos.x() + r);
+    offsetPos.setY(pos.y() + r);
+
+    circle->SetPos(offsetPos);
     circle->SetPen(color, penWidth, penStyle, capStyle, joinStyle);
     circle->SetBrush(brushColor, GetBrushStyle(brushStyle));
 
