@@ -7,7 +7,7 @@
 #include <iostream>
 #include <algorithm>
 
-static int  count = 9;
+//static int  count = 9; // use for unique IDs?
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -15,6 +15,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    l.show();
+
     textParser = new TextParser;
     renderArea = new RenderArea;
     connect(ui->actionContact_Us,SIGNAL(triggered()),this,SLOT(on_actionContact_Us_triggered()));
@@ -34,12 +36,12 @@ MainWindow::MainWindow(QWidget *parent)
     renderArea->setVector(std::move(shapeVector));
 
     // This is where we set the active shape ?
-        shapeChanged(shapeIDBox->value());
+//        shapeChanged(shapeIDBox->value());
 //        penChanged(shapeIDBox->value());
 //        brushChanged(shapeIDBox->value());
 
 
-    l.show();
+
 
 }
 
@@ -49,7 +51,7 @@ MainWindow::~MainWindow()
 //    vector<Shape*> temp;
 
 
-//    WriteToFile(std::move(shapeVector), "shapes.txt");
+//    Serializer(shapeVector, "shapes.txt");
     delete ui;
 }
 
@@ -105,14 +107,18 @@ RenderArea* MainWindow::createRenderArea()
 //    renderArea = new RenderArea;
     shapeIDBox = new QSpinBox;
 //    shapeIDBox->setWrapping(true);
-    shapeIDBox->setRange(1, shapeVector->size());
 
-    //    shapeComboBox->addItem(tr("Line"), ShapeNames::LINE);
-//    shapeComboBox->addItem(tr("Polyline"), ShapeNames::POLYLINE);
-//    shapeComboBox->addItem(tr("Polygon"), ShapeNames::POLYGON);
-//    shapeComboBox->addItem(tr("Rectangle"), ShapeNames::RECTANGLE);
-//    shapeComboBox->addItem(tr("Ellipse"), ShapeNames::ELLIPSE);
-//    shapeComboBox->addItem(tr("Text"), ShapeNames::TEXT);
+    // find highest ID and don't let them look at uninit values above it
+    int highID = 0;
+    for(int i = 0; i < shapeVector->size(); i++)
+    {
+        if((*shapeVector)[i]->GetID() >= highID)
+        {
+            highID = (*shapeVector)[i]->GetID();
+        }
+    }
+
+    shapeIDBox->setRange(1, highID);
 
     shapeLabel = new QLabel(tr("&ID:"));
     shapeLabel->setBuddy(shapeIDBox);
@@ -158,6 +164,7 @@ RenderArea* MainWindow::createRenderArea()
 //    brushStyleComboBox->addItem(tr("Conical Gradient"),
 //            static_cast<int>(Qt::ConicalGradientPattern));
 //    brushStyleComboBox->addItem(tr("Texture"), static_cast<int>(Qt::TexturePattern));
+    brushStyleComboBox->addItem(tr("None"), static_cast<int>(Qt::NoBrush));
     brushStyleComboBox->addItem(tr("Solid"), static_cast<int>(Qt::SolidPattern));
     brushStyleComboBox->addItem(tr("Horizontal"), static_cast<int>(Qt::HorPattern));
     brushStyleComboBox->addItem(tr("Vertical"), static_cast<int>(Qt::VerPattern));
@@ -172,7 +179,7 @@ RenderArea* MainWindow::createRenderArea()
 //    brushStyleComboBox->addItem(tr("Dense 5"), static_cast<int>(Qt::Dense5Pattern));
 //    brushStyleComboBox->addItem(tr("Dense 6"), static_cast<int>(Qt::Dense6Pattern));
 //    brushStyleComboBox->addItem(tr("Dense 7"), static_cast<int>(Qt::Dense7Pattern));
-    brushStyleComboBox->addItem(tr("None"), static_cast<int>(Qt::NoBrush));
+
 
     brushStyleLabel = new QLabel(tr("&Brush:"));
     brushStyleLabel->setBuddy(brushStyleComboBox);
@@ -227,16 +234,30 @@ RenderArea* MainWindow::createRenderArea()
 
     antialiasingCheckBox->setChecked(true);
 
-    //    setWindowTitle(tr("Basic Drawing"));
+    setCredentials(l.adminCredentials());
+    if(!isAdmin)
+    {
+        shapeIDBox->setEnabled(false);
+        penWidthSpinBox->setEnabled(false);
+        penStyleComboBox->setEnabled(false);
+        penCapComboBox->setEnabled(false);
+        penJoinComboBox->setEnabled(false);
+        brushStyleComboBox->setEnabled(false);
+        antialiasingCheckBox->setEnabled(false);
+        transformationsCheckBox->setEnabled(false);
+    }
+
     return renderArea;
 }
 
-void MainWindow::shapeChanged(int val)
+void MainWindow::shapeChanged(int)
 {
-    renderArea->setData((*shapeVector)[val]);
+//    Shape* shape(renderArea, (*shapeVector)[shapeIDBox->value()],
+//                 (*shapeVector)[shapeIDBox->value()]->GetShapeType());
+    renderArea->setData((*shapeVector)[shapeIDBox->value() - 1]);
 }
 
-void MainWindow::penChanged(int val)
+void MainWindow::penChanged(int)
 {
     int width = penWidthSpinBox->value();
     Qt::PenStyle style = Qt::PenStyle(penStyleComboBox->itemData(
@@ -251,10 +272,10 @@ void MainWindow::penChanged(int val)
 
     renderArea->setPen(newPen);
 
-    (*shapeVector)[val]->SetPen(newPen);
+    (*shapeVector)[shapeIDBox->value() - 1]->SetPen(newPen);
 }
 
-void MainWindow::brushChanged(int val)
+void MainWindow::brushChanged(int)
 {
     Qt::BrushStyle style = Qt::BrushStyle(brushStyleComboBox->itemData(
             brushStyleComboBox->currentIndex(), Qt::UserRole).toInt());
@@ -267,7 +288,7 @@ void MainWindow::brushChanged(int val)
         renderArea->setBrush(linearGradient);
 
         QBrush brush(linearGradient);
-        (*shapeVector)[val]->SetBrush(brush);
+        (*shapeVector)[shapeIDBox->value() - 1]->SetBrush(brush);
 
     } else if (style == Qt::RadialGradientPattern) {
         QRadialGradient radialGradient(50, 50, 50, 70, 70);
@@ -277,7 +298,7 @@ void MainWindow::brushChanged(int val)
         renderArea->setBrush(radialGradient);
 
         QBrush brush(radialGradient);
-        (*shapeVector)[val]->SetBrush(brush);
+        (*shapeVector)[shapeIDBox->value() - 1]->SetBrush(brush);
 
     } else if (style == Qt::ConicalGradientPattern) {
         QConicalGradient conicalGradient(50, 50, 150);
@@ -287,88 +308,88 @@ void MainWindow::brushChanged(int val)
         renderArea->setBrush(conicalGradient);
 
         QBrush brush(conicalGradient);
-        (*shapeVector)[val]->SetBrush(brush);
+        (*shapeVector)[shapeIDBox->value() - 1]->SetBrush(brush);
 
     } else if (style == Qt::TexturePattern) {
 
         QBrush brush(QPixmap(":/images/brick.png"));
         renderArea->setBrush(brush);
-        (*shapeVector)[val]->SetBrush(brush);
+        (*shapeVector)[shapeIDBox->value() - 1]->SetBrush(brush);
 
     } else {
         QBrush brush(Qt::green, style);
         renderArea->setBrush(brush);
-        (*shapeVector)[val]->SetBrush(brush);
+        (*shapeVector)[shapeIDBox->value() - 1]->SetBrush(brush);
     }
 }
 
-void MainWindow::on_addLine_clicked()
-{
-    // Add a line to the vector shapeVector
-    // Would require a new class AddLine
-    // Only for admins
+//void MainWindow::on_addLine_clicked()
+//{
+//    // Add a line to the vector shapeVector
+//    // Would require a new class AddLine
+//    // Only for admins
 
 
 
-    setCredentials(l.adminCredentials());
+//    setCredentials(l.adminCredentials());
 
-    if(isAdmin)
-    {
-        QPoint front, end;
-        front.setX(1); front.setY(1);
-        end.setX(500); end.setY(500);
-        Line* line = new Line(renderArea, 8, ShapeType::Line, Qt::SolidLine);
-        line->setPoint1(front);
-        line->setPoint2(end);
+//    if(isAdmin)
+//    {
+//        QPoint front, end;
+//        front.setX(1); front.setY(1);
+//        end.setX(500); end.setY(500);
+//        Line* line = new Line(renderArea, 8, ShapeType::Line, Qt::SolidLine);
+//        line->setPoint1(front);
+//        line->setPoint2(end);
 
-        shapeVector->push_back(line);
-//        RenderArea();
-        renderArea->setVector(shapeVector);
+//        shapeVector->push_back(line);
+////        RenderArea();
+//        renderArea->setVector(shapeVector);
 
-    }
-    else
-    {
-        QMessageBox sorry;
-        sorry.warning(this, "Add Line Failed",
-                      "Only Admins can add Shapes");
-    }
-
-
-}
+//    }
+//    else
+//    {
+//        QMessageBox sorry;
+//        sorry.warning(this, "Add Line Failed",
+//                      "Only Admins can add Shapes");
+//    }
 
 
+//}
 
-void MainWindow::on_addPolyline_clicked()
-{
-    if(isAdmin)
-    {
-        QList<QPoint> list;
-        QPoint p1, p2, p3, p4;
-        p1.setX(50); p1.setY(1);
-        p2.setX(1); p2.setY(100);
-        p3.setX(33); p3.setY(55);
-        p4.setX(187); p4.setY(9);
-        list.push_back(p1);
-        list.push_back(p2);
-        list.push_back(p3);
-        list.push_back(p4);
-        Polyline* polyline = new Polyline(renderArea, 8, ShapeType::Polyline, Qt::DashLine);
-        polyline->SetPoints(list);
 
-        shapeVector->push_back(polyline);
-        renderArea->setVector(shapeVector);
 
-//        std::sort(list.begin(), list.end(), Cmp_by_id());
-//        std::sort(list.begin(), list.end(), Cmp_by_perimeter());
-//        std::sort(list.begin(), list.end(), Cmp_by_area());
-    }
-    else
-    {
-        QMessageBox sorry;
-        sorry.warning(this, "Add Polyline Failed",
-                      "Only Admins can add Shapes");
-    }
-}
+//void MainWindow::on_addPolyline_clicked()
+//{
+//    if(isAdmin)
+//    {
+//        QList<QPoint> list;
+//        QPoint p1, p2, p3, p4;
+//        p1.setX(50); p1.setY(1);
+//        p2.setX(1); p2.setY(100);
+//        p3.setX(33); p3.setY(55);
+//        p4.setX(187); p4.setY(9);
+//        list.push_back(p1);
+//        list.push_back(p2);
+//        list.push_back(p3);
+//        list.push_back(p4);
+//        Polyline* polyline = new Polyline(renderArea, 8, ShapeType::Polyline, Qt::DashLine);
+//        polyline->SetPoints(list);
+
+//        shapeVector->push_back(polyline);
+//        renderArea->setVector(shapeVector);
+
+////        std::sort(list.begin(), list.end(), Cmp_by_id());
+////        std::sort(list.begin(), list.end(), Cmp_by_perimeter());
+////        std::sort(list.begin(), list.end(), Cmp_by_area());
+//    }
+//    else
+//    {
+//        QMessageBox sorry;
+//        sorry.warning(this, "Add Polyline Failed",
+//                      "Only Admins can add Shapes");
+//    }
+//}
 
 
 //void MainWindow::on_addShapeCombo_currentIndexChanged(int index)
@@ -405,6 +426,18 @@ void MainWindow::on_addShapeCombo_activated(int index)
                 ui->brushPatternCombo->setEnabled(false);
                 break;
     }
+    int highID = 0;
+    for(int i = 0; i < shapeVector->size(); i++)
+    {
+        if((*shapeVector)[i]->GetID() >= highID)
+        {
+            highID = (*shapeVector)[i]->GetID();
+        }
+    }
+    ui->addIdCombo->setRange(1, highID + 1);
+    ui->xCoordSpin->setRange(0, 1000);
+    ui->yCoordSpin->setRange(0, 1000);
+    ui->addWidSpin->setRange(0, 20);
 }
 
 
@@ -412,6 +445,9 @@ void MainWindow::on_addText_clicked()
 {
     setCredentials(l.adminCredentials());
 
+    //BUG -- If ID is higher than vector size, we crash :(
+
+    // Check if admin
     if(!isAdmin)
     {
         QMessageBox addRejected;
@@ -419,6 +455,17 @@ void MainWindow::on_addText_clicked()
     }
     else
     {
+        // Check for unique IDs
+        for(int i = 0; i < shapeVector->size(); i++)
+        {
+            if(ui->addIdCombo->value() == (*shapeVector)[i]->GetID())
+            {
+                QMessageBox addRejected;
+                addRejected.warning(this, "Add Failed!", "A shape with this ID already exists");
+                return;
+            }
+        }
+        // Add the Shape
         switch(ui->addShapeCombo->currentIndex())
         {
         case 0:{    // LINE SHAPE
@@ -454,8 +501,16 @@ void MainWindow::on_addText_clicked()
                     shapeVector->push_back(line);
 
                     // not sure if next line is necessary
-                    renderArea = createRenderArea();
+//                    renderArea->setData(line);
+//                    renderArea->setVector(std::move(shapeVector));
+                    renderArea = new RenderArea;
+                    renderArea->setData(line);
+                    renderArea->setPen(line->GetPen());
+                    renderArea->setBrush(Qt::NoBrush);
                     renderArea->setVector(std::move(shapeVector));
+                    renderArea = createRenderArea();
+
+
                }
                     break;
         case 1:{    // POLYLINE SHAPE
@@ -494,8 +549,16 @@ void MainWindow::on_addText_clicked()
                     shapeVector->push_back(polyline);
 
                     // not sure if next line is necessary
-                    renderArea = createRenderArea();
+                    renderArea->setData(polyline);
+//                    renderArea->setVector(std::move(shapeVector));
+                    renderArea = new RenderArea;
+                    renderArea->setData(polyline);
+                    renderArea->setPen(polyline->GetPen());
+                    renderArea->setBrush(Qt::NoBrush);
                     renderArea->setVector(std::move(shapeVector));
+                    renderArea = createRenderArea();
+
+
 
                }
             break;
@@ -539,8 +602,15 @@ void MainWindow::on_addText_clicked()
                     shapeVector->push_back(polygon);
 
                     // not sure if this is necessary
-                    createRenderArea();
+                    renderArea->setData(polygon);
+//                    renderArea->setVector(std::move(shapeVector));
+                    renderArea = new RenderArea;
+                    renderArea->setData(polygon);
+
                     renderArea->setVector(std::move(shapeVector));
+                    createRenderArea();
+                    renderArea->setBrush(polygon->GetBrush());
+
 
 
                }

@@ -16,7 +16,7 @@
 #include "shape.h"
 #include "textparser.h"
 #include "renderarea.h"
-#include "serializer.h"
+//#include "serializer.h"
 
 static QPainter staticQPainter;
 
@@ -81,12 +81,13 @@ private:
     bool isAdmin;
 
 
+
 private slots:
-    void shapeChanged(int val);
-    void penChanged(int val);
-    void brushChanged(int val);
-    void on_addLine_clicked();
-    void on_addPolyline_clicked();
+    void shapeChanged(int);
+    void penChanged(int);
+    void brushChanged(int);
+//    void on_addLine_clicked();
+//    void on_addPolyline_clicked();
 //    void on_addShapeCombo_currentIndexChanged(int index);
     void on_addShapeCombo_activated(int index);
     void on_addText_clicked();

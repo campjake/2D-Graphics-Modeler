@@ -2,7 +2,11 @@
 
 Rectangle::Rectangle(QPaintDevice* device, int anID,
                      ShapeType shapeType, int width, int length)
-    : Shape{device, anID, shapeType}, width{width}, length{length}{}
+    : Shape{device, anID, shapeType}, width{width}, length{length}
+{
+    SetPen(Qt::SolidLine);
+    SetBrush(Qt::black, Qt::BrushStyle::SolidPattern);
+}
 
 // Parser Constructor
 Rectangle::Rectangle(int anID, QPoint aPos, int l, int w)
@@ -67,6 +71,8 @@ void Rectangle::setLength(const float length)
 // Draw function
 void Rectangle::Draw(QPainter* painter)
 {
+    painter->setBrush(GetBrush());
+    painter->setPen(GetPen());
     painter->drawRect(GetPos().x(), GetPos().y(), width, length);
 
     painter->drawText(GetPos(), QString::number(GetID()));

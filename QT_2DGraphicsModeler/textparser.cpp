@@ -571,7 +571,8 @@ Shape* TextParser::ReadSquare(QTextStream &fin, int id,
 
     // Brush Properties
     QString brushCol = fin.readLine().remove(0, 12);
-    QColor brushColor(brushCol);
+    QColor brushColor;
+    brushColor = brushColor.fromString(brushCol);
     QString brushStyle = fin.readLine().remove(0, 12);
 
     Rectangle* square = new Rectangle(device, id,
