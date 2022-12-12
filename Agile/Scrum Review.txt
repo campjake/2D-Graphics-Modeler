@@ -1,0 +1,125 @@
+Summary 1
+-------------
+
+Hello @everyone, 
+
+We will be using an Agile Planning tool to get extra credit for this project. Thankfully, Github has this tool built-in, so you don't have to make any new accounts. The name of this tool is called Github Projects and this is how we will make our Sprint Backlog. You can access the Project by going to the Projects tab in our github repository here:
+
+ https://github.com/campjake/2D-Graphics-Modeler
+
+The Product Owner, @Matthew Chin , is in charge of the backlog, so he will review pull requests before merging branches. 
+You can create your own User Stories, and assign yourself to any of the tasks in the backlog by clicking on the descriptions.
+
+I uploaded some empty Class Definition files, so feel free to put your story/stories on the Backlog, and get started!
+If you don't know where to start, ping me with @Jacob in project-help and I can help you get what you need to do some work. We can do a screen share to get the repository on your computer and practice uploading your changes to the main branch 🙂
+You can also send me a private message if you prefer.
+
+Thanks! 
+
+
+Summary 2
+------------
+Hey @everyone,
+
+Our User Stories assignment is due next Thursday, so we can discuss dividing the information on Tuesday during lab.
+
+Before then, I really really really recommend making a GitHub account. If you have time, get started on the tutorial posted on Canvas (https://docs.github.com/en/get-started/quickstart/hello-world), but if you're busy, just making an account and sharing your username here is fine 🙂
+
+Having GitHub setup before we start programming will make it easy for us to be on the same page without asking each other what's going on all the time.
+
+If you're ever confused about the tutorials or anything we are working on, you can ask questions in project-help
+
+Summary 3
+----------------
+Just a quick recap on our Scrum & an update:
+
+@harshil - Prof Kath said we would cover the text parsing on Thursday before the test 
+
+@Matthew Chin - We should divide the Window class & login page before next class. 
+I'll DM you tomorrow, but there seems to be a lot of resources available with a quick google/Github search
+
+@Socksincrocs  & @Hardin  - @Davis said he will push the Base Class class skeleton sometime soon, 
+so if you're not sure about overriding/overloading, check the repository sometime tomorrow. 
+This is the biggest part of the backend so tell me if you need more help and we will figure something out.
+
+@Shmily & @DylanEarl - The RenderArea class is part of the basic.drawing.example here: https://doc.qt.io/qt-6/qtwidgets-painting-basicdrawing-example.html
+Here is the raw source code from the tutorial: https://code.qt.io/cgit/qt/qtbase.git/tree/examples/widgets/painting/basicdrawing?h=6.4
+It doesn't seem too crazy, but you will have to read through a lot of tutorials to do it.
+
+Thanks again everyone. We have an exam, so let's just say no meeting on Thursday, and let's meet again on Sunday. 
+Fill out the form here and I'll make an announcement.
+
+Summary 4
+-------------
+@everyone thank you for joining the meeting
+
+here is a brief summary in case you were busy:
+
+1) We have migrated the project to Qt. Please pull the changes to your computer ASAP.
+To open the project in Qt, open Qt Creator, press Open Project and find the file called "QT_2DGraphicsModeler" and make sure it IS NOT the .pro.user file. 
+You want to open the .pro (project file).
+
+I believe that it will be much easier to work on the front end now that we can open in Qt. You don't have to use Visual Studios anymore. 
+You will still push changes to the remote repository the same way as before, using the Github Desktop App.
+
+2) New assignments - Matthew will also be working on the Front End with Dylan and Asuna.
+Matthew - MainWindow class (toolbar, layout, etc.). He will also take care of the Contact Form and anything else he wants to add.
+Dylan & Asuna - You won't be able to work on the RenderArea class until the back-end is finished 😦
+Let me know if you have something you want to work on instead!!
+
+3) End of Sprint 1 - Congrats? I think we are doing okay, but we haven't learned everything we need yet. Do you have any questions? 
+Do you want more work to do? Message me if you want something to work on.
+
+Thanks and see you on Tuesday. Let's have a meeting on Thursday after class if you are all free. Very short this time.
+
+Summary 5
+------------
+set up new groups so that we can pair program and get the back-end done quickly. 
+
+Summary 6
+------------
+We have a few tasks we need people to volunteer to help out with. If you do not have something to work on, respond with what you would like to work on.
+
+1 - Doxygen (2 People) 1 + Hardin
+2 - Use Case Diagram (1 Person)
+3 - UML Diagram (1-2 People)
+
+Other Updates:
+a) Asuna should be done with the RenderArea on Friday
+b) Matthew is working on front end implementations that are not related to the RenderArea
+c) I am working on testing the backend to make sure it all compiles by Thursday
+d) The project due date has been extended a week, but we will need to submit what we have next week.
+
+
+
+Summary 7
+------------
+Update after today's meeting (1 update for each person):
+
+1) Doxygen finished by @Hardin !
+2) Use Case Diagrams (3 total) to be done by @Socksincrocs (Lawrence)
+       - @Socksincrocs I didn't know there were three so give a shoutout if you want help with one, but they should be ok being pretty basic
+3) UML Class Diagram being done by @Davis 
+4) Testing (Extra Credit) Outline being done by @DylanEarl. We will need to work together to test all the cases later
+5) RenderArea (aka Canvas) being done by Asuna @Shmily . She said she will finish by Friday, so check Discord or Github on Saturday for updates on Front End
+6) @Matthew Chin  is finishing up customer testemonials
+7) @Jacob is working on the Parser/Serializer (Read/Write Shapes), I might need help over the weekend if I have issues with QList 
+
+Please let me know if you have any questions, or if you have anything you want to add to our project  If you are interested in Design/UI, then maybe we can find something new to implement! 
+
+Thanks!
+
+Summary 8
+------------
+Hashed out final requirements for submission after a long weekend push. Continued towards goals.
+
+Summary 9
+------------
+Post-lab discussion about how to complete the requirement to use aggregation, which 
+lead to a simple fix. Continued towards goals of running the project.
+
+Summary 10
+----------------
+Reviewed the organization for project repository regarding non-coding filed like Agile files and diagrams. 
+Said goodbye for the last meeting and reaffirmed what the last push will require to submit.
+
