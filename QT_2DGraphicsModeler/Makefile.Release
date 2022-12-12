@@ -515,11 +515,11 @@ release/moc_mainwindow.cpp: mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QColor \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QMap \
 		vector.h \
-		line.h \
 		shape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		line.h \
 		polyline.h \
 		polygon.h \
 		rectangle.h \
@@ -747,11 +747,11 @@ release/moc_moveshape.cpp: moveshape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QColor \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QMap \
 		vector.h \
-		line.h \
 		shape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		line.h \
 		polyline.h \
 		polygon.h \
 		rectangle.h \
@@ -944,11 +944,11 @@ release/moc_renderarea.cpp: renderarea.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QColor \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QMap \
 		vector.h \
-		line.h \
 		shape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		line.h \
 		polyline.h \
 		polygon.h \
 		rectangle.h \
@@ -1437,11 +1437,11 @@ ui_mainwindow.h: mainwindow.ui \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QColor \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QMap \
 		vector.h \
-		line.h \
 		shape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		line.h \
 		polyline.h \
 		polygon.h \
 		rectangle.h \
@@ -2071,11 +2071,11 @@ release/main.o: main.cpp mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QColor \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QMap \
 		vector.h \
-		line.h \
 		shape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		line.h \
 		polyline.h \
 		polygon.h \
 		rectangle.h \
@@ -2311,11 +2311,11 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QColor \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QMap \
 		vector.h \
-		line.h \
 		shape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		line.h \
 		polyline.h \
 		polygon.h \
 		rectangle.h \
@@ -2565,11 +2565,11 @@ release/moveshape.o: moveshape.cpp moveshape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QColor \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QMap \
 		vector.h \
-		line.h \
 		shape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		line.h \
 		polyline.h \
 		polygon.h \
 		rectangle.h \
@@ -3099,11 +3099,11 @@ release/renderarea.o: renderarea.cpp renderarea.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QColor \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QMap \
 		vector.h \
-		line.h \
 		shape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		line.h \
 		polyline.h \
 		polygon.h \
 		rectangle.h \
@@ -3693,7 +3693,6 @@ release/textparser.o: textparser.cpp textparser.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QColor \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QMap \
 		vector.h \
-		line.h \
 		shape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPainter \
@@ -3701,6 +3700,7 @@ release/textparser.o: textparser.cpp textparser.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextoption.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		line.h \
 		polyline.h \
 		polygon.h \
 		rectangle.h \

@@ -49,6 +49,7 @@ private slots:
 
 
 
+
 private:
     Ui::MainWindow *ui;
     LoginDialog l;
@@ -86,5 +87,8 @@ private slots:
     void brushChanged(int val);
     void on_addLine_clicked();
     void on_addPolyline_clicked();
+//    void on_addShapeCombo_currentIndexChanged(int index);
+    void on_addShapeCombo_activated(int index);
+    void on_addText_clicked();
 };
 #endif // MAINWINDOW_H

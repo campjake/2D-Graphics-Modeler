@@ -370,3 +370,194 @@ void MainWindow::on_addPolyline_clicked()
     }
 }
 
+
+//void MainWindow::on_addShapeCombo_currentIndexChanged(int index)
+//{
+//    if(index == 1 ||
+//       )
+//}
+
+
+void MainWindow::on_addShapeCombo_activated(int index)
+{
+    switch(ui->addShapeCombo->currentIndex())
+    {
+    case 0 :    ui->addColorCombo_2->setEnabled(false);
+                ui->brushPatternCombo->setEnabled(false);
+                ui->lineEditBox->setEnabled(false);
+                ui->textSizeBox->setEnabled(false);
+                break;
+    case 1 :    ui->addColorCombo_2->setEnabled(false);
+                ui->brushPatternCombo->setEnabled(false);
+                ui->lineEditBox->setEnabled(false);
+                ui->textSizeBox->setEnabled(false);
+                break;
+    case 2 :    ui->lineEditBox->setEnabled(false);
+                ui->textSizeBox->setEnabled(false);
+                break;
+    case 3 :    ui->lineEditBox->setEnabled(false);
+                ui->textSizeBox->setEnabled(false);
+                break;
+    case 4 :    ui->lineEditBox->setEnabled(false);
+                ui->textSizeBox->setEnabled(false);
+                break;
+    case 5:     ui->addColorCombo_2->setEnabled(false);
+                ui->brushPatternCombo->setEnabled(false);
+                break;
+    }
+}
+
+
+void MainWindow::on_addText_clicked()
+{
+    setCredentials(l.adminCredentials());
+
+    if(!isAdmin)
+    {
+        QMessageBox addRejected;
+        addRejected.warning(this, "REJECTED", "Only admins can add shapes");
+    }
+    else
+    {
+        switch(ui->addShapeCombo->currentIndex())
+        {
+        case 0:{    // LINE SHAPE
+                    // Pen Attributes COPY/PASTE (use textParser fcns)
+                    QColor color(ui->addColorCombo->currentText());
+                    QPen pen;
+                    pen.setColor(color);
+                    pen.setStyle(textParser->GetPenStyle(ui->penStyleCombo->currentText()));
+                    pen.setCapStyle(textParser->GetCapStyle(ui->capStyleCombo->currentText()));
+                    pen.setJoinStyle(textParser->GetPenJoinStyle(ui->comboBox_5->currentText()));
+                    // end copy paste
+
+                    // Line, Polyline, TextBox have no brush
+                    pen.setBrush(Qt::NoBrush);
+
+                    // Hard Code end point? :[
+                    QPoint front, end;
+                    front.setX(ui->xCoordSpin->value());
+                    front.setY(ui->yCoordSpin->value());
+
+                    //
+                    end.setX(100); end.setY(100);
+
+                    // Create & Define Line
+                    Line* line = new Line(renderArea, ui->addIdCombo->value(), ShapeType::Line, Qt::SolidLine);
+                    line->setPoint1(front);
+                    line->setPoint2(end);
+                    line->SetPos(front);
+                    line->SetPen(color, ui->addWidSpin->value(),
+                                 pen.style(), pen.capStyle(),
+                                 pen.joinStyle());
+
+                    shapeVector->push_back(line);
+
+                    // not sure if next line is necessary
+                    renderArea = createRenderArea();
+                    renderArea->setVector(std::move(shapeVector));
+               }
+                    break;
+        case 1:{    // POLYLINE SHAPE
+                    // Pen Attributes COPY/PASTE (use textParser fcns)
+                    QColor color(ui->addColorCombo->currentText());
+                    QPen pen;
+                    pen.setColor(color);
+                    pen.setStyle(textParser->GetPenStyle(ui->penStyleCombo->currentText()));
+                    pen.setCapStyle(textParser->GetCapStyle(ui->capStyleCombo->currentText()));
+                    pen.setJoinStyle(textParser->GetPenJoinStyle(ui->comboBox_5->currentText()));
+                    // end copy paste
+
+                    // Line, Polyline, TextBox have no brush
+                    pen.setBrush(Qt::NoBrush);
+
+                    // Hard Code points? :[
+                    QList<QPoint> list;
+                    QPoint front, mid, end;
+                    front.setX(ui->xCoordSpin->value());
+                    front.setY(ui->yCoordSpin->value());
+
+                    mid.setX(33); mid.setY(50);
+                    end.setX(100); end.setY(100);
+
+                    list.append(front);
+                    list.append(mid);
+                    list.append(end);
+
+                    // Create and Define Polyline
+
+                    Polyline* polyline = new Polyline(renderArea, ui->addIdCombo->value(),
+                                                      ShapeType::Polyline, pen);
+                    polyline->SetPos(front);
+                    polyline->SetPoints(list);
+
+                    shapeVector->push_back(polyline);
+
+                    // not sure if next line is necessary
+                    renderArea = createRenderArea();
+                    renderArea->setVector(std::move(shapeVector));
+
+               }
+            break;
+        case 2:{    // POLYGON SHAPE
+                    // Pen Attributes COPY/PASTE (use textParser fcns)
+                    QColor color(ui->addColorCombo->currentText());
+                    QPen pen;
+                    pen.setColor(color);
+                    pen.setStyle(textParser->GetPenStyle(ui->penStyleCombo->currentText()));
+                    pen.setCapStyle(textParser->GetCapStyle(ui->capStyleCombo->currentText()));
+                    pen.setJoinStyle(textParser->GetPenJoinStyle(ui->comboBox_5->currentText()));
+                    // end copy paste
+
+                    // Brush Attributes COPY/PASTE (use textParser fcns)
+                    // Time constraints - only color & style options
+                    QColor bColor(ui->addColorCombo_2->currentText());
+                    QBrush brush(bColor);
+                    brush.setStyle(textParser->GetBrushStyle(ui->brushPatternCombo->currentText()));
+                    // end copy/paste
+
+                    // Hard Code points? :[
+                    QList<QPoint> list;
+                    QPoint front, mid, end;
+                    front.setX(ui->xCoordSpin->value());
+                    front.setY(ui->yCoordSpin->value());
+
+                    mid.setX(33); mid.setY(50);
+                    end.setX(100); end.setY(100);
+
+                    list.append(front);
+                    list.append(mid);
+                    list.append(end);
+
+                    Polygon* polygon = new Polygon(renderArea, ui->addIdCombo->value(),
+                                                   ShapeType::Polygon);
+                    polygon->SetPos(front);
+                    polygon->SetPoints(list);
+                    polygon->SetBrush(brush);
+                    polygon->SetPen(pen);
+
+                    shapeVector->push_back(polygon);
+
+                    // not sure if this is necessary
+                    createRenderArea();
+                    renderArea->setVector(std::move(shapeVector));
+
+
+               }
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        case 5:
+            break;
+        default :  QMessageBox addRejected;
+                   addRejected.warning(this, "REJECTED", "Only admins can add shapes");
+
+        }
+
+        QMessageBox addAccepted;
+        addAccepted.warning(this, "SUCCESS", "The shape was added to the canvas");
+    }
+}
+

@@ -27,7 +27,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_MainWindow_t {
-    uint offsetsAndSizes[24];
+    uint offsetsAndSizes[30];
     char stringdata0[11];
     char stringdata1[30];
     char stringdata2[1];
@@ -40,6 +40,9 @@ struct qt_meta_stringdata_MainWindow_t {
     char stringdata9[13];
     char stringdata10[19];
     char stringdata11[23];
+    char stringdata12[27];
+    char stringdata13[6];
+    char stringdata14[19];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_MainWindow_t::offsetsAndSizes) + ofs), len 
@@ -56,7 +59,10 @@ Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_Main
         QT_MOC_LITERAL(159, 10),  // "penChanged"
         QT_MOC_LITERAL(170, 12),  // "brushChanged"
         QT_MOC_LITERAL(183, 18),  // "on_addLine_clicked"
-        QT_MOC_LITERAL(202, 22)   // "on_addPolyline_clicked"
+        QT_MOC_LITERAL(202, 22),  // "on_addPolyline_clicked"
+        QT_MOC_LITERAL(225, 26),  // "on_addShapeCombo_activated"
+        QT_MOC_LITERAL(252, 5),  // "index"
+        QT_MOC_LITERAL(258, 18)   // "on_addText_clicked"
     },
     "MainWindow",
     "on_actionContact_Us_triggered",
@@ -69,7 +75,10 @@ Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_Main
     "penChanged",
     "brushChanged",
     "on_addLine_clicked",
-    "on_addPolyline_clicked"
+    "on_addPolyline_clicked",
+    "on_addShapeCombo_activated",
+    "index",
+    "on_addText_clicked"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -80,7 +89,7 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
+      11,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -88,15 +97,17 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   68,    2, 0x08,    1 /* Private */,
-       3,    0,   69,    2, 0x08,    2 /* Private */,
-       4,    0,   70,    2, 0x08,    3 /* Private */,
-       5,    0,   71,    2, 0x08,    4 /* Private */,
-       6,    1,   72,    2, 0x08,    5 /* Private */,
-       8,    1,   75,    2, 0x08,    7 /* Private */,
-       9,    1,   78,    2, 0x08,    9 /* Private */,
-      10,    0,   81,    2, 0x08,   11 /* Private */,
-      11,    0,   82,    2, 0x08,   12 /* Private */,
+       1,    0,   80,    2, 0x08,    1 /* Private */,
+       3,    0,   81,    2, 0x08,    2 /* Private */,
+       4,    0,   82,    2, 0x08,    3 /* Private */,
+       5,    0,   83,    2, 0x08,    4 /* Private */,
+       6,    1,   84,    2, 0x08,    5 /* Private */,
+       8,    1,   87,    2, 0x08,    7 /* Private */,
+       9,    1,   90,    2, 0x08,    9 /* Private */,
+      10,    0,   93,    2, 0x08,   11 /* Private */,
+      11,    0,   94,    2, 0x08,   12 /* Private */,
+      12,    1,   95,    2, 0x08,   13 /* Private */,
+      14,    0,   98,    2, 0x08,   15 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -107,6 +118,8 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void, QMetaType::Int,    7,
     QMetaType::Void, QMetaType::Int,    7,
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,   13,
     QMetaType::Void,
 
        0        // eod
@@ -141,6 +154,11 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'on_addLine_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_addPolyline_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_addShapeCombo_activated'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'on_addText_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -161,6 +179,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 6: _t->brushChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 7: _t->on_addLine_clicked(); break;
         case 8: _t->on_addPolyline_clicked(); break;
+        case 9: _t->on_addShapeCombo_activated((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 10: _t->on_addText_clicked(); break;
         default: ;
         }
     }
@@ -185,13 +205,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 9)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 11;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 9)
+        if (_id < 11)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 9;
+        _id -= 11;
     }
     return _id;
 }
