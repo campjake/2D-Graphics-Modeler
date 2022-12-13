@@ -529,7 +529,7 @@ void MainWindow::on_addText_clicked()
                                  pen.style(), pen.capStyle(),
                                  pen.joinStyle());
 
-                    shapeVector->push_back(line);
+                   shapeVector->push_back(line);
 
                     // not sure if next line is necessary
 //                    renderArea->setData(line);
@@ -612,12 +612,12 @@ void MainWindow::on_addText_clicked()
 
                     // Hard Code points? :[
                     QList<QPoint> list;
-                    QPoint front, mid, end;
+                    QPoint front, mid,end;
                     front.setX(ui->xCoordSpin->value());
                     front.setY(ui->yCoordSpin->value());
 
-                    mid.setX(33); mid.setY(50);
-                    end.setX(100); end.setY(100);
+                    mid.setX(33); mid.setY(100);
+                    end.setX(100); end.setY(50);
 
                     list.append(front);
                     list.append(mid);
@@ -641,16 +641,140 @@ void MainWindow::on_addText_clicked()
                     renderArea->setVector(std::move(shapeVector));
                     createRenderArea();
                     renderArea->setBrush(polygon->GetBrush());
-
-
-
                }
             break;
-        case 3:
+        case 3: {   //RECTANGLE
+                    // Pen Attributes COPY/PASTE (use textParser fcns)
+                    QColor color(ui->addColorCombo->currentText());
+                    QPen pen;
+                    pen.setColor(color);
+                    pen.setStyle(textParser->GetPenStyle(ui->penStyleCombo->currentText()));
+                    pen.setCapStyle(textParser->GetCapStyle(ui->capStyleCombo->currentText()));
+                    pen.setJoinStyle(textParser->GetPenJoinStyle(ui->comboBox_5->currentText()));
+                    // end copy paste
+
+                    // Brush Attributes COPY/PASTE (use textParser fcns)
+                    // Time constraints - only color & style options
+                    QColor bColor(ui->addColorCombo_2->currentText());
+                    QBrush brush(bColor);
+                    brush.setStyle(textParser->GetBrushStyle(ui->brushPatternCombo->currentText()));
+                    // end copy/paste
+
+                    QList<QPoint> list;
+                    QPoint front, end;
+                    front.setX(ui->xCoordSpin->value());
+                    front.setY(ui->yCoordSpin->value());
+
+                    end.setX(100); end.setY(200);
+
+                    list.append(front);
+                    list.append(end);
+
+                    Rectangle* rectangle = new Rectangle(renderArea,ui->addIdCombo->value(),
+                                                   ShapeType::Rectangle,ui->xCoordSpin->value(),ui->yCoordSpin->value());
+                    rectangle->SetPos(front);
+                    rectangle->SetBrush(brush);
+                    rectangle->SetPen(pen);
+
+                    shapeVector->push_back(rectangle);
+
+                    // not sure if this is necessary
+                    // renderArea->setData();
+                    //  renderArea->setVector(std::move(shapeVector));
+                    renderArea = new RenderArea;
+                    renderArea->setData(rectangle);
+
+                    renderArea->setVector(std::move(shapeVector));
+                    createRenderArea();
+                    renderArea->setBrush(rectangle->GetBrush());
+
+        }
             break;
-        case 4:
+        case 4: {   //Ellipse
+                    // Pen Attributes COPY/PASTE (use textParser fcns)
+                    QColor color(ui->addColorCombo->currentText());
+                    QPen pen;
+                    pen.setColor(color);
+                    pen.setStyle(textParser->GetPenStyle(ui->penStyleCombo->currentText()));
+                    pen.setCapStyle(textParser->GetCapStyle(ui->capStyleCombo->currentText()));
+                    pen.setJoinStyle(textParser->GetPenJoinStyle(ui->comboBox_5->currentText()));
+                    // end copy paste
+
+                    // Brush Attributes COPY/PASTE (use textParser fcns)
+                    // Time constraints - only color & style options
+                    QColor bColor(ui->addColorCombo_2->currentText());
+                    QBrush brush(bColor);
+                    brush.setStyle(textParser->GetBrushStyle(ui->brushPatternCombo->currentText()));
+                    // end copy/paste
+
+
+                    QList<QPoint> list;
+                    QPoint front, end;
+                    front.setX(ui->xCoordSpin->value());
+                    front.setY(ui->yCoordSpin->value());
+
+                    end.setX(100); end.setY(200);
+
+                    list.append(front);
+                    list.append(end);
+
+                    Ellipse* ellipse = new Ellipse(renderArea,ui->addIdCombo->value(),
+                                                   ShapeType::Ellipse,ui->xCoordSpin->value(),ui->yCoordSpin->value());
+                    ellipse->SetPos(front);
+                    ellipse->SetBrush(brush);
+                    ellipse->SetPen(pen);
+
+                    shapeVector->push_back(ellipse);
+
+                    // not sure if this is necessary
+                    // renderArea->setData();
+                    // renderArea->setVector(std::move(shapeVector));
+                    renderArea = new RenderArea;
+                    renderArea->setData(ellipse);
+
+                    renderArea->setVector(std::move(shapeVector));
+                    createRenderArea();
+                    renderArea->setBrush(ellipse->GetBrush());
+        }
             break;
-        case 5:
+        case 5: {   //Text Box
+                    // Pen Attributes COPY/PASTE (use textParser fcns)
+                    QColor color(ui->addColorCombo->currentText());
+                    QPen pen;
+                    pen.setColor(color);
+                    pen.setStyle(textParser->GetPenStyle(ui->penStyleCombo->currentText()));
+                    pen.setCapStyle(textParser->GetCapStyle(ui->capStyleCombo->currentText()));
+                    pen.setJoinStyle(textParser->GetPenJoinStyle(ui->comboBox_5->currentText()));
+                    // end copy paste
+
+                    // Line, Polyline, TextBox have no brush
+                    pen.setBrush(Qt::NoBrush);
+
+                    QPoint front;
+                    front.setX(ui->xCoordSpin->value());
+                    front.setY(ui->yCoordSpin->value());
+
+                    Text* text = new Text(renderArea, ui->addIdCombo->value(), ShapeType::Text);
+
+                    text->SetPen(color, ui->addWidSpin->value(),
+                                 pen.style(), pen.capStyle(),
+                                 pen.joinStyle());
+                    text->SetTextString(ui->lineEditBox->text());
+
+                    text->SetPos(front);
+
+                    shapeVector->push_back(text);
+
+                    // not sure if next line is necessary
+                    // renderArea->setData(line);
+                    // renderArea->setVector(std::move(shapeVector));
+                    renderArea = new RenderArea;
+                    renderArea->setData(text);
+                    renderArea->setPen(text->GetPen());
+                    renderArea->setBrush(Qt::NoBrush);
+                    renderArea->setVector(std::move(shapeVector));
+                    renderArea = createRenderArea();
+        }
             break;
         default :  QMessageBox addRejected;
                    addRejected.warning(this, "REJECTED", "Only admins can add shapes");
