@@ -97,6 +97,9 @@ public:
 
     // CalcArea
     virtual double CalcArea() const;
+
+    // Print
+    virtual void Print(QTextStream &fout);
     /*************************************************************/
 
 

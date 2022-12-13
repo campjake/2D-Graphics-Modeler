@@ -35,6 +35,8 @@ public:
     //calculates area
     double CalcArea() const;
 
+    virtual void Print(QTextStream &fout);
+
     //Operators
 
     bool operator == (const Polyline& other);

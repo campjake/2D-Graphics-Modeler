@@ -1,0 +1,42 @@
+TEAM - Shapes R Us
+
+---- 2D GRAPHICS MODELER CHECKPOINTS / MILESTONES ----
+
+1) URL TO REPOSITORY - https://github.com/campjake/2D-Graphics-Modeler
+
+2) zip file containing complete Qt project. To include working UI once project is opened and built in Qt.
+	-- 2D-Graphics-Modeler.tar
+3) zip file JUST THE UI FILES
+	-- UI_Files.tar
+
+4) LIST OF IMPORTANT DELIVERABLES
+
+Modify shapes 			-- (mainwindow.cpp -- createRenderArea() line 102), Modify Okay, Move buggy
+selection_sort (by id&perim) 	-- Incomplete (shape.h -- line 137)
+Docker				-- N/A
+White Box Testing		-- N/A
+	
+	(CODE REQUIREMENTS)
+	Customer Testimonials 	-- class: testimonial.h
+				-- implementation: mainwindow.cpp - LINE 42
+	
+	Contact Us		-- mainwindow.cpp - LINE 35
+	
+	Display Graphics	-- createRenderArea fcn in mainwindow.cpp @ LINE 102
+				-- paint event fcn in renderarea.cpp @ line 57
+	
+	Shape Vector		-- textparser.cpp @ line 263 (while loop with switch case)
+
+	Move Shapes		-- Bugged/Incomplete (shape.cpp, mainwindow.cpp line 107)
+
+	Shape Listing		-- Incomplete, perimeter and area print to application output (mainwindow.cpp, no ui file))
+
+	Serializer		-- serializer.h -- pure virtual print function in shape hierarchy (end of all derived class cpp files)
+
+	
+
+5) Agile 			-- Export Agile Docs.csv, Scrum Review.txt
+
+6) Doxygen -- Doxygen.tar
+
+7) Valgrind memory leak check 	-- Test.tar
