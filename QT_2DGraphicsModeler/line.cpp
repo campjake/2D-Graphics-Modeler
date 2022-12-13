@@ -145,7 +145,7 @@ void Line::Print(QTextStream &fout)
     fout << "\nShapeDimensions: ";
 
     // Print point 1 & 2
-    for(int i = 0; i <= dimensions.size(); i++)
+    for(int i = 0; i < dimensions.size(); i++)
     {
         fout << dimensions[i];
     }

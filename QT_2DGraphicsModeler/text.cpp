@@ -162,10 +162,12 @@ void Text::Print(QTextStream &fout)
     fout << "\nShapeDimensions: ";
 
     // Print Position, A, B
-    for(int i = 0; i <= dimensions.size(); i++)
+    for(int i = 0; i < dimensions.size() - 1; i++)
     {
-        fout << dimensions[i] << ", ";
+        fout << dimensions[i];
     }
+
+    fout << dimensions[dimensions.size() - 1];
 
     // Print Pen Color
     if(GetPen().color()  == QColor(Qt::red))
@@ -383,6 +385,6 @@ void Text::Print(QTextStream &fout)
     case 900: style = "Black";
     }
 
-    fout << "\nTextFontWeight" << style;
+    fout << "\nTextFontWeight: " << style;
 
 }

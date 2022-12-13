@@ -133,7 +133,7 @@ void Polyline::deletePoint(const QPoint& point)
 void Polyline::Print(QTextStream &fout)
 {
     vector<QString>  dimensions;
-    QString shapeName = "Line";
+    QString shapeName = "Polyline";
     QString colorName;
     QString style;
 
@@ -149,10 +149,12 @@ void Polyline::Print(QTextStream &fout)
     fout << "\nShapeDimensions: ";
 
     // Print point 1 & 2
-    for(int i = 0; i <= dimensions.size(); i++)
+    for(int i = 0; i < dimensions.size() - 1; i++)
     {
         fout << dimensions[i] << ", ";
     }
+
+    fout << dimensions[dimensions.size() - 1];
 
     // Print Pen Color
     if(GetPen().color()  == QColor(Qt::red))
