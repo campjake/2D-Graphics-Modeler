@@ -47,8 +47,6 @@ public:
     //Moves all points by offset in x and y
 //    void moveOffset(int offsetX, int offsetY);
 
-    virtual void Print(QTextStream &fout);
-
     //sets both ends of line
     void setPoints(const QPoint& P1, const QPoint& P2);
 

@@ -39,7 +39,7 @@ that can be integrated into an existing software suite.
 - [x] Objects print
 - [ ] Add/Remove Objects
 - [ ] Shape List Report
-- [x] Save changes between executions
+- [ ] Save changes between executions
 - [x] Contact Us Method
 - [x] Testimonials
 - [x] Passes valgrind memory check

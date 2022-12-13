@@ -56,7 +56,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    out.txt \
     shape_input_file_specs.txt \
     shapes.txt \
     testimonial.txt

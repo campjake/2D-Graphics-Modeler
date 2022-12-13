@@ -6,8 +6,6 @@
 #include <QApplication>
 #include <iostream>
 #include <algorithm>
-#include "serializer.h"
-
 
 //static int  count = 9; // use for unique IDs?
 
@@ -28,6 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
     // Shapes get defined and vector is filled here
     // renderArea is the paintdevice for the shapes painter ptr
     shapeVector = textParser->ReadFile("shapes.txt", renderArea);
+
     renderArea = createRenderArea();
 
     // Copy operations were deleted
@@ -48,8 +47,11 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
-    serializer(renderArea->getVector(), "out.txt");
+    // Keep this format to save in the future not just on quit
+//    vector<Shape*> temp;
 
+
+//    Serializer(shapeVector, "shapes.txt");
     delete ui;
 }
 

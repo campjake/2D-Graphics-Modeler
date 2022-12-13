@@ -15,7 +15,6 @@
 #include "rectangle.h"
 #include "ellipse.h"
 #include "text.h"
-#include "serializer.h"
 
 
 class RenderArea : public QWidget
@@ -30,7 +29,7 @@ public:
 
     vector<Shape*>* getVector() const
     {
-        return std::move(shapeVector);
+        return shapeVector;
     }
 
     Shape* getData() const

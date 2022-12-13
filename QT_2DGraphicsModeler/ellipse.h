@@ -27,9 +27,6 @@ class Ellipse : public Shape
 
     int getHeight()const;
 
-    int getA() const {return a;}
-    int getB() const {return b;}
-
     void setWidth(const int width);
 
     void setHeight(const int height);
@@ -46,8 +43,6 @@ class Ellipse : public Shape
 
     // CalcArea
     virtual double CalcArea() const;
-
-    virtual void Print(QTextStream &fout);
     /*************************************************************/
 
   private :
