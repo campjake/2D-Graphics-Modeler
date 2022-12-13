@@ -2,7 +2,11 @@
 
 Rectangle::Rectangle(QPaintDevice* device, int anID,
                      ShapeType shapeType, int width, int length)
-    : Shape{device, anID, shapeType}, width{width}, length{length}{}
+    : Shape{device, anID, shapeType}, width{width}, length{length}
+{
+    SetPen(Qt::SolidLine);
+    SetBrush(Qt::black, Qt::BrushStyle::SolidPattern);
+}
 
 // Parser Constructor
 Rectangle::Rectangle(int anID, QPoint aPos, int l, int w)
@@ -24,6 +28,24 @@ Rectangle::~Rectangle(){}
 
 //        // Move Assignment
 //    Shape& operator=(Shape&& otherShape) noexcept;
+//Rectangle::Rectangle(Rectangle&& otherRectangle) noexcept
+//: Shape(Shape&& otherRectangle) noexcept
+//{
+//    width = std::move(otherRectangle.width);
+//    length = std::move(otherRectangle.length);
+//}
+
+////// Move Assignment
+////// Pre-Conditions - R-value casted other shape object
+////// Post-Conditions - Returns a shape object
+//Rectangle& Rectangle::operator=(Rectangle&& otherRectangle) noexcept
+//{
+//    *this = std::move(Shape(otherRectangle));
+//    width = std::move(otherRectangle.width);
+//    length = std::move(otherRectangle.length);
+
+//    return *this;
+//}
 
 float Rectangle::getWidth()const
 {
@@ -49,7 +71,11 @@ void Rectangle::setLength(const float length)
 // Draw function
 void Rectangle::Draw(QPainter* painter)
 {
-    painter->drawRect(0, 0, width, length);
+    painter->setBrush(GetBrush());
+    painter->setPen(GetPen());
+    painter->drawRect(GetPos().x(), GetPos().y(), width, length);
+
+    painter->drawText(GetPos(), QString::number(GetID()));
 }
 
 // Move function

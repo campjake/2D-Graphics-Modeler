@@ -3,6 +3,7 @@
 #include "contactus.h"
 #include "logindialog.h"
 #include "testimonial.h"
+#include "moveshape.h"
 #include <QMainWindow>
 #include <QGridLayout>
 #include <QCheckBox>
@@ -15,7 +16,7 @@
 #include "shape.h"
 #include "textparser.h"
 #include "renderarea.h"
-#include "serializer.h"
+//#include "serializer.h"
 
 static QPainter staticQPainter;
 
@@ -43,16 +44,25 @@ private slots:
 
     void on_actionOpen_File_triggered();
 
+    void on_actionMove_Shape_triggered();
+
+
+
 
 
 private:
     Ui::MainWindow *ui;
     LoginDialog l;
+
     RenderArea* createRenderArea();
+
     QPainter* painter;          // ?
     vector<Shape*>* shapeVector;
     RenderArea *renderArea;
     TextParser *textParser;
+    RenderArea* setRenderArea(RenderArea* rA);
+    QLabel *xmoveShapeLabel;
+    QLabel *ymoveShapeLabel;
     QLabel *shapeLabel;
     QLabel *penWidthLabel;
     QLabel *penStyleLabel;
@@ -60,7 +70,9 @@ private:
     QLabel *penJoinLabel;
     QLabel *brushStyleLabel;
     QLabel *otherOptionsLabel;
-    QComboBox *shapeComboBox;
+    QSpinBox *xmoveShapeSpinBox;
+    QSpinBox *ymoveShapeSpinBox;
+    QSpinBox *shapeIDBox;
     QSpinBox *penWidthSpinBox;
     QComboBox *penStyleComboBox;
     QComboBox *penCapComboBox;
@@ -68,15 +80,20 @@ private:
     QComboBox *brushStyleComboBox;
     QCheckBox *antialiasingCheckBox;
     QCheckBox *transformationsCheckBox;
-
+    MoveShape* moveWindow;
     bool isAdmin;
+
 
 
 private slots:
     void shapeChanged(int);
     void penChanged(int);
     void brushChanged(int);
-    void on_addLine_clicked();
-    void on_addPolyline_clicked();
+    void moveChanged(int);
+//    void on_addLine_clicked();
+//    void on_addPolyline_clicked();
+//    void on_addShapeCombo_currentIndexChanged(int index);
+    void on_addShapeCombo_activated(int index);
+    void on_addText_clicked();
 };
 #endif // MAINWINDOW_H

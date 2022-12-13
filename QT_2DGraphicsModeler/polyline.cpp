@@ -12,6 +12,7 @@ Polyline::Polyline(QPaintDevice* device, int anID,
       LinePoints{new QList<QPoint>}
 {
     SetPen(thatPen);
+
 }
 
 // Parser Constructor
@@ -25,15 +26,18 @@ Polyline::Polyline(int anID, QList<QPoint> list)
 void Polyline::Draw(QPainter* painter)
 {
     // QPainter doesn't like this list, and wants an array
-    QPoint pointList[GetNumPoints()];
-    for(int i = 0; i < GetNumPoints(); i++)
+    int count = GetNumPoints();
+    QPoint pointList[count];
+    for(int i = 0; i < count; i++)
     {
         pointList[i] = (*LinePoints)[i];
     }
 
     painter->setPen(GetPen());
     painter->setBrush(GetBrush());
-    painter->drawPolyline(pointList, GetNumPoints());
+    painter->drawPolyline(pointList, count);
+
+    painter->drawText(pointList[0], QString::number(GetID()));
 }
 
 //Moves first point

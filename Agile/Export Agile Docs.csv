@@ -1,0 +1,310 @@
+Issue Number,title,assignee/login,milestone/title,See Timeline,milestone/description,comments,created_at,updated_at,body
+2,Calc shape perimeter Prototypes,campjake,Sprint 1,https://github.com/campjake/2D-Graphics-Modeler/issues/2,"Goals:
+- Vector Class
+- Shape Base Class & Derived Classes
+- Text Parser for application to read input file
+- RenderArea Class
+- Window Class
+- User login (Window Object)",0,2022-10-28T20:44:43Z,2022-12-12T19:30:57Z,A public member function that calculates the perimeter of a shape for each derived class
+3,upload provided vector class and txt files,campjake,Pre-project,https://github.com/campjake/2D-Graphics-Modeler/issues/3,,0,2022-10-28T21:06:45Z,2022-12-12T19:30:53Z,Copy/paste & commit files provided from Canvas
+6,Vector Class Definition,HardinL,Sprint 1,https://github.com/campjake/2D-Graphics-Modeler/issues/6,"Goals:
+- Vector Class
+- Shape Base Class & Derived Classes
+- Text Parser for application to read input file
+- RenderArea Class
+- Window Class
+- User login (Window Object)",3,error from export,error from exprt,error from exprt
+8,"As a user, I should be able to see the perimeter of a shape I??e drawn",HardinL,Sprint 2,https://github.com/campjake/2D-Graphics-Modeler/issues/8,Race to the finish!,2,2022-10-30T00:59:39Z,2022-12-09T22:13:56Z,"1. Description
+   1. The perimeter of a shape should be calculated and displayed on screen for the user when the shape is selected
+2. Tasks
+   1. A member function that calculates the perimeter of the shape (derived classes)
+   2. Output of these values should have consistent representation (same number of significant figures) (use data type double)
+3. Tests
+   1. Values always be greater than 0 (input validation)
+   2. Values update when properties change
+   3. Values should be readable even with large numbers (front end, UI)
+4. Assignee:
+   1. Jacob
+5. Estimation: 20
+6. Priority: 6
+7. Done
+   1. User can see the perimeter of a shape whenever they select a shape
+   2. All task, test conditions satisfied??,https://api.github.com/repos/campjake/2D-Graphics-Modeler/issues/8/reactions,0,0,0,0,0,0,0,0,0,https://api.github.com/repos/campjake/2D-Graphics-Modeler/issues/8/timeline,,,PastelChips,116604930,U_kgDOBvNAAg,https://avatars.githubusercontent.com/u/116604930?v=4,,https://api.github.com/users/PastelChips,https://github.com/PastelChips,https://api.github.com/users/PastelChips/followers,https://api.github.com/users/PastelChips/following{/other_user},https://api.github.com/users/PastelChips/gists{/gist_id},https://api.github.com/users/PastelChips/starred{/owner}{/repo},https://api.github.com/users/PastelChips/subscriptions,https://api.github.com/users/PastelChips/orgs,https://api.github.com/users/PastelChips/repos,https://api.github.com/users/PastelChips/events{/privacy},https://api.github.com/users/PastelChips/received_events,User,false,ltep0,116687378,U_kgDOBvSCEg,https://avatars.githubusercontent.com/u/116687378?v=4,,https://api.github.com/users/ltep0,https://github.com/ltep0,https://api.github.com/users/ltep0/followers,https://api.github.com/users/ltep0/following{/other_user},https://api.github.com/users/ltep0/gists{/gist_id},https://api.github.com/users/ltep0/starred{/owner}{/repo},https://api.github.com/users/ltep0/subscriptions,https://api.github.com/users/ltep0/orgs,https://api.github.com/users/ltep0/repos,https://api.github.com/users/ltep0/events{/privacy},https://api.github.com/users/ltep0/received_events,User,false,,,,,,,,,,,,,,,,,,,4777403252,LA_kwDOIRdw-c8AAAABHMFjdA,https://api.github.com/repos/campjake/2D-Graphics-Modeler/labels/Shape%20Base/Derived%20Class,Shape Base/Derived Class,bfd4f2,false,,,,,,,,,,,,,,,,,
+https://api.github.com/repos/campjake/2D-Graphics-Modeler/issues/6,https://api.github.com/repos/campjake/2D-Graphics-Modeler,https://api.github.com/repos/campjake/2D-Graphics-Modeler/issues/6/labels{/name},https://api.github.com/repos/campjake/2D-Graphics-Modeler/issues/6/comments,https://api.github.com/repos/campjake/2D-Graphics-Modeler/issues/6/events,https://github.com/campjake/2D-Graphics-Modeler/issues/6,1428416899,I_kwDOIRdw-c5VI-mD,6,Vecter class definition,HardinL,116381698,U_kgDOBu_YAg,https://avatars.githubusercontent.com/u/116381698?v=4,,https://api.github.com/users/HardinL,https://github.com/HardinL,https://api.github.com/users/HardinL/followers,https://api.github.com/users/HardinL/following{/other_user},https://api.github.com/users/HardinL/gists{/gist_id},https://api.github.com/users/HardinL/starred{/owner}{/repo},https://api.github.com/users/HardinL/subscriptions,https://api.github.com/users/HardinL/orgs,https://api.github.com/users/HardinL/repos,https://api.github.com/users/HardinL/events{/privacy},https://api.github.com/users/HardinL/received_events,User,false,4777403673,LA_kwDOIRdw-c8AAAABHMFlGQ,https://api.github.com/repos/campjake/2D-Graphics-Modeler/labels/Vector%20Class,Vector Class,F9A6C0,false,,open,false,HardinL,116381698,U_kgDOBu_YAg,https://avatars.githubusercontent.com/u/116381698?v=4,,https://api.github.com/users/HardinL,https://github.com/HardinL,https://api.github.com/users/HardinL/followers,https://api.github.com/users/HardinL/following{/other_user},https://api.github.com/users/HardinL/gists{/gist_id},https://api.github.com/users/HardinL/starred{/owner}{/repo},https://api.github.com/users/HardinL/subscriptions,https://api.github.com/users/HardinL/orgs,https://api.github.com/users/HardinL/repos,https://api.github.com/users/HardinL/events{/privacy},https://api.github.com/users/HardinL/received_events,User,false,HardinL,116381698,U_kgDOBu_YAg,https://avatars.githubusercontent.com/u/116381698?v=4,,https://api.github.com/users/HardinL,https://github.com/HardinL,https://api.github.com/users/HardinL/followers,https://api.github.com/users/HardinL/following{/other_user},https://api.github.com/users/HardinL/gists{/gist_id},https://api.github.com/users/HardinL/starred{/owner}{/repo},https://api.github.com/users/HardinL/subscriptions,https://api.github.com/users/HardinL/orgs,https://api.github.com/users/HardinL/repos,https://api.github.com/users/HardinL/events{/privacy},https://api.github.com/users/HardinL/received_events,User,false,https://api.github.com/repos/campjake/2D-Graphics-Modeler/milestones/1,https://github.com/campjake/2D-Graphics-Modeler/milestone/1,https://api.github.com/repos/campjake/2D-Graphics-Modeler/milestones/1/labels,8593690,MI_kwDOIRdw-c4AgyEa,1,Sprint 1,Goals:"
+9,"As a user, I should be able to see the area of a shape I??e drawn",campjake,Sprint 2,https://github.com/campjake/2D-Graphics-Modeler/issues/9,Race to the finish!,0,2022-10-30T01:01:54Z,2022-12-12T19:30:46Z,"1. Description
+   1. The area of a shape should be calculated and displayed on screen for the user when the shape is selected
+2. Tasks
+   1. A member function that calculates the area of the shape (derived classes)
+   2. Output of these values should have consistent representation
+3. Tests
+   1. Verify that values should always be greater than 0
+   2. Verify that values update when properties change
+   3. Values should be readable even with large numbers
+   4. Verify that we never divide by 0 or a value that is rounded down to 0
+4. Assignee
+   1. Jacob
+5. Estimation: 20
+6. Priority: 6
+7. Done
+   1. User can see the area of a shape whenever they select a shape
+   2. All task & conditions satisfied
+Baseline story point estimate value of one = 2 hrs of development time for a single developer"
+10,"As a user, I want to be able to change the properties of the brush and dimensions of the shapes, so that I can interact with the drawing screen.",campjake,Sprint 2,https://github.com/campjake/2D-Graphics-Modeler/issues/10,Race to the finish!,1,2022-10-30T01:02:35Z,2022-12-09T22:11:36Z,"a) Description:
+	A user can change the dimensions of the shape in the drawing screen.
+	A user can change the color of the brush they are using to draw.
+	A user can change the style of brush they are using to draw.
+b) Tasks:
+	As a user, I can change the dimensions of the shape.
+	As a user, I can change the color of the brush.
+	As a user, I can change the style of the brush.
+c) Tests:
+	Verify that a user can change the dimensions of the shape.
+	Verify that a user can change the color of the brush.
+	Verify that a user can change the style of the brush.
+d) Assignee:
+	Matthew, implement the frontend and backend UI and code in order to use these
+	features within the graphics modeler.
+e) Estimation: 15
+f) Priority: 3
+g) Done:
+	A user is able to use all the listed features to change the properties of the brush on the screen.
+	A user is able to change the dimension of the shapes on the screen.
+	All task, text conditions satisfied.
+
+Baseline story point estimate value of one = 2 hrs of development time for a single developer."
+11,"As a user, I want to be able to change the properties of the pen, so that I can interact with the drawing screen.","Fuli, campjake",Sprint 2,https://github.com/campjake/2D-Graphics-Modeler/issues/11,Race to the finish!,1,2022-10-30T01:03:52Z,2022-12-12T06:31:13Z,"a) Description:
+
+	A user can change the color of the pen they are using to draw.
+
+	A user can change the width of the pen that they are using to draw. 
+	
+	A user can change the styles of the pen that they are using to draw. An example of this is
+	using a pen that is a solid line, dashed line, or a dotted line.
+
+	A user can change the style of the cap of the pen that they are using to draw. An example of 
+	this is using a pen tip that changes the end point of line.(flat,round, etc..)
+
+	A user can change the style of of the line on the drawing screen when two lines join together.
+	An example of this would be a line having a edged join, beveled join, or a round join.
+b) Tasks:
+	As a user, I can change the color of the pen.
+	As a user, I can change the width of the pen.
+	As a user, I can change the styles of the pen.
+	As a user, I can change the pen cap style.
+	As a user, I can change the pen join style.
+c) Tests:
+	Verify that a user can change the color of the pen.
+	Verify that a user can change the width of the pen.
+	Verify that a user can change the styles of the pen.
+	Verify that a user can change the pen cap style.
+	Verify that a user can change the pen join style.
+d) Assignee:
+	Matthew, implement the front end and backend UI and code in order to use these
+	features within the graphics modeler.
+e) Estimation: 15
+f) Priority: 2
+g) Done:
+	A user is able to use all the listed features to change the properties of the pen on the screen.
+	All task, text conditions satisfied.
+
+Baseline story point estimate value of one = 2 hrs of development time for a single developer."
+12,"As an admin, I want to move shapes and text so I can modify the window",HardinL,Sprint 2,https://github.com/campjake/2D-Graphics-Modeler/issues/12,Race to the finish!,0,2022-10-30T01:04:34Z,2022-11-14T20:04:22Z,"a) Description:
+	The admin should be able to move shapes and text within the window by entering an x and y coordinate to move to.
+	The moved shape/text will be rendered in its new location.
+	The moved shape/text's parameters should not change outside of its position.
+
+b) Tasks:
+	As an admin, I can enter a new coordinate for a shape/text so that it moves to the location on the render window.
+
+c) Tests:	
+	Verify that the admin can move the shape/text, with the new coordinates being updated in the private member.
+	Verify that the parameters of the shape/text remains consistent after the move.
+	Verify that the shape/text's new location will be reflected in the rendering window.
+	Verify that the shape/text can't go out of the bounds of the rendering area.
+
+d) Assignee:
+	Davis, create the function used to allow the shape/text to move through the input of the admin.
+
+e) Estimation: 10
+f) Priority: 5
+g) Done:
+	A admin is able to change the location of a rendered shape/text within the rendering area.
+	All task, text conditions satisfied.
+
+Baseline story point estimate value of one = 2 hrs of development time for a single developer"
+13,"As a user, I want to define a shape so that I can draw it.",campjake,Sprint 1,https://github.com/campjake/2D-Graphics-Modeler/issues/13,"Goals:
+- Vector Class
+- Shape Base Class & Derived Classes
+- Text Parser for application to read input file
+- RenderArea Class
+- Window Class
+- User login (Window Object)",0,2022-10-30T01:04:56Z,2022-12-12T19:30:42Z,"a)	Description:
+	A user can choose a pre-defined shape, then choose the type, the width, and color of outline, shape color/gradient. A user can also delete a shape.
+
+b)	Tasks:
+	As a user, I can choose a shape.
+	As a user, I can choose the size of the shape.
+	As a user, I can choose the color of the shape.
+	As a user, I can choose the shape?? desired fill.
+	As a user, I can choose to have an outline of the shape.
+	As a user, I can choose the width of the outline.
+	As a user, I can choose the color of the outline.
+	As a user, I can choose the type of the outline (i.e. solid, dashed, dotted).
+
+c)	Tests:
+	Verify that a user can choose a shape from a menu.
+	Verify that a user can choose the size of the shape from a menu.
+	Verify that a user can choose the color of the shape from a menu.
+	Verify that a user can choose the shape?? desired fill from the menu.
+	Verify that a user can choose to have an outline of the shape from a menu.
+	Verify that a user can choose the width of the outline from a menu.
+	Verify that a user can choose the color of the outline from a menu.
+	Verify that a user can choose the type of the outline (i.e. solid, dashed, dotted) from a menu.
+	Verify that a user can delete a shape.
+
+d)	Assignee:
+	Dylan, implement front end UI and code behind logic.
+
+e)	Estimation: 10
+
+f)	Priority: 1
+
+g)	Done:
+	User is able to create a desired shape with the desired fill and outline.
+	User is able to delete an unwanted shape."
+14,"As a user, I want to see a shape listing report so I can review the shapes and text",campjake,Sprint 2,https://github.com/campjake/2D-Graphics-Modeler/issues/14,Race to the finish!,0,2022-10-30T01:05:59Z,2022-12-09T22:12:43Z,"a) Description:
+Create a drop-down menu names Shape that includes all the shapes. Users can simply click
+on the Shape button, all the shape names will appear below. Users can select the shape that
+they want to draw.
+b) Tasks:
+Create the base class Shape, and all shapes in the menu will be the derived class derived from
+Shape. When users click the Shape button, the base class Shape pointer will be created. Then
+when users select a shape, the Shape pointer will point to the dynamic shape object on the
+heap. Then when the users try to draw a shape, the correct shape will be drawn.
+c) Tests:
+Verified the Shape button can expand correctly.
+Verified all the shape names will appear below the Shape button.
+Verified the Shape pointer will point to the dynamic shape object that the user wants to draw.
+Verified the correct shape will be drawn.
+d) Assignee:
+Hardin Liu. Writing the code, and designing the button.
+e) Estimation: 25
+f) Priority: 9
+g) Done:
+Users can select the shape that they want to draw, and the correct shape will be drawn. The
+user could draw the shape repeatedly and switch to a different shape and draw it. The Shape
+button will be expended correctly."
+15,"As a user, I want to change text properties so I can manipulate the text",campjake,Sprint 2,https://github.com/campjake/2D-Graphics-Modeler/issues/18,Race to the finish!,0,2022-10-30T01:07:03Z,2022-12-09T22:14:58Z,"a) Description: 
+A section the user can edit the text properties including Text String, Text Color, Text Alignment, Text Point Size, Text Font Family, Text Font Style, Text Font Weight (refer to shape_input_file_specs.txt).
+Display all the selection of text properties to the user
+The display of the user?? selection is invalid
+Display the edited information for the user to conform
+Display example text for the user to conform
+Confirmation shows up to use for changing text properties
+
+b) Tasks: 
+As a user, I can manipulate the text properties and confirm the selection I made, then I will able to see my edited text properties display.
+
+c) Tests: 
+Verify that the user inputs a valid selection
+Verify that the text properties had changed
+Verify that confirmation is show up on the screen
+
+d) Assignee:
+Asuna Gan completes tasks for building up the menu that users can make, testing user input, and displaying edited text.
+
+e) Estimation: 25
+f) Priority: 5 
+g) Done: 
+User is able to edit the text properties including Text String, Text Color, Text Alignment, Text Point Size, Text Font Family, Text Font Style, Text Font Weight (refer to shape_input_file_specs.txt).
+User is able to check whether they make a valid input for text properties
+User is able to confirm the choice so they can re-input
+The user is able to see the display of edited text
+User is able to make the change if they still consider changing after display the edited text
+
+
+All task, test conditions satisfied Baseline story point estimate value of one = 2 hrs of development time for a single developer"
+16,"As a user, I should be able to see and add customer testimonials",matthewchin47,Sprint 1,https://github.com/campjake/2D-Graphics-Modeler/issues/16,"Goals:
+- Vector Class
+- Shape Base Class & Derived Classes
+- Text Parser for application to read input file
+- RenderArea Class
+- Window Class
+- User login (Window Object)",1,2022-10-30T01:07:30Z,2022-12-12T19:30:38Z,"a) Description
+	Guest users can prompt to see previously left testimonials
+	Guest users can add their own testimonials
+	Testimonials should be persistent between executions
+b) Tasks
+ 	Display previous testimonials
+	Allow users to add testimonials
+	Keep testimonials between executions
+c) Tests	
+	Verify that output is of previous testimonials
+	Verify that User can add testimonial
+	Verify that user added testimonial is added to list of testimonials
+	Verify that list of testimonials is persistent between executions
+4. Assignee:
+   	Lawrence, implement code that allows users to see previous testimonials and add testimonial. Ensure 
+	testimonials are constant between executions
+5. Estimation: 10
+6. Priority: 10
+7. Done:
+	User can see previous testimonies
+	User can add testimonial
+	Testimonials are constant through executions"
+17,"As a user, I should be able to see contact information of group",matthewchin47,Sprint 2,https://github.com/campjake/2D-Graphics-Modeler/issues/17,Race to the finish!,1,2022-10-30T01:07:56Z,2022-12-12T19:30:34Z,"a) Description
+	Guest users can prompt to see group contact information
+	Team name is displayed
+	Team logo is displayed
+b) Tasks
+ 	Display team name
+	Display team logo
+c) Tests	
+	Verify that user can call method
+	Verify that team name is displayed and accurate
+	Verify that team logo is displayed and accurate
+4. Assignee:
+   	Lawrence, implement code that allows users to call a method to display team information
+5. Estimation: 10
+6. Priority: 10
+7. Done:
+	User can call method to display information
+	Team name is displayed
+	Team logo is displayed"
+20,"As a user, I should be able to login with my username and password",campjake,Sprint 1,https://github.com/campjake/2D-Graphics-Modeler/issues/20,"Goals:
+- Vector Class
+- Shape Base Class & Derived Classes
+- Text Parser for application to read input file
+- RenderArea Class
+- Window Class
+- User login (Window Object)",1,2022-11-08T23:45:32Z,2022-12-12T19:30:13Z,"- Define and implement the window class using Qt
+- Define and implement a User class ?
+- Login credentials do not need to be locked to a user yet, just need some basic Qt functionality with the .ui files"
+22,"As a user, I should be able to load shapes from a text file",campjake,Sprint 1,https://github.com/campjake/2D-Graphics-Modeler/issues/22,"Goals:
+- Vector Class
+- Shape Base Class & Derived Classes
+- Text Parser for application to read input file
+- RenderArea Class
+- Window Class
+- User login (Window Object)",0,2022-11-12T23:44:49Z,2022-12-12T19:30:10Z,
+25,As a user I should be able to draw a Polygon,campjake,Sprint 2,https://github.com/campjake/2D-Graphics-Modeler/issues/25,Race to the finish!,0,2022-11-19T02:35:23Z,2022-12-12T19:30:07Z,"Polygon class definition and implementation--
+
+Inherits Shape Class and must override the pure virtual functions accurately.
+
+NOTE - Perimeter and Area will be challenging and will require some sort of algorithm for n-number of sides"
+27,Failed Shadow Build Uploaded,matthewchin47,Sprint 2,https://github.com/campjake/2D-Graphics-Modeler/issues/27,Race to the finish!,1,2022-11-20T22:54:10Z,2022-12-12T19:30:04Z,Needs to be deleted and the settings to NOT create a Shadow Build by default needs to be set again.
+28,Need an alternate constructor for Derived Classes,campjake,Sprint 2,https://github.com/campjake/2D-Graphics-Modeler/issues/28,Race to the finish!,2,2022-11-21T00:27:36Z,2022-12-12T19:29:40Z,"To reduce overhead and coupling, the text parser class needs to be able to call an alternate constructor from each of the Shape derived classes.
+The reason for this is to avoid accessing the Canvas until it is called by a draw function. Text parser's Read File function should only read the file, and not Draw the shapes as well. Sorry for not making this clear earlier.
+
+Line - ID number (int), front point(QPoint), end point (QPoint) @ltep0 
+Polyline - ID Number (int), pointer to QList of QPoints (QList<QPoint>*) 
+Polygon - done @campjake 
+Rectangle - ID Number, Position (QPoint), length (int), width (int) @HardinL 
+Ellipse - ID Number (int), Position (QPoint), major axis point (int), minor axis point (int)
+Text - Text actually has it! But it needs another constructor that the others have: 
+            Text(QPaintDevice * device = nullptr, int id = -1, ShapeType shapeType = ShapeType::Text) @PastelChips 
+
+Please respond with a comment when you have added them so I can close this issue later :) thank you!
+
+- Jake"
+31,File Pathing Errors for TextParser,campjake,Sprint 2,https://api.github.com/repos/campjake/2D-Graphics-Modeler/issues/31,Race to the finish!,3,2022-12-03T18:28:12Z,2022-12-12T19:29:12Z,

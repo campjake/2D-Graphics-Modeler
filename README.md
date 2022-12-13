@@ -42,7 +42,7 @@ that can be integrated into an existing software suite.
 - [ ] Save changes between executions
 - [x] Contact Us Method
 - [x] Testimonials
-- [ ] Passes valgrind memory check
+- [x] Passes valgrind memory check
 - [x] Extra Credit: Uses Agile Planning tools (Projects, Issues & Actions)
 
 ## Project Group Members

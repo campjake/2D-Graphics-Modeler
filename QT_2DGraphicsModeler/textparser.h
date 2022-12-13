@@ -11,7 +11,7 @@
 #include <QColor>
 #include <QMap>
 #include "vector.h"
-//#include "shape.h"
+#include "shape.h"
 #include "line.h"
 #include "polyline.h"
 #include "polygon.h"
@@ -30,6 +30,8 @@ enum ShapeNames
     CIRCLE,
     TEXT
 };
+
+
 
 // Parser is an abstract class, you should not be able to declare it
 class TextParser

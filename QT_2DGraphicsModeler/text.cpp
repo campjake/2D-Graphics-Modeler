@@ -116,6 +116,8 @@ void Text::Draw(QPainter* painter) {
 
 	//This uses drawText(const QRect &rectangle, int flags, const QString &text, QRect *boundingRect = nullptr)
     painter->drawText(boundBox, textAlignment, textString);
+
+    painter->drawText(GetPos(), QString::number(GetID()));
 }
 
 /*********************************************************************

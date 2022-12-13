@@ -13,6 +13,8 @@
 // GLOBAL QPAINTER VAR. -- ALL FILES THAT DRAW NEED THIS
 //QPainter qpainter;
 
+
+
 enum class ShapeType
 {
   NoShape, Line, Polyline, Polygon, Rectangle,
@@ -29,7 +31,7 @@ class Shape
           ShapeType shapeType = ShapeType::NoShape);
 
     // Destructor
-    virtual ~Shape(){}
+    virtual ~Shape(){delete painter;}
 
     // Copy Operations (delete them)
     Shape(const Shape& source) = delete;
@@ -38,12 +40,12 @@ class Shape
 
     // COME BACK AND FIGURE OUT IMPLEMENTATION
 
-////    // Move Operations
-////        // Move Ctor
-//    Shape(Shape&& otherShape) noexcept;
+//    // Move Operations
+//        // Move Ctor
+    Shape(Shape&& otherShape) noexcept;
 
 //        // Move Assignment
-//    Shape& operator=(Shape&& otherShape) noexcept;
+    Shape& operator=(Shape&& otherShape) noexcept;
 
     /******************* Overloaded Compare Operators *********************/
     // Equality operator
@@ -116,7 +118,7 @@ class Shape
   QPainter* getPainter();
 
   private :
-    QPainter    painter;
+    QPainter*    painter;
     int   id;
     ShapeType   shapeName;
     QPen        shapePen;
@@ -124,6 +126,38 @@ class Shape
     QPoint      shapePos;
 //    static int  count;      // helps set unique ID
 
+};
+
+
+// Equality Comparable Operators
+
+// compare by id
+// returns true if lhs shape ID < rhs shape ID
+struct Cmp_by_id
+{
+    bool operator()(const Shape* s1, const Shape* s2) const
+    {
+        return s1->GetID() < s2->GetID();
+    }
+};
+
+// compare by perimeter
+// returns true if lhs shape perimeter < rhs shape perimeter
+struct Cmp_by_perimeter
+{
+    bool operator()(const Shape* s1, const Shape* s2) const
+    {
+        return s1->CalcPerimeter() < s2->CalcPerimeter();
+    }
+};
+
+// compare by area
+// returns true if lhs shape area < rhs shape area
+struct Cmp_by_area {
+    bool operator()(const Shape* s1, const Shape* s2) const
+    {
+        return s1->CalcArea() < s2->CalcArea();
+    }
 };
 
 

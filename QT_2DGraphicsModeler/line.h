@@ -6,7 +6,6 @@
 class Line : virtual public Shape
 {
 public:
-public:
     //Constructor
     Line(QPaintDevice* device = nullptr, int anID = -1, ShapeType shapeType = ShapeType::Line);
 

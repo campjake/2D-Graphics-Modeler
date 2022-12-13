@@ -185,6 +185,8 @@ void Polygon::Draw(QPainter* painter)
     painter->setBrush(GetBrush());
     painter->setPen(GetPen());
     painter->drawPolygon(pointList, GetPointCount());
+
+    painter->drawText(pointList[0], QString::number(GetID()));
 }
 
 // Move Function for Polygon should use SetPoints?

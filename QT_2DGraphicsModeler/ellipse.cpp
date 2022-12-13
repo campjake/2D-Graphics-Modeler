@@ -7,7 +7,9 @@
 Ellipse::Ellipse(QPaintDevice* device, int anID,
                  ShapeType shapeType, int a, int b)
     : Shape{device, anID, shapeType}, a{a}, b{b}
-{}
+{
+
+}
 
 // Parser Constructor
 Ellipse::Ellipse(int anID, QPoint qPos, int a, int b)
@@ -47,6 +49,29 @@ void Ellipse::Draw(QPainter* painter)
     painter->setPen(GetPen());
     painter->setBrush(GetBrush());
     painter->drawEllipse(GetPos(), a, b);
+
+    QPoint offsetPos;
+    if(GetPos().x() > GetPos().y())
+    {
+        offsetPos.setX(GetPos().x() - a );
+        offsetPos.setY(GetPos().y() - b );
+    }
+    else
+    {
+        if(GetPos().x() < GetPos().y())
+        {
+            offsetPos.setX(GetPos().x() - b );
+            offsetPos.setY(GetPos().y() - a );
+        }
+        else
+        {
+            offsetPos.setX(GetPos().x() - a );
+            offsetPos.setY(GetPos().y() - a );
+        }
+    }
+
+    painter->drawText(offsetPos, QString::number(GetID()));
+
 }
 
 // Move function

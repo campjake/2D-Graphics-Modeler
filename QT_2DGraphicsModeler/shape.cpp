@@ -9,11 +9,10 @@
 Shape::Shape(QPaintDevice* device,
              int anID,
              ShapeType shapeType)
-    : painter{device},
-      id{anID},
+    : id{anID},
       shapeName{shapeType}
 {
-//    QPainter painter(device);
+    painter = new QPainter(device);
     shapePen = Qt::SolidLine;
     shapeBrush = Qt::NoBrush;
 
@@ -24,38 +23,38 @@ Shape::Shape(QPaintDevice* device,
 
 // Move Operations
 
-//// Move Ctor
-//// Pre-Conditions - R-value casted other shape object
-//// Post-Conditions - Constructs a Shape object
-//Shape::Shape(Shape&& otherShape) noexcept
-//    : id{std::move(otherShape.id)},
-//      shapeName{std::move(otherShape.shapeName)},
-//      shapePen{std::move(otherShape.shapePen)},
-//      shapeBrush{std::move(otherShape.shapeBrush)},
-//      shapePos{std::move(otherShape.shapePos)}
-//{
-//    qpainter = otherShape.get_qpainter();
-//    otherShape.qpainter = nullptr;
-//}
+// Move Ctor
+// Pre-Conditions - R-value casted other shape object
+// Post-Conditions - Constructs a Shape object
+Shape::Shape(Shape&& otherShape) noexcept
+    : painter{std::move(otherShape.painter)},
+      id{std::move(otherShape.id)},
+      shapeName{std::move(otherShape.shapeName)},
+      shapePen{std::move(otherShape.shapePen)},
+      shapeBrush{std::move(otherShape.shapeBrush)},
+      shapePos{std::move(otherShape.shapePos)}
+{
+    otherShape.painter = nullptr;
+}
 
 //// Move Assignment
 //// Pre-Conditions - R-value casted other shape object
 //// Post-Conditions - Returns a shape object
-//Shape& Shape::operator=(Shape&& otherShape) noexcept
-//{
-//    delete p_qpainter;
+Shape& Shape::operator=(Shape&& otherShape) noexcept
+{
+    delete painter;
 
-//    p_qpainter = std::move(otherShape.p_qpainter);
-//    otherShape.p_qpainter = nullptr;
+    painter = std::move(otherShape.painter);
+    otherShape.painter = nullptr;
 
-//    id = std::move(otherShape.id);
-//    shapeName = std::move(otherShape.shapeName);
-//    shapePen = std::move(otherShape.shapePen);
-//    shapeBrush = std::move(otherShape.shapeBrush);
-//    shapePos = std::move(otherShape.shapePos);
+    id = std::move(otherShape.id);
+    shapeName = std::move(otherShape.shapeName);
+    shapePen = std::move(otherShape.shapePen);
+    shapeBrush = std::move(otherShape.shapeBrush);
+    shapePos = std::move(otherShape.shapePos);
 
-//    return *this;
-//}
+    return *this;
+}
 
 // Overloaded == op
 // Pre-conditions - Other shape must be there..
@@ -172,6 +171,11 @@ void Shape::SetBrush(const QColor aColor,
     shapeBrush.setStyle(brushStyle);
 }
 
+void Shape::SetBrush(const QBrush thatBrush)
+{
+    shapeBrush = thatBrush;
+}
+
 // Overloaded SetPos function
 // Pre-Conditions - a QPoint
 // Post-conditions - NONE
@@ -193,6 +197,7 @@ void Shape::Move(int xCoord, int yCoord)
 // Post-Conditions - Returns a reference to a QPainter Object
 QPainter* Shape::getPainter()
 {
-    return &painter;
+    return painter;
 }
+
 
