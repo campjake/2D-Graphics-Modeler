@@ -44,6 +44,7 @@ that can be integrated into an existing software suite.
 - [x] Testimonials
 - [x] Passes valgrind memory check
 - [x] Extra Credit: Uses Agile Planning tools (Projects, Issues & Actions)
+- [x] Extra Credit: Sort using STL Architecture
 
 ## Project Group Members
 ### Sprint 1
