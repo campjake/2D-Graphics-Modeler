@@ -8,6 +8,7 @@
 #include <QPaintDevice>
 #include <QPoint>
 #include "vector.h"
+#include <QTextStream>
 
 
 // GLOBAL QPAINTER VAR. -- ALL FILES THAT DRAW NEED THIS
@@ -112,7 +113,11 @@ class Shape
 
     // CalcArea
     virtual double CalcArea() const = 0;
+
+    virtual void Print(QTextStream &fout) = 0;
     /*************************************************************/
+
+
 
   protected : //static
   QPainter* getPainter();

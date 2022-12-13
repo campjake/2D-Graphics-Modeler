@@ -16,7 +16,6 @@
 #include "shape.h"
 #include "textparser.h"
 #include "renderarea.h"
-//#include "serializer.h"
 
 static QPainter staticQPainter;
 

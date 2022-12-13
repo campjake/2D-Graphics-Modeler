@@ -29,6 +29,16 @@ class Text : public Shape
             return textFont;
         }
 
+        int GetHeight() const
+        {
+            return height;
+        }
+
+        int GetWidth() const
+        {
+            return width;
+        }
+
 		/***********
 		 * MUTATORS
 		 ***********/
@@ -51,6 +61,8 @@ class Text : public Shape
 
 		    // CalcArea
         virtual double CalcArea() const;
+
+        virtual void Print(QTextStream &fout);
 
 	private:
 		int width;	//Text Box Width

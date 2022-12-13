@@ -38,6 +38,8 @@ public:
 
     // CalcArea
     virtual double CalcArea() const;
+
+    virtual void Print(QTextStream &fout);
     /*************************************************************/
 
   private :

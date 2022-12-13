@@ -94,7 +94,8 @@ OBJECTS       = debug/ellipse.o \
 		debug/moc_testimonial.o \
 		debug/moc_contactus.o
 
-DIST          = shape_input_file_specs.txt \
+DIST          = out.txt \
+		shape_input_file_specs.txt \
 		shapes.txt \
 		testimonial.txt ellipse.h \
 		line.h \
@@ -324,7 +325,7 @@ debug/moc_logindialog.cpp: logindialog.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QCloseEvent \
 		debug/moc_predefs.h \
 		C:/Qt/6.4.0/mingw_64/bin/moc.exe
-	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include logindialog.h -o debug\moc_logindialog.cpp
+	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include logindialog.h -o debug\moc_logindialog.cpp
 
 debug/moc_mainwindow.cpp: mainwindow.h \
 		contactus.h \
@@ -519,6 +520,7 @@ debug/moc_mainwindow.cpp: mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
 		line.h \
 		polyline.h \
 		polygon.h \
@@ -557,11 +559,9 @@ debug/moc_mainwindow.cpp: mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QSpinBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qspinbox.h \
-		serializer.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
 		debug/moc_predefs.h \
 		C:/Qt/6.4.0/mingw_64/bin/moc.exe
-	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include mainwindow.h -o debug\moc_mainwindow.cpp
+	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include mainwindow.h -o debug\moc_mainwindow.cpp
 
 debug/moc_moveshape.cpp: moveshape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QDialog \
@@ -751,6 +751,7 @@ debug/moc_moveshape.cpp: moveshape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
 		line.h \
 		polyline.h \
 		polygon.h \
@@ -760,7 +761,7 @@ debug/moc_moveshape.cpp: moveshape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QString \
 		debug/moc_predefs.h \
 		C:/Qt/6.4.0/mingw_64/bin/moc.exe
-	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include moveshape.h -o debug\moc_moveshape.cpp
+	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include moveshape.h -o debug\moc_moveshape.cpp
 
 debug/moc_renderarea.cpp: renderarea.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QBrush \
@@ -948,6 +949,7 @@ debug/moc_renderarea.cpp: renderarea.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
 		line.h \
 		polyline.h \
 		polygon.h \
@@ -957,7 +959,7 @@ debug/moc_renderarea.cpp: renderarea.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QString \
 		debug/moc_predefs.h \
 		C:/Qt/6.4.0/mingw_64/bin/moc.exe
-	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include renderarea.h -o debug\moc_renderarea.cpp
+	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include renderarea.h -o debug\moc_renderarea.cpp
 
 debug/moc_testimonial.cpp: testimonial.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QDialog \
@@ -1098,7 +1100,7 @@ debug/moc_testimonial.cpp: testimonial.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qnativeinterface.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.4.0/mingw_64/bin/moc.exe
-	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include testimonial.h -o debug\moc_testimonial.cpp
+	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include testimonial.h -o debug\moc_testimonial.cpp
 
 debug/moc_contactus.cpp: contactus.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QDialog \
@@ -1240,7 +1242,7 @@ debug/moc_contactus.cpp: contactus.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QWidget \
 		debug/moc_predefs.h \
 		C:/Qt/6.4.0/mingw_64/bin/moc.exe
-	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include contactus.h -o debug\moc_contactus.cpp
+	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Users/jacob/OneDrive/Documents/GitHub/2D-Graphics-Modeler/QT_2DGraphicsModeler -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include contactus.h -o debug\moc_contactus.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -1441,6 +1443,7 @@ ui_mainwindow.h: mainwindow.ui \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
 		line.h \
 		polyline.h \
 		polygon.h \
@@ -1575,7 +1578,10 @@ debug/ellipse.o: ellipse.cpp ellipse.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontmetrics.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
-		vector.h
+		vector.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtextstream.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringconverter_base.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\ellipse.o ellipse.cpp
 
 debug/line.o: line.cpp line.h \
@@ -1680,10 +1686,11 @@ debug/line.o: line.cpp line.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
 		vector.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/QDebug \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qdebug.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qtextstream.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringconverter_base.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QDebug \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qdebug.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qcontiguouscache.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qmap.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qshareddata_impl.h \
@@ -2075,6 +2082,7 @@ debug/main.o: main.cpp mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
 		line.h \
 		polyline.h \
 		polygon.h \
@@ -2113,8 +2121,6 @@ debug/main.o: main.cpp mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QSpinBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qspinbox.h \
-		serializer.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qguiapplication.h \
@@ -2315,6 +2321,7 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
 		line.h \
 		polyline.h \
 		polygon.h \
@@ -2353,8 +2360,6 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QSpinBox \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qspinbox.h \
-		serializer.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
 		ui_mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QVariant \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QAction \
@@ -2377,8 +2382,11 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qmenubar.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QPushButton \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QSplitter \
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qsplitter.h \
 		C:/Qt/6.4.0/mingw_64/include/QtWidgets/QStatusBar \
-		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qstatusbar.h
+		C:/Qt/6.4.0/mingw_64/include/QtWidgets/qstatusbar.h \
+		serializer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o mainwindow.cpp
 
 debug/moveshape.o: moveshape.cpp moveshape.h \
@@ -2569,6 +2577,7 @@ debug/moveshape.o: moveshape.cpp moveshape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
 		line.h \
 		polyline.h \
 		polygon.h \
@@ -2706,7 +2715,10 @@ debug/polygon.o: polygon.cpp polygon.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontmetrics.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
-		vector.h
+		vector.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtextstream.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringconverter_base.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\polygon.o polygon.cpp
 
 debug/polyline.o: polyline.cpp polyline.h \
@@ -2810,7 +2822,10 @@ debug/polyline.o: polyline.cpp polyline.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontmetrics.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
-		vector.h
+		vector.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtextstream.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringconverter_base.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\polyline.o polyline.cpp
 
 debug/rectangle.o: rectangle.cpp rectangle.h \
@@ -2914,7 +2929,10 @@ debug/rectangle.o: rectangle.cpp rectangle.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qfontmetrics.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
-		vector.h
+		vector.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtextstream.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringconverter_base.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\rectangle.o rectangle.cpp
 
 debug/renderarea.o: renderarea.cpp renderarea.h \
@@ -3103,6 +3121,7 @@ debug/renderarea.o: renderarea.cpp renderarea.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/Qt \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
 		line.h \
 		polyline.h \
 		polygon.h \
@@ -3213,10 +3232,11 @@ debug/shape.o: shape.cpp shape.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
 		vector.h \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/QDebug \
-		C:/Qt/6.4.0/mingw_64/include/QtCore/qdebug.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qtextstream.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringconverter_base.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QDebug \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qdebug.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qcontiguouscache.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qmap.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/qshareddata_impl.h \
@@ -3517,6 +3537,9 @@ debug/text.o: text.cpp text.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
 		vector.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qtextstream.h \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/qstringconverter_base.h \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\text.o text.cpp
 
@@ -3700,6 +3723,7 @@ debug/textparser.o: textparser.cpp textparser.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/qtextoption.h \
 		C:/Qt/6.4.0/mingw_64/include/QtGui/QPaintDevice \
 		C:/Qt/6.4.0/mingw_64/include/QtCore/QPoint \
+		C:/Qt/6.4.0/mingw_64/include/QtCore/QTextStream \
 		line.h \
 		polyline.h \
 		polygon.h \
